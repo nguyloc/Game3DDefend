@@ -18,7 +18,18 @@ namespace _Data.Tower.Scripts
 
         protected void FixedUpdate()
         {
-            this.FindNearestEnemy();
+            this.FindNearest();
+        }
+
+             
+        protected virtual void OnTriggerEnter(Collider collider)
+        {
+            this.AddEnemy(collider);
+        }
+        
+        protected virtual void OnTriggerExit(Collider collider)
+        {
+            this.RemoveEnemy(collider);
         }
 
 
@@ -34,7 +45,7 @@ namespace _Data.Tower.Scripts
             if (this.sphereCollider != null) return;
             this.sphereCollider = GetComponent<SphereCollider>();
             this.sphereCollider.isTrigger = true;
-            this.sphereCollider.radius = 5f;
+            this.sphereCollider.radius = 15f;
             Debug.Log(transform.name + " is loading SphereCollider", gameObject);
         }
         
@@ -45,17 +56,39 @@ namespace _Data.Tower.Scripts
             this.rig.isKinematic = true;
             Debug.Log(transform.name + " is loading Rigidbody", gameObject);
         }
-        
-        protected virtual void FindNearestEnemy()
+   
+        protected virtual void AddEnemy(Collider collider)
         {
-            if (this.enemies.Count == 0) return;
-            this.nearestEnemy = this.enemies[0];
-            foreach (var enemy in this.enemies)
+          if (collider.name != Const.TOWER_TARGETABLE) return;
+          var enemyController = collider.transform.parent.GetComponent<EnemyController>();
+          this.enemies.Add(enemyController);
+          Debug.Log("Enemy added" + collider.name, gameObject);
+        }
+        
+        protected virtual void RemoveEnemy(Collider collider)
+        {
+            Debug.Log("Enemy removed" + collider.name, gameObject);
+            foreach (EnemyController enemyController in this.enemies)
             {
-                if (Vector3.Distance(transform.position, enemy.transform.position) <
-                    Vector3.Distance(transform.position, this.nearestEnemy.transform.position))
+                if (collider.transform.parent == enemyController.transform)
                 {
-                    this.nearestEnemy = enemy;
+                    this.enemies.Remove(enemyController);
+                    return;
+                }
+            }
+        }
+        
+        protected virtual void FindNearest()
+        {
+            float nearestDistance = Mathf.Infinity;
+            float enemyDistance;
+            foreach (var enemyController in this.enemies)
+            {
+                enemyDistance = Vector3.Distance(transform.position, enemyController.transform.position);
+                if (enemyDistance < nearestDistance)
+                {
+                    nearestDistance = enemyDistance;
+                    this.nearestEnemy = enemyController;
                 }
             }
         }

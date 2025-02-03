@@ -57,7 +57,6 @@ namespace _Data.Enemy.Scripts
    
         protected virtual void Moving()
         {
-            //KISS
             if (!this.canMove)
             {
                 this.enemyController.Agent.isStopped = true;

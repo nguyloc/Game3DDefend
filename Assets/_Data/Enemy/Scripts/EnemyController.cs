@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 using _Data.Scripts;
+using _Data.Tower.Scripts;
 
 namespace  _Data.Enemy.Scripts
 {
@@ -9,15 +10,18 @@ namespace  _Data.Enemy.Scripts
         [SerializeField] protected Transform model;
         [SerializeField] protected NavMeshAgent agent;
         [SerializeField] protected Animator animator;
+        [SerializeField] protected TowerTargetable towerTargetable;
 
         public NavMeshAgent Agent => agent;
         public Animator Animator => animator;
+        public TowerTargetable TowerTargetable => towerTargetable;
 
         protected override void LoadComponents()
         {
             base.LoadComponents();
             this.LoadNavMeshAgent();
             this.LoadModel();
+            this.LoadTowerTargetable();
             this.LoadAnimator();
         }
 
@@ -36,6 +40,14 @@ namespace  _Data.Enemy.Scripts
             if (this.model != null) return;
             this.model = transform.Find("Model");
             this.model.localPosition = new Vector3(0, 0, 0);
+            Debug.Log(transform.name + " is loading Model", gameObject);
+        }
+        
+        protected virtual void LoadTowerTargetable()
+        {
+            if (this.towerTargetable != null) return;
+            this.towerTargetable = transform.GetComponentInChildren<TowerTargetable>();
+            this.towerTargetable.transform.localPosition = new Vector3(0, 0.4f, 0);
             Debug.Log(transform.name + " is loading Model", gameObject);
         }
 

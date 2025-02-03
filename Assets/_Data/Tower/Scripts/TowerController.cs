@@ -6,7 +6,10 @@ namespace _Data.Tower.Scripts
     public class TowerController : LocMonoBehaviour
     {
         [SerializeField] protected Transform model;
+        [SerializeField] protected Transform rotator;
 
+        public Transform Rotator => rotator;
+        
         protected override void LoadComponents()
         {
             base.LoadComponents();
@@ -17,7 +20,7 @@ namespace _Data.Tower.Scripts
         {
             if (this.model != null) return;
             this.model = transform.Find("Model");
-            this.model.localPosition = new Vector3(0, 0, 0);
+            this.rotator = this.model.Find("Rotator");
             Debug.Log(transform.name + " is loading Model", gameObject);
         }
     }
