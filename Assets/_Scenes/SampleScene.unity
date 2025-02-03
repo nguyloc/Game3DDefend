@@ -1458,6 +1458,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 547058600}
   enemyController: {fileID: 1239195332}
+  pathIndex: 2
+  enemyPath: {fileID: 0}
 --- !u!1 &1523890489
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,9 +2208,6 @@ MonoBehaviour:
   - {fileID: 1541324403}
   - {fileID: 374482543}
   - {fileID: 20056417}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &4013017198954728409
 Transform:
   m_ObjectHideFlags: 0
