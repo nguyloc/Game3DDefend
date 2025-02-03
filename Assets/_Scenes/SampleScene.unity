@@ -1416,6 +1416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   model: {fileID: 113559982}
   rotator: {fileID: 1660694258}
+  towerTargeting: {fileID: 1062976053}
 --- !u!4 &1046023192
 Transform:
   m_ObjectHideFlags: 0
@@ -1503,7 +1504,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 5
+  m_Radius: 15
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1062976055
 Rigidbody:
@@ -2486,7 +2487,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerController: {fileID: 1046023191}
-  target: {fileID: 1239195332}
+  rotationSpeed: 2
+  target: {fileID: 0}
 --- !u!4 &1941015986 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7223585718771780990, guid: 15f0f79636d89144491faaf84cfc789b, type: 3}

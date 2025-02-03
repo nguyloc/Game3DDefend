@@ -16,6 +16,9 @@ namespace _Data.Tower.Scripts
 
         [SerializeField] protected List<EnemyController> enemies = new();
 
+        
+        public EnemyController NearestEnemy => nearestEnemy;
+        
         protected void FixedUpdate()
         {
             this.FindNearest();

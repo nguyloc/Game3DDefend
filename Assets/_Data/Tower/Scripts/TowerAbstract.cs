@@ -19,5 +19,9 @@ namespace _Data.Tower.Scripts
             this.towerController = transform.parent.GetComponent<TowerController>();
             Debug.Log(transform.name + " is loading TowerController", gameObject);
         }
+        protected virtual void Start()
+        {
+            Debug.Log("TowerAbstract Start logic");
+        }
     }
 }
