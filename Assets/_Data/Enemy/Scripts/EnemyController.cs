@@ -6,19 +6,19 @@ namespace  _Data.Enemy.Scripts
 {
     public class EnemyController : LocMonoBehaviour
     {
-        [SerializeField]
-        protected Transform model;
-
-        [SerializeField]
-        protected NavMeshAgent agent;
+        [SerializeField] protected Transform model;
+        [SerializeField] protected NavMeshAgent agent;
+        [SerializeField] protected Animator animator;
 
         public NavMeshAgent Agent => agent;
+        public Animator Animator => animator;
 
         protected override void LoadComponents()
         {
             base.LoadComponents();
             this.LoadNavMeshAgent();
             this.LoadModel();
+            this.LoadAnimator();
         }
 
         protected virtual void LoadNavMeshAgent()
@@ -37,6 +37,13 @@ namespace  _Data.Enemy.Scripts
             this.model = transform.Find("Model");
             this.model.localPosition = new Vector3(0, 0, 0);
             Debug.Log(transform.name + " is loading Model", gameObject);
+        }
+
+        protected virtual void LoadAnimator()
+        {
+            if (this.animator != null) return;
+            this.animator = this.model.GetComponent<Animator>();
+            Debug.Log(transform.name + " is loading Animator", gameObject);
         }
     }
 }

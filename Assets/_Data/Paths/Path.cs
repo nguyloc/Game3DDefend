@@ -26,5 +26,14 @@ namespace _Data.Paths
             
             Debug.Log(transform.name + "Load Points", gameObject);
         }
+        
+        public Point GetPoint(int index)
+        {
+            if (index < 0 || index >= this.points.Count)
+            {
+                return null;
+            }
+            return this.points[index];
+        }
     }
 }

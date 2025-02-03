@@ -31,9 +31,16 @@ namespace _Data.Paths
            Debug.Log(transform.name + "Load Paths", gameObject);
         }
         
-        public Path GetPath(int index)
+        public Path GetPath(string pathName)
         {
-            return this.paths[index];
+            foreach (var path in this.paths)
+            {
+                if (path.name == pathName)
+                {
+                    return path;
+                }
+            }
+            return null;
         }
     }
 }

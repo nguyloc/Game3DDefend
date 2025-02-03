@@ -12,9 +12,15 @@ namespace _Data.Scripts
         protected void Reset()
         {
             this.LoadComponents();
+            this.ResetValue();
         }
 
         protected virtual void LoadComponents()
+        {
+            // Load all components here
+        }
+        
+        protected virtual void ResetValue()
         {
             // Load all components here
         }

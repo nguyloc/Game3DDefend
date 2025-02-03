@@ -6,6 +6,9 @@ namespace _Data.Paths
     public class Point : LocMonoBehaviour
     {
         [SerializeField] protected Point nextPoint;
+        
+        public Point NextPoint => nextPoint;
+        
         protected override void LoadComponents()
         {
             base.LoadComponents();
