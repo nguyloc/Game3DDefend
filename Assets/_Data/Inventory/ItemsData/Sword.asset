@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc31527cbd11445497137eaa4d504bf1, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  itemName: 
-  icon: {fileID: 0}
-  isEquippable: 0
+  itemName: Sword
+  icon: {fileID: 21300000, guid: c75340e91d9f4ec488d54c027c16039e, type: 3}
+  isEquippable: 1
   isUsable: 0

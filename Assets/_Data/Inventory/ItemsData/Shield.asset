@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc31527cbd11445497137eaa4d504bf1, type: 3}
   m_Name: Shield
   m_EditorClassIdentifier: 
-  itemName: 
-  icon: {fileID: 0}
-  isEquippable: 0
+  itemName: Shield
+  icon: {fileID: 21300000, guid: f5941abeaf982b249be1b4a23785c6e7, type: 3}
+  isEquippable: 1
   isUsable: 0
