@@ -9,6 +9,9 @@ namespace _Data.Tower.Scripts
     {
         [SerializeField] protected float rotationSpeed = 2f;
         [SerializeField] protected EnemyController target;
+        [SerializeField] protected BulletSpawner bulletSpawner;
+        [SerializeField] protected Bullet bullet;
+
 
         protected override void Start()
         {
@@ -18,9 +21,15 @@ namespace _Data.Tower.Scripts
 
         protected void FixedUpdate()
         {
-            this.LookingAtTarget();
+            this.Looking();
+            this.Shooting();
         }
-       
+        
+        protected override void LoadComponents()
+        {
+            base.LoadComponents();
+        }
+    
         protected virtual void TargetLoading()
         {
             Invoke(nameof(this.TargetLoading), 1f);
@@ -29,7 +38,7 @@ namespace _Data.Tower.Scripts
         }
         
          
-        protected virtual void LookingAtTarget()
+        protected virtual void Looking()
         {
             if (this.target == null) return; 
             Vector3 directionToTarget = this.target.TowerTargetable.transform.position - this.towerController.Rotator.position;
@@ -39,6 +48,14 @@ namespace _Data.Tower.Scripts
                 rotationSpeed * Time.fixedDeltaTime, 0.0f);
             
             this.towerController.Rotator.rotation = Quaternion.LookRotation(newDirection);
+        }
+        
+        protected virtual void Shooting()
+        {
+            if (this.target == null) return;
+            
+            //Spawner
+            this.towerController.BulletSpawner.Spawn(this.towerController.Bullet);
         }
     }
 }
