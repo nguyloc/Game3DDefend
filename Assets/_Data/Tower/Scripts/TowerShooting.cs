@@ -7,22 +7,25 @@ namespace _Data.Tower.Scripts
 {
     public class TowerShooting : TowerAbstract
     {
+        [SerializeField] protected float targetLoadSpeed = 1f;
+        [SerializeField] protected float shootingSpeed = 1f;
         [SerializeField] protected float rotationSpeed = 2f;
         [SerializeField] protected EnemyController target;
         [SerializeField] protected BulletSpawner bulletSpawner;
         [SerializeField] protected Bullet bullet;
 
 
+
         protected override void Start()
         {
             base.Start();
-            Invoke(nameof(this.TargetLoading), 1f);
+            Invoke(nameof(this.TargetLoading), this.targetLoadSpeed);
+            Invoke(nameof(this.Shooting), this.shootingSpeed);
         }
 
         protected void FixedUpdate()
         {
             this.Looking();
-            this.Shooting();
         }
         
         protected override void LoadComponents()
@@ -32,7 +35,7 @@ namespace _Data.Tower.Scripts
     
         protected virtual void TargetLoading()
         {
-            Invoke(nameof(this.TargetLoading), 1f);
+            Invoke(nameof(this.TargetLoading), this.targetLoadSpeed);
 
             this.target = this.towerController.TowerTargeting.NearestEnemy;
         }
@@ -52,9 +55,8 @@ namespace _Data.Tower.Scripts
         
         protected virtual void Shooting()
         {
+            Invoke(nameof(this.Shooting), this.shootingSpeed);
             if (this.target == null) return;
-            
-            //Spawner
             this.towerController.BulletSpawner.Spawn(this.towerController.Bullet);
         }
     }

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using _Data.Scripts;
 using UnityEngine;
 
@@ -10,12 +11,14 @@ namespace _Data.Tower.Scripts
         [SerializeField] protected TowerTargeting towerTargeting;
         [SerializeField] protected BulletSpawner bulletSpawner;
         [SerializeField] protected Bullet bullet;
+        [SerializeField] protected List<FirePoint> firePoints = new();
 
         
         public Transform Rotator => rotator;
         public TowerTargeting TowerTargeting => towerTargeting;
         public BulletSpawner BulletSpawner => bulletSpawner;
         public Bullet Bullet => bullet;
+        public List<FirePoint> FirePoints => firePoints;
         
         protected override void LoadComponents()
         {
@@ -24,9 +27,19 @@ namespace _Data.Tower.Scripts
             this.LoadTowerTargeting();
             this.LoadBulletSpawner();
             this.LoadBullet();
+            this.LoadFirePoints();
         }
 
+          
+        protected virtual void LoadFirePoints()
+        {
+            if (this.firePoints.Count > 0) return;
+            FirePoint[] points = transform.GetComponentsInChildren<FirePoint>();
+            this.firePoints = new List<FirePoint>(points);
             
+            Debug.Log(transform.name + "LoadFirePoints", gameObject);
+        }
+        
         protected virtual void LoadBulletSpawner()
         {
             if (this.bulletSpawner != null) return;
