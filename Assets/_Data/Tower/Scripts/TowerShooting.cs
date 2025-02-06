@@ -7,6 +7,7 @@ namespace _Data.Tower.Scripts
 {
     public class TowerShooting : TowerAbstract
     {
+        [SerializeField] protected float currentFirePoint = 0;
         [SerializeField] protected float targetLoadSpeed = 1f;
         [SerializeField] protected float shootingSpeed = 1f;
         [SerializeField] protected float rotationSpeed = 2f;
@@ -57,7 +58,22 @@ namespace _Data.Tower.Scripts
         {
             Invoke(nameof(this.Shooting), this.shootingSpeed);
             if (this.target == null) return;
-            this.towerController.BulletSpawner.Spawn(this.towerController.Bullet);
+            
+            FirePoint firePoint = this.GetFirePoint();
+            Bullet newBullet = this.towerController.BulletSpawner.Spawn(this.towerController.Bullet, firePoint.transform.position);
+            newBullet.gameObject.SetActive(true);
+        }
+        
+        protected virtual FirePoint GetFirePoint()
+        {
+            FirePoint firePoint = this.towerController.FirePoints[(int) this.currentFirePoint];
+            this.currentFirePoint++;
+            if (this.currentFirePoint >= this.towerController.FirePoints.Count)
+            {
+                this.currentFirePoint = 0;
+            }
+
+            return firePoint;
         }
     }
 }

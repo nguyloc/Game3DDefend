@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using _Data.Scripts;
 using UnityEngine;
@@ -19,7 +20,15 @@ namespace _Data.Tower.Scripts
         public BulletSpawner BulletSpawner => bulletSpawner;
         public Bullet Bullet => bullet;
         public List<FirePoint> FirePoints => firePoints;
-        
+
+
+        protected override void Awake()
+        {
+            base.Awake();
+            this.HidePrefab();
+        }
+
+
         protected override void LoadComponents()
         {
             base.LoadComponents();
@@ -67,6 +76,11 @@ namespace _Data.Tower.Scripts
             if (this.towerTargeting != null) return;
             this.towerTargeting = GetComponentInChildren<TowerTargeting>();
             Debug.Log(transform.name + " is loading TowerTargeting", gameObject);
+        }
+        
+        protected virtual void HidePrefab()
+        {
+            this.bullet.gameObject.SetActive(false);
         }
     }
 }
