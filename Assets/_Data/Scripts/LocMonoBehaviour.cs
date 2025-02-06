@@ -4,10 +4,10 @@ namespace _Data.Scripts
 {
     public class LocMonoBehaviour : MonoBehaviour
     {
-        // protected virtual void Start()
-        // {
-        //     this.LoadComponents();
-        // }
+        protected virtual void Start()
+        {
+            
+        }
         
         protected virtual void Awake()
         {

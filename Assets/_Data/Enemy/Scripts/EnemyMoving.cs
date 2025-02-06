@@ -24,7 +24,7 @@ namespace _Data.Enemy.Scripts
         [SerializeField] protected bool canMove = false;
 
 
-        protected void Start()
+        protected override void Start()
         {
             this.LoadEnemyPath();
         }

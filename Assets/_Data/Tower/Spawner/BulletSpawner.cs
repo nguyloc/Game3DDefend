@@ -1,12 +1,14 @@
-﻿using UnityEngine;
+﻿using _Data.Tower.Scripts;
+using UnityEngine;
 
-namespace _Data.Tower.Scripts
+namespace _Data.Tower.Spawner
 {
-    public class BulletSpawner : Spawner
+    public class BulletSpawner : Spawner<Bullet>
     {
         public virtual Bullet Spawn(Bullet bulletPrefab)
         {
             Bullet newObject = Instantiate(bulletPrefab);
+            newObject.Despawn.SetSpawner(this);
             return newObject;
         }
         

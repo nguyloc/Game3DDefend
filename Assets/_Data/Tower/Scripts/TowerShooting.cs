@@ -1,5 +1,6 @@
 ﻿using System;
 using _Data.Enemy.Scripts;
+using _Data.Tower.Spawner;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -61,6 +62,8 @@ namespace _Data.Tower.Scripts
             
             FirePoint firePoint = this.GetFirePoint();
             Bullet newBullet = this.towerController.BulletSpawner.Spawn(this.towerController.Bullet, firePoint.transform.position);
+            Vector3 rotatorDirection = this.towerController.Rotator.forward;
+            newBullet.transform.forward = rotatorDirection;
             newBullet.gameObject.SetActive(true);
         }
         
