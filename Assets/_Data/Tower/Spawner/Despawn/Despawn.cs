@@ -1,9 +1,9 @@
 ﻿using _Data.Scripts;
 using UnityEngine;
 
-namespace _Data.Tower.Spawner
+namespace _Data.Tower.Spawner.Despawn
 {
-    public abstract class Despawn<T> : LocMonoBehaviour
+    public abstract class Despawn<T> : DespawnBase where T : PoolObj
     {
         [SerializeField] protected Spawner<T> spawner;
         [SerializeField] protected T parent;
@@ -19,11 +19,7 @@ namespace _Data.Tower.Spawner
         {
             base.LoadComponents();
             this.LoadParent();
-        }
-        
-        public virtual void SetSpawner(Spawner<T> spawner)
-        {
-            this.spawner = spawner;
+            this.LoadSpawner();
         }
         
         protected virtual void DespawnChecking()
@@ -40,6 +36,13 @@ namespace _Data.Tower.Spawner
             if (this.parent != null) return;
             this.parent = transform.parent.GetComponent<T>();
             Debug.Log(transform.name + ": LoadParent",gameObject);
+        } 
+        
+        protected virtual void LoadSpawner()
+        {
+            if (this.spawner != null) return;
+            this.spawner = GameObject.FindAnyObjectByType<Spawner<T>>();
+            Debug.Log(transform.name + ": LoadSpawner",gameObject);
         }
     }
 }
