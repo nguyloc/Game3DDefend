@@ -22,15 +22,6 @@ namespace _Data.Tower.Spawner.Despawn
             this.LoadSpawner();
         }
         
-        protected virtual void DespawnChecking()
-        {
-            this.currentTime -= Time.fixedDeltaTime;
-            if (this.currentTime > 0) return;
-
-            this.spawner.Despawn(this.parent);
-            this.currentTime = this.timeLife;
-        }
-        
         protected virtual void LoadParent()
         {
             if (this.parent != null) return;
@@ -43,6 +34,20 @@ namespace _Data.Tower.Spawner.Despawn
             if (this.spawner != null) return;
             this.spawner = GameObject.FindAnyObjectByType<Spawner<T>>();
             Debug.Log(transform.name + ": LoadSpawner",gameObject);
+        }
+
+        protected virtual void DespawnChecking()
+        {
+            this.currentTime -= Time.fixedDeltaTime;
+            if (this.currentTime > 0) return;
+
+            this.DoDespawn();
+            this.currentTime = this.timeLife;
+        }
+
+        public override void DoDespawn()
+        {
+            this.spawner.Despawn(this.parent);
         }
     }
 }

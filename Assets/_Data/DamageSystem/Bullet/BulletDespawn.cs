@@ -2,7 +2,7 @@
 
 namespace _Data.DamageSystem.Bullet
 {
-    public class BulletDespawn : Despawn<DamageSystem.Bullet.Bullet>
+    public class BulletDespawn : Despawn<Bullet>
     {
         
     }

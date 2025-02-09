@@ -5,6 +5,6 @@ namespace _Data.Tower.Spawner.Despawn
 {
     public abstract class DespawnBase : LocMonoBehaviour
     {
-        
+        public abstract void DoDespawn();
     }
 }

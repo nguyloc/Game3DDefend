@@ -252,6 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigid: {fileID: 6951239003387905417}
   damage: 1
+  bulletController: {fileID: 5790037879763968634}
   sphereCollider: {fileID: 7043454818221025545}
 --- !u!1 &6780013812104360542
 GameObject:
@@ -263,6 +264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8002714260778470}
   - component: {fileID: 8730024156152750543}
+  - component: {fileID: 5790037879763968634}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -302,3 +304,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   despawn: {fileID: 6748871680232788312}
   speed: 10
+--- !u!114 &5790037879763968634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6780013812104360542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4b8edd2a5c454596dbe533a6a68ce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 8730024156152750543}

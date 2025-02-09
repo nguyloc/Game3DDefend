@@ -26,9 +26,9 @@ namespace _Data.DamageSystem
             Debug.Log("OnTriggerEnter" + collider.name);
         }
         
-        protected virtual void Send (DamageReceiver receiver)
+        protected virtual void Send (DamageReceiver damageReceiver)
         {
-            receiver.Deduct(this.damage);
+            damageReceiver.Deduct(this.damage);
         }
         
         protected virtual void LoadRigidbody()
