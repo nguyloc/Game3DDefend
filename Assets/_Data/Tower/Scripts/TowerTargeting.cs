@@ -13,7 +13,8 @@ namespace _Data.Tower.Scripts
         [SerializeField] protected SphereCollider sphereCollider;
         [SerializeField] protected Rigidbody rig;
         [SerializeField] protected EnemyController nearestEnemy;
-
+        [SerializeField] protected LayerMask obstacleLayerMask;
+        
         [SerializeField] protected List<EnemyController> enemies = new();
 
         
@@ -77,6 +78,8 @@ namespace _Data.Tower.Scripts
             {
                 if (collider.transform.parent == enemyController.transform)
                 {
+                    if(enemyController == this.nearestEnemy) this.nearestEnemy = null;
+
                     this.enemies.Remove(enemyController);
                     return;
                 }
@@ -89,6 +92,8 @@ namespace _Data.Tower.Scripts
             float enemyDistance;
             foreach (var enemyController in this.enemies)
             {
+                if(!this.CanSeeTarget(enemyController)) continue;
+                
                 enemyDistance = Vector3.Distance(transform.position, enemyController.transform.position);
                 if (enemyDistance < nearestDistance)
                 {
@@ -96,6 +101,23 @@ namespace _Data.Tower.Scripts
                     this.nearestEnemy = enemyController;
                 }
             }
+        }
+
+        protected virtual bool CanSeeTarget(EnemyController target)
+        {
+            Vector3 directionToTarget = target.transform.position - transform.position;
+            float distanceToTarget = directionToTarget.magnitude;
+            
+            if (Physics.Raycast(transform.position, directionToTarget, out RaycastHit hitInfo, distanceToTarget, obstacleLayerMask))
+            {
+                Vector3 directionToCollider = hitInfo.point - transform.position;
+                float distanceToCollier = directionToCollider.magnitude;
+                
+                Debug.DrawRay(transform.position, directionToCollider.normalized * distanceToCollier, Color.red);
+                return false;
+            }
+            Debug.DrawRay(transform.position, directionToTarget.normalized * distanceToTarget, Color.green);
+            return true;
         }
 
         protected virtual void RemoveDeadEnemies()

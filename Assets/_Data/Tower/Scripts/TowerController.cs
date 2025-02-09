@@ -4,16 +4,20 @@ using _Data.DamageSystem.Bullet;
 using _Data.Scripts;
 using _Data.Tower.Spawner;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace _Data.Tower.Scripts
 {
     public class TowerController : LocMonoBehaviour
     {
+        protected string bulletName = "Bullet";
+        
         [SerializeField] protected Transform model;
         [SerializeField] protected Transform rotator;
         [SerializeField] protected TowerTargeting towerTargeting;
         [SerializeField] protected BulletSpawner bulletSpawner;
         [SerializeField] protected Bullet bullet;
+        [SerializeField] protected BulletPrefabs bulletPrefabs;
         [SerializeField] protected List<FirePoint> firePoints = new();
 
         
@@ -21,6 +25,8 @@ namespace _Data.Tower.Scripts
         public TowerTargeting TowerTargeting => towerTargeting;
         public BulletSpawner BulletSpawner => bulletSpawner;
         public Bullet Bullet => bullet;
+        public BulletPrefabs BulletPrefabs => bulletPrefabs;
+        
         public List<FirePoint> FirePoints => firePoints;
 
 
@@ -37,7 +43,7 @@ namespace _Data.Tower.Scripts
             this.LoadModel();
             this.LoadTowerTargeting();
             this.LoadBulletSpawner();
-            this.LoadBullet();
+            this.LoadBulletPrefabs();
             this.LoadFirePoints();
         }
 
@@ -54,15 +60,25 @@ namespace _Data.Tower.Scripts
         protected virtual void LoadBulletSpawner()
         {
             if (this.bulletSpawner != null) return;
-            this.bulletSpawner = FindObjectOfType<BulletSpawner>();
+            //this.bulletSpawner = FindObjectOfType<BulletSpawner>();
+            this.bulletSpawner =  Object.FindFirstObjectByType<BulletSpawner>();
             Debug.Log(transform.name + "LoadBulletSpawner", gameObject);
         }
 
         protected virtual void LoadBullet()
         {
             if (this.bullet != null) return;
-            this.bullet = transform.GetComponentInChildren<Bullet>();
+            this.bullet = this.bulletPrefabs.GetByName(this.bulletName);
             Debug.Log(transform.name + "LoadBullet", gameObject);
+        }
+
+        protected virtual void LoadBulletPrefabs()
+        {
+            if (this.bulletPrefabs != null) return;
+            this.bulletPrefabs = GameObject.FindAnyObjectByType<BulletPrefabs>();
+            Debug.Log(transform.name + "LoadBullet", gameObject);
+            
+            this.LoadBullet();
         }
         
         protected virtual void LoadModel()
@@ -77,6 +93,7 @@ namespace _Data.Tower.Scripts
         {
             if (this.towerTargeting != null) return;
             this.towerTargeting = GetComponentInChildren<TowerTargeting>();
+            this.towerTargeting.transform.localPosition = new Vector3(0, 0.5f, 0);
             Debug.Log(transform.name + " is loading TowerTargeting", gameObject);
         }
         
