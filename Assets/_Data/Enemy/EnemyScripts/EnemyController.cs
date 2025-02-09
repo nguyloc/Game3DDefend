@@ -1,11 +1,11 @@
+using _Data.Tower.Scripts;
+using _Data.Tower.Spawner;
 using UnityEngine;
 using UnityEngine.AI;
-using _Data.Scripts;
-using _Data.Tower.Scripts;
 
-namespace  _Data.Enemy.Scripts
+namespace  _Data.Enemy.EnemyScripts
 {
-    public class EnemyController : LocMonoBehaviour
+    public abstract class EnemyController : PoolObj
     {
         [SerializeField] protected Transform model;
         [SerializeField] protected NavMeshAgent agent;

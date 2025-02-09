@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using _Data.Enemy.Scripts;
+using _Data.Enemy.EnemyScripts;
 using _Data.Scripts;
 using UnityEngine;
 

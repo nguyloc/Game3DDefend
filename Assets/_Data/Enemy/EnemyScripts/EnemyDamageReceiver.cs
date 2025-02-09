@@ -1,7 +1,7 @@
 ﻿using _Data.DamageSystem;
 using UnityEngine;
 
-namespace _Data.Enemy.Scripts
+namespace _Data.Enemy.EnemyScripts
 {
     [RequireComponent(typeof(CapsuleCollider))]
     public class EnemyDamageReceiver : DamageReceiver

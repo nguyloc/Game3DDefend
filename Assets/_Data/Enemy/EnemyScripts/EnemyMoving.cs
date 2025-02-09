@@ -1,10 +1,8 @@
-using System;
 using _Data.Paths;
-using UnityEngine;
 using _Data.Scripts;
+using UnityEngine;
 
-
-namespace _Data.Enemy.Scripts
+namespace _Data.Enemy.EnemyScripts
 {
     public class EnemyMoving : LocMonoBehaviour
     {

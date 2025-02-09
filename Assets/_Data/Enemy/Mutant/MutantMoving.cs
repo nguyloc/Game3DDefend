@@ -1,4 +1,4 @@
-using _Data.Enemy.Scripts;
+using _Data.Enemy.EnemyScripts;
 using UnityEngine;
 
 namespace _Data.Enemy.Mutant
