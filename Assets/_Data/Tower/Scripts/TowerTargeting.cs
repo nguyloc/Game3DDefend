@@ -22,6 +22,7 @@ namespace _Data.Tower.Scripts
         protected void FixedUpdate()
         {
             this.FindNearest();
+            this.RemoveDeadEnemies();
         }
 
              
@@ -64,13 +65,14 @@ namespace _Data.Tower.Scripts
         {
           if (collider.name != Const.TOWER_TARGETABLE) return;
           var enemyController = collider.transform.parent.GetComponent<EnemyController>();
+          
+          if(enemyController.EnemyDamageReceiver.IsDead()) return;
+          
           this.enemies.Add(enemyController);
-          Debug.Log("Enemy added" + collider.name, gameObject);
         }
         
         protected virtual void RemoveEnemy(Collider collider)
         {
-            Debug.Log("Enemy removed" + collider.name, gameObject);
             foreach (EnemyController enemyController in this.enemies)
             {
                 if (collider.transform.parent == enemyController.transform)
@@ -92,6 +94,19 @@ namespace _Data.Tower.Scripts
                 {
                     nearestDistance = enemyDistance;
                     this.nearestEnemy = enemyController;
+                }
+            }
+        }
+
+        protected virtual void RemoveDeadEnemies()
+        {
+            foreach (EnemyController enemyController in this.enemies)
+            {
+                if (enemyController.EnemyDamageReceiver.IsDead())
+                {
+                    if(enemyController == this.nearestEnemy) this.nearestEnemy = null;
+                    this.enemies.Remove(enemyController);
+                    return;
                 }
             }
         }

@@ -7,12 +7,20 @@ namespace _Data.Tower.Spawner
     public abstract class Spawner<T> : LocMonoBehaviour where T : PoolObj
     {
         [SerializeField] protected int spawnCount = 0;
+        [SerializeField] protected PoolHolder poolHolder;
         [SerializeField] protected List<T> inPoolObjs;
         
-        public virtual Transform Spawn(Transform prefab)
+        protected override void LoadComponents()
         {
-            Transform newObject = Instantiate(prefab);
-            return newObject;
+            base.LoadComponents();
+            this.LoadPoolHolder();
+        }
+        
+        protected virtual void LoadPoolHolder()
+        {
+            if (this.poolHolder != null) return;
+            this.poolHolder = transform.GetComponentInChildren<PoolHolder>();
+            Debug.Log(transform.name + " PoolHolder: " , gameObject);
         }
         
         public virtual T Spawn(T prefab)
@@ -24,6 +32,9 @@ namespace _Data.Tower.Spawner
                 spawnCount++;
                 this.UpdateName(prefab.transform, newObject.transform);
             }
+            
+            if (this.poolHolder != null) newObject.transform.parent = this.poolHolder.transform;
+
             return newObject;
         }
         

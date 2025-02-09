@@ -1,4 +1,5 @@
-﻿using _Data.Scripts;
+﻿using System;
+using _Data.Scripts;
 using UnityEngine;
 
 namespace _Data.DamageSystem
@@ -11,6 +12,11 @@ namespace _Data.DamageSystem
         protected int currentHP = 10;
         protected bool isDead = false;
 
+        protected void OnEnable()
+        {
+            this.OnReborn();
+        }
+
         public virtual int Deduct(int hp)
         {
             if(!this.isImmotal) this.currentHP -= hp;
@@ -21,7 +27,7 @@ namespace _Data.DamageSystem
             return currentHP;
         }
 
-        protected virtual bool IsDead()
+        public virtual bool IsDead()
         {
             return this.isDead = this.currentHP <= 0;
         }
@@ -34,6 +40,11 @@ namespace _Data.DamageSystem
         protected virtual void OnHurt()
         {
             // overide
+        }
+        
+        protected virtual void OnReborn()
+        {
+            this.currentHP = this.maxHP;
         }
     }
 }

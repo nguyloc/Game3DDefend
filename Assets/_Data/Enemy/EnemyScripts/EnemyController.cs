@@ -11,7 +11,9 @@ namespace  _Data.Enemy.EnemyScripts
         [SerializeField] protected NavMeshAgent agent;
         [SerializeField] protected Animator animator;
         [SerializeField] protected TowerTargetable towerTargetable;
-
+        [SerializeField] protected EnemyDamageReceiver enemyDamageReceiver;
+        
+        public EnemyDamageReceiver EnemyDamageReceiver => enemyDamageReceiver;
         public NavMeshAgent Agent => agent;
         public Animator Animator => animator;
         public TowerTargetable TowerTargetable => towerTargetable;
@@ -23,6 +25,7 @@ namespace  _Data.Enemy.EnemyScripts
             this.LoadModel();
             this.LoadTowerTargetable();
             this.LoadAnimator();
+            this.LoadEnemyDamageReceiver();
         }
 
         protected virtual void LoadNavMeshAgent()
@@ -56,6 +59,13 @@ namespace  _Data.Enemy.EnemyScripts
             if (this.animator != null) return;
             this.animator = this.model.GetComponent<Animator>();
             Debug.Log(transform.name + " is loading Animator", gameObject);
+        }
+        
+        protected virtual void LoadEnemyDamageReceiver()
+        {
+            if (this.enemyDamageReceiver != null) return;
+            this.enemyDamageReceiver = GetComponentInChildren<EnemyDamageReceiver>();
+            Debug.Log(transform.name + " is loading EnemyDamageReceiver", gameObject);
         }
     }
 }

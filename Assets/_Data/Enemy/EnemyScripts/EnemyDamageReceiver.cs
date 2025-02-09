@@ -1,4 +1,5 @@
 ﻿using _Data.DamageSystem;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace _Data.Enemy.EnemyScripts
@@ -44,12 +45,25 @@ namespace _Data.Enemy.EnemyScripts
         {
             base.OnDead();
             this.enemyController.Animator.SetBool("isDead", this.isDead);
+            this.capsuleCollider.enabled = false;
+            Invoke(nameof(this.Dissappear), 3f);
         }
 
         protected override void OnHurt()
         {
             base.OnHurt();
             this.enemyController.Animator.SetTrigger("isHurt");
+        }
+
+        protected virtual void Dissappear()
+        {
+            this.enemyController.Despawn.DoDespawn();
+        }
+
+        protected override void OnReborn()
+        {
+            base.OnReborn();
+            this.capsuleCollider.enabled = true;
         }
     }
 }

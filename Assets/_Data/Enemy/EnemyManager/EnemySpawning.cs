@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using _Data.Enemy.EnemyScripts;
 using _Data.Enemy.Manager;
 using Unity.VisualScripting;
@@ -18,16 +19,38 @@ namespace _Data.Enemy.EnemyManager
             Invoke(nameof(this.Spawning), spawnSpeed);
         }
 
+        protected void FixedUpdate()
+        {
+            this.RemoveDeadOne();
+        }
+
         protected virtual void Spawning()
         {
             Invoke(nameof(this.Spawning), spawnSpeed);
+            
+            if(this.spawnedEnemies.Count >= maxSpawn) return;
+            
+            
             EnemyController prefab = this.enemyManagerController.EnemyPrefabs.GetRandom();
             
             //spawn
             EnemyController newEnemy = this.enemyManagerController.EnemySpawner.Spawn(prefab, transform.position);
             newEnemy.gameObject.SetActive(true);
             
+            this.spawnedEnemies.Add(newEnemy);
             Debug.Log("Spawning", gameObject);
+        }
+
+        protected virtual void RemoveDeadOne()
+        {
+            foreach (EnemyController enemyController in this.spawnedEnemies)
+            {
+                if (enemyController.EnemyDamageReceiver.IsDead())
+                {
+                    this.spawnedEnemies.Remove(enemyController);
+                    return;
+                }
+            }
         }
     }
 }

@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawner: {fileID: 0}
   parent: {fileID: 8730024156152750543}
+  isDespawnByTime: 1
   timeLife: 7
   currentTime: 7
 --- !u!1 &3595030719461384862
@@ -251,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigid: {fileID: 6951239003387905417}
-  damage: 1
+  damage: 8
   bulletController: {fileID: 5790037879763968634}
   sphereCollider: {fileID: 7043454818221025545}
 --- !u!1 &6780013812104360542

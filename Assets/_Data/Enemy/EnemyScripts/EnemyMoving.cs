@@ -1,3 +1,4 @@
+using System;
 using _Data.Paths;
 using _Data.Scripts;
 using UnityEngine;
@@ -9,6 +10,7 @@ namespace _Data.Enemy.EnemyScripts
         public GameObject target;
         
         [SerializeField] protected EnemyController enemyController;
+
         
         [SerializeField] protected string pathName = "path (1)";
         [SerializeField] protected Path enemyPath;
@@ -20,6 +22,12 @@ namespace _Data.Enemy.EnemyScripts
         [SerializeField] protected bool isFinish = false;
         [SerializeField] protected bool isMoving = false;
         [SerializeField] protected bool canMove = false;
+
+
+        protected void OnEnable()
+        {
+            this.OnReborn();
+        }
 
 
         protected override void Start()
@@ -56,6 +64,12 @@ namespace _Data.Enemy.EnemyScripts
         protected virtual void Moving()
         {
             if (!this.canMove)
+            {
+                this.enemyController.Agent.isStopped = true;
+                return;
+            }
+            
+            if (this.enemyController.EnemyDamageReceiver.IsDead())
             {
                 this.enemyController.Agent.isStopped = true;
                 return;
@@ -99,6 +113,11 @@ namespace _Data.Enemy.EnemyScripts
             else this.isMoving = false;
             
             this.enemyController.Animator.SetBool("isMoving", this.isMoving);
+        }
+        
+        protected virtual void OnReborn()
+        {
+            this.isFinish = false;
         }
     }
 }

@@ -7,12 +7,13 @@ namespace _Data.Tower.Spawner.Despawn
     {
         [SerializeField] protected Spawner<T> spawner;
         [SerializeField] protected T parent;
+        [SerializeField] protected bool isDespawnByTime = true;
         [SerializeField] protected float timeLife = 7f;
         [SerializeField] protected float currentTime = 7f;
         
         protected virtual void FixedUpdate()
         {
-            this.DespawnChecking();
+            this.DespawnByTime();
         }
         
         protected override void LoadComponents()
@@ -36,8 +37,10 @@ namespace _Data.Tower.Spawner.Despawn
             Debug.Log(transform.name + ": LoadSpawner",gameObject);
         }
 
-        protected virtual void DespawnChecking()
+        protected virtual void DespawnByTime()
         {
+            if (!this.isDespawnByTime) return;
+            
             this.currentTime -= Time.fixedDeltaTime;
             if (this.currentTime > 0) return;
 
