@@ -18,7 +18,7 @@ namespace _Data.Environment
         {
             if (this.boxCollider != null) return;
             this.boxCollider = GetComponent<BoxCollider>();
-            this.boxCollider.isTrigger = true;
+            this.boxCollider.isTrigger = false;
             Debug.Log(transform.name + " is loading BoxCollider", gameObject);
         }
         
