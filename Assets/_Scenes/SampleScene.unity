@@ -2149,6 +2149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20ceef2f0fc54bdab3be7f982ba1b203, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isImmotal: 1
+  enemyController: {fileID: 1239195332}
   capsuleCollider: {fileID: 1524400407}
 --- !u!136 &1524400407
 CapsuleCollider:
