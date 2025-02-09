@@ -1,7 +1,7 @@
-﻿using _Data.Tower.Scripts;
+﻿using _Data.Tower.Spawner;
 using UnityEngine;
 
-namespace _Data.Tower.Spawner.Bullet
+namespace _Data.DamageSystem.Bullet
 {
     public class Bullet : PoolObj
     {
