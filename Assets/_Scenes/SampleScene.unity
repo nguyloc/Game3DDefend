@@ -2201,6 +2201,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45447a097354cbb9a09feb4f1682373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnCount: 0
+  inPoolObjs: []
 --- !u!4 &1715348120
 Transform:
   m_ObjectHideFlags: 0
@@ -2434,9 +2436,9 @@ MonoBehaviour:
   targetLoadSpeed: 1
   shootingSpeed: 1
   rotationSpeed: 2
-  target: {fileID: 0}
-  bulletSpawner: {fileID: 0}
-  bullet: {fileID: 0}
+  target: {fileID: 1239195332}
+  bulletSpawner: {fileID: 1715348119}
+  bullet: {fileID: 1993836254}
 --- !u!4 &1941015986 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7223585718771780990, guid: 15f0f79636d89144491faaf84cfc789b, type: 3}
@@ -3062,6 +3064,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6748871680232788312, guid: 6cba0bccee6c8b64992e06bd7bd19f56, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 1993836254}
     - target: {fileID: 6780013812104360542, guid: 6cba0bccee6c8b64992e06bd7bd19f56, type: 3}
       propertyPath: m_Name
       value: Bullet

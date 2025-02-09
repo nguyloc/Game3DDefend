@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawner: {fileID: 0}
+  parent: {fileID: 8730024156152750543}
   timeLife: 7
   currentTime: 7
 --- !u!1 &6780013812104360542
@@ -201,5 +202,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72043cb49a34e6e83159bb435b98ce4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 10
-  despawn: {fileID: 0}
+  speed: 10
+  despawn: {fileID: 6748871680232788312}

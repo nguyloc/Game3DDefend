@@ -10,14 +10,14 @@ namespace _Data.Tower.Spawner
         [SerializeField] protected float timeLife = 7f;
         [SerializeField] protected float currentTime = 7f;
         
-        protected void FixedUpdate()
+        protected virtual void FixedUpdate()
         {
             this.DespawnChecking();
         }
         
         protected override void LoadComponents()
         {
-            this.LoadComponents();
+            base.LoadComponents();
             this.LoadParent();
         }
         

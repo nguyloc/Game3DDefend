@@ -13,12 +13,12 @@ namespace _Data.Tower.Spawner
         
         void Update()
         {
-            transform.Translate(Vector3.forward * (speed * Time.deltaTime));
+            transform.Translate(speed * Time.deltaTime * Vector3.forward);
         }
         
         protected override void LoadComponents()
         {
-            this.LoadComponents();
+            base.LoadComponents();
             this.LoadDespawn();
         }
         

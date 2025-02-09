@@ -6,7 +6,7 @@ namespace _Data.Tower.Spawner
 {
     public abstract class Spawner<T> : LocMonoBehaviour
     {
-        [SerializeField] protected int spawnCount = 0;
+        //[SerializeField] protected int spawnCount = 0;
         [SerializeField] protected List<T> inPoolObjs;
         
         
