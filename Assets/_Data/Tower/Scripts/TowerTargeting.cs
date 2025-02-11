@@ -13,7 +13,7 @@ namespace _Data.Tower.Scripts
         [SerializeField] protected SphereCollider sphereCollider;
         [SerializeField] protected Rigidbody rig;
         [SerializeField] protected EnemyController nearestEnemy;
-        [SerializeField] protected LayerMask obstacleLayerMask;
+        [SerializeField] protected LayerMask obstacleLayerMask = -1;
         
         [SerializeField] protected List<EnemyController> enemies = new();
 
