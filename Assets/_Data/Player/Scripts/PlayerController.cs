@@ -46,9 +46,9 @@ namespace _Data.Player.Scripts
         {
             if (this.thirdPersonCamera != null) return;
             this.thirdPersonCamera = GameObject.FindAnyObjectByType<vThirdPersonCamera>();
-            this.thirdPersonCamera.rightOffset = 0.5f;
-            this.thirdPersonCamera.defaultDistance = 2f;
-            this.thirdPersonCamera.height = 1.3f;
+            this.thirdPersonCamera.rightOffset = 0.6f;
+            this.thirdPersonCamera.defaultDistance = 1.3f;
+            this.thirdPersonCamera.height = 1.8f;
             this.thirdPersonCamera.yMinLimit = -40f;
             this.thirdPersonCamera.yMaxLimit = 40f;
             Debug.Log(transform.name + ": LoadThirdPersonCamera", gameObject);

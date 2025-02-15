@@ -5,6 +5,7 @@ namespace _Data.Player.Scripts
 {
     public class PlayerAiming : PlayerAbstract
     {
+        [SerializeField] protected bool isAlwaysAiming = false;
         protected float closeLookDistance = 0.6f;
         protected float farLookDistance = 1.3f;
         
@@ -15,7 +16,7 @@ namespace _Data.Player.Scripts
 
         protected virtual void Aiming()
         {
-            if (InputManager.Instance.IsRightClick()) this.LookClose();
+            if (this.isAlwaysAiming || InputManager.Instance.IsAiming()) this.LookClose();
             else this.LookFar();
         }
         
