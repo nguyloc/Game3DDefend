@@ -1,3 +1,4 @@
+using _Data.Scripts;
 using UnityEngine;
 
 namespace _Data.Player.Skills
@@ -6,7 +7,7 @@ namespace _Data.Player.Skills
     {
         protected override void Attacking()
         {
-         
+            if(!InputManager.Instance.IsAttackHeavy()) return;
         }
     }
 }
