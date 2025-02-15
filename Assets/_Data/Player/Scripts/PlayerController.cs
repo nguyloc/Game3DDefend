@@ -18,6 +18,12 @@ namespace _Data.Player.Scripts
 
         [SerializeField] protected Rig aimingRig;
         public Rig AimingRig => aimingRig;
+
+        [SerializeField] protected Animator animator;
+        public Animator Animator => animator;
+        
+        [SerializeField] protected Weapon.Weapons weapons;
+        public Weapon.Weapons Weapons => weapons;
         
         protected override void LoadComponents()
         {
@@ -26,6 +32,8 @@ namespace _Data.Player.Scripts
             this.LoadThirdPersonCamera();
             this.LoadCrosshairPointer();
             this.LoadAimingRig();
+            this.LoadAnimator();
+            this.LoadWeaponController();
         }
         
         protected virtual void LoadAimingRig()
@@ -59,6 +67,20 @@ namespace _Data.Player.Scripts
             if (this.crosshairPointer != null) return;
             this.crosshairPointer = GetComponentInChildren<CrosshairPointer>();
             Debug.Log(transform.name + ": LoadCrosshairPointer", gameObject);
+        }
+        
+        protected virtual void LoadAnimator()
+        {
+            if (this.animator != null) return;
+            this.animator = GetComponentInChildren<Animator>();
+            Debug.Log(transform.name + ": LoadAnimator", gameObject);
+        }
+        
+        protected virtual void LoadWeaponController()
+        {
+            if (this.weapons != null) return;
+            this.weapons = GetComponentInChildren<Weapon.Weapons>();
+            Debug.Log(transform.name + ": LoadWeaponController", gameObject);
         }
     }
 }

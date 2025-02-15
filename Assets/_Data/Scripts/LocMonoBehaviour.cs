@@ -14,7 +14,7 @@ namespace _Data.Scripts
             this.LoadComponents();
         }
 
-        protected void Reset()
+        protected virtual void Reset()
         {
             this.LoadComponents();
             this.ResetValue();
