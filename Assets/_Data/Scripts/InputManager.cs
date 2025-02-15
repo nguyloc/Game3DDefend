@@ -4,33 +4,34 @@ namespace _Data.Scripts
 {
     public class InputManager : LocSingleton<InputManager>
     {
-        protected bool isLeftClick = false;
-        protected bool isRightClick = false;
+        protected bool isAttackLight = false;
+        protected bool isAiming = false;
         
         private void Update()
         {
-            this.CheckRightClick();
-            this.CheckLeftClick();
+            this.CheckAiming();
+            this.CheckAttackLight();
         }
 
-        protected virtual void CheckRightClick()
+        protected virtual void CheckAiming()
         {
-            this.isRightClick = Input.GetMouseButton(1);
+            this.isAiming = Input.GetMouseButton(1);
         } 
         
-        protected virtual void CheckLeftClick()
+        protected virtual void CheckAttackLight()
         {
-            this.isLeftClick = Input.GetMouseButton(0);
+            this.isAttackLight = Input.GetMouseButtonUp(0);
+        } 
+        
+        
+        public virtual bool IsAiming()
+        {
+            return this.isAiming;
         }
         
-        public virtual bool IsRightClick()
+        public virtual bool IsAttackLight()
         {
-            return this.isRightClick;
-        }
-        
-        public virtual bool IsLeftClick()
-        {
-            return this.isLeftClick;
+            return this.isAttackLight;
         }
     }
 }
