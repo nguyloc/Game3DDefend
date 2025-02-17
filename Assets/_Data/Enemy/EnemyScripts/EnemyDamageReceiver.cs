@@ -1,4 +1,6 @@
 ﻿using _Data.DamageSystem;
+using _Data.Inventory;
+using _Data.Inventory.Item;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -12,8 +14,6 @@ namespace _Data.Enemy.EnemyScripts
 
         [SerializeField]
         protected CapsuleCollider capsuleCollider;
-
-        // public EnemyController EnemyController => enemyController;
 
 
         protected override void LoadComponents()
@@ -46,6 +46,7 @@ namespace _Data.Enemy.EnemyScripts
             base.OnDead();
             this.enemyController.Animator.SetBool("isDead", this.isDead);
             this.capsuleCollider.enabled = false;
+            this.RewardOnDead();
             Invoke(nameof(this.Dissappear), 3f);
         }
 
@@ -64,6 +65,14 @@ namespace _Data.Enemy.EnemyScripts
         {
             base.OnReborn();
             this.capsuleCollider.enabled = true;
+        }
+        
+        protected virtual void RewardOnDead()
+        {
+            ItemInventory item = new();
+            item.itemProfile = InventoryManager.Instance.GetProfileByCode(ItemCode.Gold);
+            item.itemCount = 1;
+            InventoryManager.Instance.Monies().AddItem(item);
         }
     }
 }
