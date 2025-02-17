@@ -9,6 +9,7 @@ namespace _Data.Inventory
     {
         
         [SerializeField] protected List<ItemInventory> items = new();
+        public List<ItemInventory> Items => items;
         
         public abstract InventoryCodeName GetName();
     

@@ -31,11 +31,15 @@ namespace _Data.Inventory
             gold.itemProfile = this.GetProfileByCode(ItemCode.Gold);
             gold.itemCount = 100;
             inventoryController.AddItem(gold);
-            
-            ItemInventory gold2 = new ItemInventory();
-            gold2.itemProfile = this.GetProfileByCode(ItemCode.Gold);
-            gold2.itemCount = 50;
-            inventoryController.AddItem(gold2);
+
+            InventoryController items = this.GetByName(InventoryCodeName.Items);
+            for (int i = 0; i < 10 ; i++)
+            {
+                ItemInventory wand = new ItemInventory();
+                wand.itemProfile = this.GetProfileByCode(ItemCode.Wand);
+                wand.itemCount = 1;
+                items.AddItem(wand);
+            }
         }
         
         protected virtual void LoadInventories()
