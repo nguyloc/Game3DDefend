@@ -1,4 +1,4 @@
-﻿using _Data.Tower.Spawner;
+﻿using _Data.Spawner;
 using UnityEngine;
 
 namespace _Data.DamageSystem.Bullet

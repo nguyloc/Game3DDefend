@@ -1,6 +1,6 @@
 using _Data.Scripts;
 
-namespace _Data.Tower.Spawner
+namespace _Data.Spawner
 {
     public class PoolHolder : LocMonoBehaviour
     {

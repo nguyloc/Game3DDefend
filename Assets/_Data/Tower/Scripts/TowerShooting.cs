@@ -1,8 +1,6 @@
 ﻿using System;
 using _Data.DamageSystem.Bullet;
 using _Data.Enemy.EnemyScripts;
-using _Data.Tower.Spawner;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace _Data.Tower.Scripts

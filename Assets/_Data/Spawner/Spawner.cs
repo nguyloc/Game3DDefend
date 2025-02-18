@@ -2,25 +2,43 @@
 using _Data.Scripts;
 using UnityEngine;
 
-namespace _Data.Tower.Spawner
+namespace _Data.Spawner
 {
     public abstract class Spawner<T> : LocMonoBehaviour where T : PoolObj
     {
         [SerializeField] protected int spawnCount = 0;
-        [SerializeField] protected PoolHolder poolHolder;
-        [SerializeField] protected List<T> inPoolObjs;
+        [SerializeField] protected Transform poolHolder;
+        [SerializeField] protected List<T> inPoolObjs = new();
+        
+        [SerializeField] protected PoolPrefabs<T> poolPrefabs;
+        public PoolPrefabs<T> PoolPrefabs => poolPrefabs;
+        
         
         protected override void LoadComponents()
         {
             base.LoadComponents();
             this.LoadPoolHolder();
+            this.LoadPoolPrefabs();
+        }
+        
+        
+        protected virtual void LoadPoolPrefabs()
+        {
+            if (this.poolPrefabs != null) return;
+            this.poolPrefabs = GetComponentInChildren<PoolPrefabs<T>>();
+            Debug.Log(transform.name + ": LoadPoolPrefabs", gameObject);
         }
         
         protected virtual void LoadPoolHolder()
         {
             if (this.poolHolder != null) return;
-            this.poolHolder = transform.GetComponentInChildren<PoolHolder>();
-            Debug.Log(transform.name + " PoolHolder: " , gameObject);
+            this.poolHolder = transform.Find("PoolHolder");
+            if (this.poolHolder == null)
+            {
+                this.poolHolder = new GameObject("PoolHolder").transform;
+                this.poolHolder.parent = transform;
+            }
+            Debug.Log(transform.name + ": LoadPoolHolder", gameObject);
         }
         
         public virtual T Spawn(T prefab)
@@ -29,7 +47,7 @@ namespace _Data.Tower.Spawner
             if (newObject == null)
             {
                 newObject = Instantiate(prefab);
-                spawnCount++;
+                this.spawnCount++;
                 this.UpdateName(prefab.transform, newObject.transform);
             }
             
@@ -38,9 +56,9 @@ namespace _Data.Tower.Spawner
             return newObject;
         }
         
-        public virtual T Spawn(T buletPrefab, Vector3 position)
+        public virtual T Spawn(T prefab, Vector3 position)
         { 
-            T newBullet = this.Spawn(buletPrefab); 
+            T newBullet = this.Spawn(prefab); 
             newBullet.transform.position = position; 
             return newBullet;
         }

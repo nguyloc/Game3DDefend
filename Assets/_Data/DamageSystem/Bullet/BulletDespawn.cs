@@ -1,4 +1,4 @@
-﻿using _Data.Tower.Spawner.Despawn;
+﻿using _Data.Spawner.Despawn;
 
 namespace _Data.DamageSystem.Bullet
 {

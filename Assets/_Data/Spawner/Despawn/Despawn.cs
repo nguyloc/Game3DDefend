@@ -1,7 +1,6 @@
-﻿using _Data.Scripts;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace _Data.Tower.Spawner.Despawn
+namespace _Data.Spawner.Despawn
 {
     public abstract class Despawn<T> : DespawnBase where T : PoolObj
     {

@@ -2,7 +2,7 @@
 using _Data.Scripts;
 using UnityEngine;
 
-namespace _Data.Tower.Spawner
+namespace _Data.Spawner
 {
     public class PoolPrefabs<T> : LocMonoBehaviour where T : MonoBehaviour
     {
