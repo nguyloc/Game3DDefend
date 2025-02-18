@@ -15,10 +15,10 @@ namespace _Data.Inventory
     
         public virtual void AddItem(ItemInventory item)
         {
-            ItemInventory itemExists = this.FindItem(item.itemProfile.itemCode);
-            if (!item.itemProfile.isStackable || itemExists == null)
+            ItemInventory itemExists = this.FindItem(item.ItemProfile.itemCode);
+            if (!item.ItemProfile.isStackable || itemExists == null)
             {
-                item.itemId = Random.Range(0, 1000);
+                item.SetId(Random.Range(0, 99999999));
                 this.items.Add(item);
                 return;
             }
@@ -27,7 +27,7 @@ namespace _Data.Inventory
         
         public virtual bool RemoveItem(ItemInventory item)
         {
-            ItemInventory itemExists = this.FindItemNotEmpty(item.itemProfile.itemCode);
+            ItemInventory itemExists = this.FindItemNotEmpty(item.ItemProfile.itemCode);
             if (itemExists == null) return false;
             if (itemExists.itemCount < item.itemCount) return false;
             itemExists.itemCount -= item.itemCount;
@@ -39,7 +39,7 @@ namespace _Data.Inventory
         {
             foreach (ItemInventory itemInventory in this.items)
             {
-                if (itemInventory.itemProfile.itemCode == itemCode) return itemInventory;
+                if (itemInventory.ItemProfile.itemCode == itemCode) return itemInventory;
             }
             return null;
         }
@@ -48,8 +48,8 @@ namespace _Data.Inventory
         {
             foreach (ItemInventory itemInventory in this.items)
             {
-                if (itemInventory.itemProfile.itemCode != itemCode) continue;
-                if (itemInventory.itemProfile.itemCode > 0) return itemInventory;
+                if (itemInventory.ItemProfile.itemCode != itemCode) continue;
+                if (itemInventory.itemCount > 0) return itemInventory;
             }
             return null;
         }

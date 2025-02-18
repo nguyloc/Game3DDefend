@@ -1,4 +1,5 @@
-﻿using _Data.Scripts;
+﻿using _Data.Level;
+using _Data.Scripts;
 using UnityEngine;
 using Invector.vCharacterController;
 using UnityEngine.Animations.Rigging;
@@ -24,6 +25,10 @@ namespace _Data.Player.Scripts
         
         [SerializeField] protected Weapon.Weapons weapons;
         public Weapon.Weapons Weapons => weapons;
+
+        [SerializeField] protected LevelAbstract level;
+        public LevelAbstract Level => level;
+        
         
         protected override void LoadComponents()
         {
@@ -34,6 +39,14 @@ namespace _Data.Player.Scripts
             this.LoadAimingRig();
             this.LoadAnimator();
             this.LoadWeaponController();
+            this.LoadLevel();
+        }
+        
+        protected virtual void LoadLevel()
+        {
+            if (this.level != null) return;
+            this.level = GetComponentInChildren<LevelAbstract>();
+            Debug.Log(transform.name + ": LoadLevel", gameObject);
         }
         
         protected virtual void LoadAimingRig()

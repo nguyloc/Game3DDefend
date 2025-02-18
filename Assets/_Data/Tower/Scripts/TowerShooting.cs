@@ -12,8 +12,10 @@ namespace _Data.Tower.Scripts
         [SerializeField] protected float shootingSpeed = 1f;
         [SerializeField] protected float rotationSpeed = 2f;
         [SerializeField] protected EnemyController target;
-        [SerializeField] protected BulletSpawner bulletSpawner;
-        [SerializeField] protected Bullet bullet;
+        
+        [SerializeField] protected int killCount = 0;
+        [SerializeField] protected int totalKill = 0;
+        public int KillCount => killCount;
 
 
 
@@ -27,6 +29,7 @@ namespace _Data.Tower.Scripts
         protected void FixedUpdate()
         {
             this.Looking();
+            this.IsTargetDead();
         }
         
         protected override void LoadComponents()
@@ -77,6 +80,23 @@ namespace _Data.Tower.Scripts
             }
 
             return firePoint;
+        }
+
+        protected virtual bool IsTargetDead()
+        { 
+            if (this.target == null) return true;
+            if (!this.target.EnemyDamageReceiver.IsDead()) return false;
+            this.killCount++;
+            this.totalKill++;
+            this.target = null;
+            return true;
+        }
+        
+        public virtual bool DeductKillCount(int count)
+        {
+            if (this.KillCount < count) return false;
+            this.killCount -= count;
+            return true;
         }
     }
 }

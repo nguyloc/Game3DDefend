@@ -14,10 +14,12 @@ namespace _Data.Tower.Scripts
         [SerializeField] protected Transform model;
         [SerializeField] protected Transform rotator;
         [SerializeField] protected TowerTargeting towerTargeting;
+        [SerializeField] protected TowerShooting towerShooting;
         [SerializeField] protected BulletSpawner bulletSpawner;
         [SerializeField] protected Bullet bullet;
         [SerializeField] protected BulletPrefabs bulletPrefabs;
         [SerializeField] protected List<FirePoint> firePoints = new();
+      
 
         
         public Transform Rotator => rotator;
@@ -25,8 +27,8 @@ namespace _Data.Tower.Scripts
         public BulletSpawner BulletSpawner => bulletSpawner;
         public Bullet Bullet => bullet;
         public BulletPrefabs BulletPrefabs => bulletPrefabs;
-        
         public List<FirePoint> FirePoints => firePoints;
+        public TowerShooting TowerShooting => towerShooting;
 
 
         protected override void Awake()
@@ -44,9 +46,17 @@ namespace _Data.Tower.Scripts
             this.LoadBulletSpawner();
             this.LoadBulletPrefabs();
             this.LoadFirePoints();
+            this.LoadTowerShooting();
         }
 
           
+        protected virtual void LoadTowerShooting()
+        {
+            if (this.towerShooting != null) return;
+            this.towerShooting = GetComponentInChildren<TowerShooting>();
+            Debug.Log(transform.name + " is loading TowerShooting", gameObject);
+        }
+        
         protected virtual void LoadFirePoints()
         {
             if (this.firePoints.Count > 0) return;

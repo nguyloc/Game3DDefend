@@ -7,7 +7,7 @@ namespace _Data.Inventory
     {
         public override InventoryCodeName GetName()
         {
-            return InventoryCodeName.Monies;
+            return InventoryCodeName.Currency;
         }
     }
 }

@@ -93,7 +93,7 @@ namespace _Data.UI.Inventory
                     newButtonItem = Instantiate(this.defaultItemInventoryUI, this.defaultItemInventoryUI.transform.parent, true);
                     newButtonItem.SetItem(itemInventory);
                     newButtonItem.gameObject.SetActive(true);
-                    newButtonItem.name = itemInventory.itemName + " - " + itemInventory.itemId;
+                    newButtonItem.name = itemInventory.GetItemName() + " - " + itemInventory.ItemID;
                     this.buttonItems.Add(newButtonItem);
                 }
             }
@@ -103,7 +103,7 @@ namespace _Data.UI.Inventory
         {
             foreach (ButtonItemInventory itemInventoryUI in this.buttonItems)
             {
-                if (itemInventoryUI.ItemInventory.itemId == itemInventory.itemId) return itemInventoryUI;
+                if (itemInventoryUI.ItemInventory.ItemID == itemInventory.ItemID) return itemInventoryUI;
             }
             return null;
         }
