@@ -6,6 +6,7 @@
         NoName = 0,
         Gold = 1,
         Wand = 2,
-        PoisonMana = 3
+        PoisonMana = 3,
+        PlayerExp = 4
     }
 }

@@ -13,8 +13,6 @@ namespace _Data.UI.Inventory
         
         [SerializeField] protected ItemInventory itemInventory;
         public ItemInventory ItemInventory => itemInventory;
-
-        protected bool IsDestroyed = false;
         
 
         protected void FixedUpdate()
@@ -37,7 +35,7 @@ namespace _Data.UI.Inventory
         
         protected override void OnClick()
         {
-            Debug.Log("Clicked ButtonItemInventory: " + this.itemInventory.itemProfile.itemName);
+            Debug.Log("Clicked ButtonItemInventory: " + this.itemInventory.ItemProfile.itemName);
         }
         
         protected virtual void LoadTextItemName()
@@ -56,16 +54,10 @@ namespace _Data.UI.Inventory
         
         protected virtual void ItemsUpdating()
         {
-            if (IsDestroyed) return;
-            
-            this.textItemName.text = this.itemInventory.itemName;
+            this.textItemName.text = this.itemInventory.GetItemName();
             this.textItemCount.text = this.itemInventory.itemCount.ToString();
-            
-            if (this.itemInventory.itemCount == 0 )
-            {
-                IsDestroyed = true;
-                Destroy(gameObject);
-            }
+
+            if (this.itemInventory.itemCount == 0) Destroy(gameObject);
         }
     }
 }

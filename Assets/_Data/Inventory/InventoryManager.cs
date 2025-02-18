@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using _Data.Inventory.Item;
 using _Data.Scripts;
 using UnityEngine;
-using com.cyborgAssets.inspectorButtonPro;
+
 
 namespace _Data.Inventory
 {
@@ -40,18 +40,18 @@ namespace _Data.Inventory
             return null; 
         }
         
-        public virtual ItemProfileSO GetProfileByCode(ItemCode itemCode)
+        public virtual ItemProfileSO GetProfileByCode(ItemCode itemCodeName)
         {
             foreach (ItemProfileSO itemProfile in this.itemProfiles)
             {
-                if (itemProfile.itemCode == itemCode) return itemProfile;
+                if (itemProfile.itemCode == itemCodeName) return itemProfile;
             }
             return null; 
         }
 
         public virtual InventoryController Monies()
         {
-            return this.GetByCodeName(InventoryCodeName.Monies);
+            return this.GetByCodeName(InventoryCodeName.Currency);
         }
         
         public virtual InventoryController Items()
@@ -59,6 +59,36 @@ namespace _Data.Inventory
             return this.GetByCodeName(InventoryCodeName.Items);
         }
         
+        public virtual void AddItem(ItemInventory itemInventory)
+        {
+            InventoryCodeName inventoryCodeName = itemInventory.ItemProfile.inventoryCodeName;
+            InventoryController inventoryCtrl = InventoryManager.Instance.GetByCodeName(inventoryCodeName);
+            inventoryCtrl.AddItem(itemInventory);
+        }
+        
+        public virtual void AddItem(ItemCode itemCode, int itemCount)
+        {
+            ItemProfileSO itemProfile = InventoryManager.Instance.GetProfileByCode(itemCode);
+            ItemInventory item = new(itemProfile, itemCount);
+            this.AddItem(item);
+        }
+
+        public virtual void RemoveItem(ItemCode itemCode, int itemCount)
+        {
+            ItemProfileSO itemProfile = InventoryManager.Instance.GetProfileByCode(itemCode);
+            ItemInventory item = new(itemProfile, itemCount);
+            this.RemoveItem(item);
+        }
+
+        public virtual void RemoveItem(ItemInventory itemInventory)
+        {
+            InventoryCodeName invCodeName = itemInventory.ItemProfile.inventoryCodeName;
+            InventoryController inventoryController = InventoryManager.Instance.GetByCodeName(invCodeName);
+            inventoryController.RemoveItem(itemInventory);
+        }
+        
+        // Lưu ý: Chỉ làm với file nhỏ, làm với file âm thanh hay map là cook :)))
+        // Tự động hóa add ItemProfileSO vào inspector
         protected virtual void LoadItemProfiles()
         {
             if (this.itemProfiles.Count > 0) return;
