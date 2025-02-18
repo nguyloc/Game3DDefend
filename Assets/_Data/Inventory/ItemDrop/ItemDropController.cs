@@ -30,12 +30,12 @@ namespace _Data.Inventory.ItemDrop
             this.itemCount = itemCount;
         }
         
-        public virtual void SetValue (ItemCode itemCode, int itemCount, InventoryCodeName inventoryCodeName)
-        {
-            this.itemCode = itemCode;
-            this.itemCount = itemCount;
-            this.inventoryCodeName = inventoryCodeName;
-        }
+        // public virtual void SetValue (ItemCode itemCode, int itemCount, InventoryCodeName inventoryCodeName)
+        // {
+        //     this.itemCode = itemCode;
+        //     this.itemCount = itemCount;
+        //     this.inventoryCodeName = inventoryCodeName;
+        // }
         
         protected override void LoadComponents()
         {
@@ -49,6 +49,5 @@ namespace _Data.Inventory.ItemDrop
             this.rb = GetComponent<Rigidbody>();
             Debug.Log(transform.name + ": LoadRigidbody", gameObject);
         }
-        
     }
 }

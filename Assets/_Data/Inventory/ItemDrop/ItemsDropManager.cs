@@ -25,12 +25,20 @@ namespace _Data.Inventory.ItemDrop
             Debug.Log (transform.name + " : LoadSpawner : " , gameObject);
         }
 
+        public virtual void DropMany(ItemCode itemCode, int dropCount, Vector3 dropPosition)
+        {
+            for (int i = 0; i < dropCount; i++)
+            {
+                this.Drop(itemCode, 1, dropPosition);
+            }
+        }
+        
         public virtual void Drop(ItemCode itemCode, int dropCount, Vector3 dropPosition)
         {
             Vector3 spawnPosition = dropPosition + new Vector3(Random.Range(-0.5f, 0.5f), spawnHeight, Random.Range(-0.5f, 0.5f));
-            //ItemDropController itemPrefab = this.spawner.PoolPrefabs.GetByName(itemCode.ToString());
-            ItemDropController itemPrefab = this.spawner.PoolPrefabs.GetByName("Gold");
-            //if(itemPrefab == null) itemPrefab = this.spawner.PoolPrefabs.GetByName("DefaultDrop");
+            ItemDropController itemPrefab = this.spawner.PoolPrefabs.GetByName(itemCode.ToString());
+            
+            if(itemPrefab == null) itemPrefab = this.spawner.PoolPrefabs.GetByName("DefaultDrop");
 
             ItemDropController newItem = this.spawner.Spawn(itemPrefab, spawnPosition);
             newItem.SetValue(itemCode, dropCount);
