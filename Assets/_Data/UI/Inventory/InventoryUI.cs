@@ -12,6 +12,9 @@ namespace _Data.UI.Inventory
     {
         protected bool isShow = true;
         protected bool IsShow => isShow;
+
+        [SerializeField]
+        protected Transform showHide;
         
         [SerializeField] protected ButtonItemInventory defaultItemInventoryUI;
         protected List<ButtonItemInventory> buttonItems = new();
@@ -19,6 +22,11 @@ namespace _Data.UI.Inventory
         protected void FixedUpdate()
         {
             this.ItemUpdating();
+        }
+
+        protected void LateUpdate()
+        {
+            this.HotkeyToogleInventory();
         }
 
         protected override void Start()
@@ -32,6 +40,7 @@ namespace _Data.UI.Inventory
         {
             base.LoadComponents();
             this.LoadButtonItemInventory();
+            this.LoadShowHide();
         }
         
         protected virtual void LoadButtonItemInventory()
@@ -41,15 +50,22 @@ namespace _Data.UI.Inventory
             Debug.Log(transform.name + " has no ButtonItemInventory component.", gameObject);
         }
         
+        protected virtual void LoadShowHide()
+        {
+            if (this.showHide != null) return;
+            this.showHide = transform.Find("ShowHide");
+            Debug.Log(transform.name + " has no ShowHide component.", gameObject);
+        }
+        
         public virtual void Show()
         {
-            gameObject.SetActive(true);
+            this.showHide.gameObject.SetActive(true);
             this.isShow = true;
         }
         
         public virtual void Hide()
         {
-            gameObject.SetActive(false);
+            this.showHide.gameObject.SetActive(false);
             this.isShow = false;
         }
         
@@ -66,15 +82,19 @@ namespace _Data.UI.Inventory
         
         protected virtual void ItemUpdating()
         {
+            if(!this.isShow) return;
+            
             InventoryController itemInventoryController = InventoryManager.Instance.Items();
             foreach (ItemInventory itemInventory in itemInventoryController.Items)
             {
-               // ButtonItemInventory newItemUI = this.GetExistItem();
-               // if (newItemUI = null)
+               ButtonItemInventory newButtonItem = this.GetExistItem(itemInventory);
+               if (newButtonItem == null)
                 {
-                    // newItemUI = Instantiate(this.defaultItemInventoryUI);
-                    // newItemUI.transform.parent = this.defaultItemInventoryUI.transform.parent;
-                    // newItemUI.gameObject.SetActive(true);
+                    newButtonItem = Instantiate(this.defaultItemInventoryUI, this.defaultItemInventoryUI.transform.parent, true);
+                    newButtonItem.SetItem(itemInventory);
+                    newButtonItem.gameObject.SetActive(true);
+                    newButtonItem.name = itemInventory.itemName + " - " + itemInventory.itemId;
+                    this.buttonItems.Add(newButtonItem);
                 }
             }
         }
@@ -83,9 +103,14 @@ namespace _Data.UI.Inventory
         {
             foreach (ButtonItemInventory itemInventoryUI in this.buttonItems)
             {
-                //if (itemInventoryUI.ItemInventory == itemInventory) return itemInventoryUI;
+                if (itemInventoryUI.ItemInventory.itemId == itemInventory.itemId) return itemInventoryUI;
             }
             return null;
+        }
+        
+        protected virtual void HotkeyToogleInventory()
+        {
+            if (InputHotKey.Instance.IsToogleInventoryUI) this.Toggle();
         }
     }
 }

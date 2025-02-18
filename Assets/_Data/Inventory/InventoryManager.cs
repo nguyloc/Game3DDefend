@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using _Data.Inventory.Item;
 using _Data.Scripts;
 using UnityEngine;
+using com.cyborgAssets.inspectorButtonPro;
 
 namespace _Data.Inventory
 {
@@ -15,31 +16,7 @@ namespace _Data.Inventory
         {
             base.LoadComponents();
             this.LoadInventories();
-        }
-
-        protected override void Start()
-        {
-            base.Start();
-            this.AddTestItems();
-        }
-
-        protected virtual void AddTestItems()
-        {
-            InventoryController inventoryController = this.GetByName(InventoryCodeName.Monies);
-            
-            ItemInventory gold = new ItemInventory();
-            gold.itemProfile = this.GetProfileByCode(ItemCode.Gold);
-            gold.itemCount = 100;
-            inventoryController.AddItem(gold);
-
-            InventoryController items = this.GetByName(InventoryCodeName.Items);
-            for (int i = 0; i < 10 ; i++)
-            {
-                ItemInventory wand = new ItemInventory();
-                wand.itemProfile = this.GetProfileByCode(ItemCode.Wand);
-                wand.itemCount = 1;
-                items.AddItem(wand);
-            }
+            this.LoadItemProfiles();
         }
         
         protected virtual void LoadInventories()
@@ -54,7 +31,7 @@ namespace _Data.Inventory
             Debug.Log(transform.name + ": LoadInventories", gameObject);
         }
 
-        public virtual InventoryController GetByName(InventoryCodeName inventoryName)
+        public virtual InventoryController GetByCodeName(InventoryCodeName inventoryName)
         {
             foreach (InventoryController inventory in this.inventories)
             {
@@ -74,12 +51,20 @@ namespace _Data.Inventory
 
         public virtual InventoryController Monies()
         {
-            return this.GetByName(InventoryCodeName.Monies);
+            return this.GetByCodeName(InventoryCodeName.Monies);
         }
         
         public virtual InventoryController Items()
         {
-            return this.GetByName(InventoryCodeName.Items);
+            return this.GetByCodeName(InventoryCodeName.Items);
+        }
+        
+        protected virtual void LoadItemProfiles()
+        {
+            if (this.itemProfiles.Count > 0) return;
+            ItemProfileSO[] itemProfileSOs = Resources.LoadAll<ItemProfileSO>("/");
+            this.itemProfiles = new List<ItemProfileSO>(itemProfileSOs);
+            Debug.Log(transform.name + ": LoadItemProfiles", gameObject);
         }
     }
 }

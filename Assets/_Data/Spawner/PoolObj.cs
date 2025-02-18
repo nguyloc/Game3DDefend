@@ -1,8 +1,8 @@
 ﻿using _Data.Scripts;
-using _Data.Tower.Spawner.Despawn;
+using _Data.Spawner.Despawn;
 using UnityEngine;
 
-namespace _Data.Tower.Spawner
+namespace _Data.Spawner
 {
     public abstract class PoolObj : LocMonoBehaviour
     {

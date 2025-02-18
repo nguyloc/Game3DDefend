@@ -1,5 +1,5 @@
 using _Data.Enemy.EnemyScripts;
-using _Data.Tower.Spawner;
+using _Data.Spawner;
 
 namespace _Data.Enemy.EnemyManager
 {

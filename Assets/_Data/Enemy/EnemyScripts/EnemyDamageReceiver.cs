@@ -1,6 +1,7 @@
 ﻿using _Data.DamageSystem;
 using _Data.Inventory;
 using _Data.Inventory.Item;
+using _Data.Inventory.ItemDrop;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -69,10 +70,7 @@ namespace _Data.Enemy.EnemyScripts
         
         protected virtual void RewardOnDead()
         {
-            ItemInventory item = new();
-            item.itemProfile = InventoryManager.Instance.GetProfileByCode(ItemCode.Gold);
-            item.itemCount = 1;
-            InventoryManager.Instance.Monies().AddItem(item);
+            ItemsDropManager.Instance.Drop(ItemCode.Gold, 1, transform.position);
         }
     }
 }
