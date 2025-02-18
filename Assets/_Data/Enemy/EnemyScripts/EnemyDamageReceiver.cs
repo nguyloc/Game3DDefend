@@ -70,7 +70,8 @@ namespace _Data.Enemy.EnemyScripts
         
         protected virtual void RewardOnDead()
         {
-            ItemsDropManager.Instance.Drop(ItemCode.Gold, 1, transform.position);
+            ItemsDropManager.Instance.DropMany(ItemCode.Gold, 10, transform.position);
+            ItemsDropManager.Instance.DropMany(ItemCode.Wand, 5, transform.position);
         }
     }
 }
