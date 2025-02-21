@@ -1,17 +1,21 @@
-﻿using System;
-using _Data.Scripts;
+﻿using _Data.Scripts;
 using UnityEngine;
+
 
 namespace _Data.DamageSystem
 {
-    public class DamageReceiver : LocMonoBehaviour
+    public abstract class DamageReceiver : LocMonoBehaviour
     {
-        [SerializeField] protected bool isImmotal = false;
+        [SerializeField] protected int maxHP = 10;
+        public int MaxHP => maxHP;
         
-        protected int maxHP = 10;
-        protected int currentHP = 10;
+        [SerializeField] protected int currentHP = 10;
+        public int CurrentHP => currentHP;
+        
         protected bool isDead = false;
-
+    
+        [SerializeField] protected bool isImmortal = false;
+        
         protected void OnEnable()
         {
             this.OnReborn();
@@ -19,7 +23,7 @@ namespace _Data.DamageSystem
 
         public virtual int Deduct(int hp)
         {
-            if(!this.isImmotal) this.currentHP -= hp;
+            if (!this.isImmortal) this.currentHP -= hp;
             if (this.IsDead())  this.OnDead();
             else this.OnHurt();
             
