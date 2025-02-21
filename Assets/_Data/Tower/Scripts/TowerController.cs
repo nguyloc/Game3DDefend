@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using _Data.DamageSystem.Bullet;
+using _Data.Level;
 using _Data.Scripts;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -18,7 +19,9 @@ namespace _Data.Tower.Scripts
         [SerializeField] protected BulletSpawner bulletSpawner;
         [SerializeField] protected Bullet bullet;
         [SerializeField] protected BulletPrefabs bulletPrefabs;
+        [SerializeField] protected LevelAbstract level;
         [SerializeField] protected List<FirePoint> firePoints = new();
+        
       
 
         
@@ -29,6 +32,7 @@ namespace _Data.Tower.Scripts
         public BulletPrefabs BulletPrefabs => bulletPrefabs;
         public List<FirePoint> FirePoints => firePoints;
         public TowerShooting TowerShooting => towerShooting;
+        public LevelAbstract Level => level;
 
 
         protected override void Awake()
@@ -47,6 +51,14 @@ namespace _Data.Tower.Scripts
             this.LoadBulletPrefabs();
             this.LoadFirePoints();
             this.LoadTowerShooting();
+            this.LoadLevel();
+        }
+        
+        protected virtual void LoadLevel()
+        {
+            if (this.level != null) return;
+            this.level = GetComponentInChildren<LevelAbstract>();
+            Debug.Log(transform.name + " is loading Level", gameObject);
         }
 
           
