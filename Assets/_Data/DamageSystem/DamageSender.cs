@@ -10,7 +10,8 @@ namespace _Data.DamageSystem
     {
         [SerializeField] protected Rigidbody rigid;
         [SerializeField] protected int damage = 1;
-
+        
+        
         protected override void LoadComponents()
         {
             base.LoadComponents();
@@ -19,24 +20,22 @@ namespace _Data.DamageSystem
         
         public void OnTriggerEnter(Collider collider)
         {
-            Debug.Log("OnTriggerEnter" + collider.name);
             DamageReceiver damageReceiver = collider.GetComponent<DamageReceiver>();
             if (damageReceiver == null) return;
-            this.Send(damageReceiver);
-            Debug.Log("OnTriggerEnter" + collider.name);
+            this.Send(damageReceiver, collider);
         }
-        
-        protected virtual void Send (DamageReceiver damageReceiver)
-        {
-            damageReceiver.Deduct(this.damage);
-        }
-        
+     
         protected virtual void LoadRigidbody()
         {
             if (this.rigid != null) return;
             this.rigid = GetComponent<Rigidbody>();
             this.rigid.useGravity = false;
             Debug.Log(transform.name + " Rigidbody loaded", gameObject);
+        }
+        
+        protected virtual void Send (DamageReceiver damageReceiver, Collider collider)
+        {
+            damageReceiver.Deduct(this.damage);
         }
     }
 }

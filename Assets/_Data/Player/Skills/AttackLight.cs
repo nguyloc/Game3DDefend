@@ -8,7 +8,7 @@ namespace _Data.Player.Skills
 {
     public class AttackLight : AttackAbstract
     {
-        protected string effectName = "Fire1"; // Enable to change the effect name in the inspector
+        protected string effectName = "Projectile1"; // Enable to change the effect name in the inspector
         
         protected override void Attacking()
         {

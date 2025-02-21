@@ -19,6 +19,7 @@ namespace _Data.Spawner
         {
             base.LoadComponents();
             this.LoadPrefabs();
+            this.HidePrefabs();
         }
         
         protected virtual void LoadPrefabs()

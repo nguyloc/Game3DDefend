@@ -2,7 +2,7 @@
 using _Data.Scripts;
 using UnityEngine;
 
-namespace _Data.Weapons
+namespace _Data.Weapon
 {
     public abstract class WeaponAbtract : LocMonoBehaviour
     {

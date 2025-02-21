@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace _Data.Weapons
+namespace _Data.Weapon
 {
     public class WandController : WeaponAbtract
     {

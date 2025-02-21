@@ -7,11 +7,20 @@ namespace _Data.Player.Skills
 {
     public class AttackHeavy : AttackAbstract
     {
-        protected string effectName = "Fire2"; // Enable to change the effect name in the inspector
+        protected string effectName = "Fire2";
+        protected float timer = 0.0f;
+        protected float delay = 0.5f;
         
         protected override void Attacking()
         {
             if(!InputManager.Instance.IsAttackHeavy()) return;
+            
+            // delay
+            this.timer += Time.deltaTime;
+            if(this.timer < this.delay) return;
+            this.timer = 0.0f;
+            
+            
             AttackPoint attackPoint = this.GetAttackPoint();
             EffectController effect = this.spawner.Spawn(this.GetEffect(), attackPoint.transform.position);
             
