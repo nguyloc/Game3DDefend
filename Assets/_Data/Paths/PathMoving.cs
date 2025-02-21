@@ -4,7 +4,7 @@ using _Data.Scripts;
 
 namespace _Data.Paths
 {
-    public class Path : LocMonoBehaviour
+    public class PathMoving : LocMonoBehaviour
     {
         [SerializeField] protected List<Point> points;
         

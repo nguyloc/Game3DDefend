@@ -2,7 +2,7 @@
 
 namespace _Data.DamageSystem.Bullet
 {
-    public class BulletSpawner : Spawner<DamageSystem.Bullet.Bullet>
+    public class BulletSpawner : Spawner<Bullet>
     {
       
     }

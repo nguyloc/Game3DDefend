@@ -1,7 +1,7 @@
 using _Data.Scripts;
 using UnityEngine;
 
-namespace _Data.Effect
+namespace _Data.Effect.Fly
 {
     public abstract class EffectFlyAbtract : EffectController
     {
