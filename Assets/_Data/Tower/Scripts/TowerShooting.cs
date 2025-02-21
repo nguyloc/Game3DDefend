@@ -1,10 +1,7 @@
-﻿using System;
-using _Data.DamageSystem.Bullet;
-using _Data.Effect;
+﻿using _Data.Effect;
 using _Data.Effect.Fly;
 using _Data.Enemy.EnemyScripts;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace _Data.Tower.Scripts
 {
@@ -80,12 +77,6 @@ namespace _Data.Tower.Scripts
             this.SpawnMuzzle(firePoint.transform.position, rotatorDirection);
         }
         
-        protected virtual void _SpawnBullet(Vector3 spawnPoint, Vector3 rotatorDirection)
-        {
-            Bullet newBullet = this.towerController.BulletSpawner.Spawn(this.towerController.Bullet, spawnPoint);
-            newBullet.transform.forward = rotatorDirection;
-            newBullet.gameObject.SetActive(true);
-        }
         
         protected virtual void SpawnBullet(Vector3 spawnPoint, Vector3 rotatorDirection)
         {

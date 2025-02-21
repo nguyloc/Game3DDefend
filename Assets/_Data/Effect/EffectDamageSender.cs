@@ -5,9 +5,8 @@ using UnityEngine.Serialization;
 namespace _Data.Effect
 {
     [RequireComponent(typeof(SphereCollider))]
-    public class EffectDamageSender : DamageSender
+    public abstract class EffectDamageSender : DamageSender
     {
-        [FormerlySerializedAs("effectCtrl")]
         [SerializeField] protected EffectController effectController;
         [SerializeField] protected SphereCollider sphereCollider;
 
@@ -22,7 +21,7 @@ namespace _Data.Effect
         {
             if (this.effectController != null) return;
             this.effectController = transform.GetComponentInParent<EffectController>();
-            Debug.Log(transform.name + ": LoadEffectCtrl", gameObject);
+            Debug.Log(transform.name + ": LoadEffectController", gameObject);
         }
 
         protected virtual void LoadSphereCollider()
@@ -34,21 +33,21 @@ namespace _Data.Effect
             Debug.Log(transform.name + ": LoadSphereCollider", gameObject);
         }
 
-        protected override void Send(DamageReceiver damageReceiver)
+        protected override void Send(DamageReceiver damageReceiver, Collider collider)
         {
-            base.Send(damageReceiver);
-            //this.ShowHitEffect(collider);
+            base.Send(damageReceiver, collider);
+            this.ShowHitEffect(collider);
             this.effectController.Despawn.DoDespawn();
         }
 
-        // protected virtual void ShowHitEffect(Collider collider)
-        // {
-        //     Vector3 hitPoint = collider.ClosestPoint(transform.position);
-        //     EffectCtrl prefab = EffectSpawnerCtrl.Instance.Spawner.PoolPrefabs.GetByName(this.GetHitName());
-        //     EffectCtrl newObj = EffectSpawnerCtrl.Instance.Spawner.Spawn(prefab, hitPoint);
-        //     newObj.gameObject.SetActive(true);
-        // }
-        //
-        // protected abstract string GetHitName();
+        protected virtual void ShowHitEffect(Collider collider)
+        {
+             Vector3 hitPoint = collider.ClosestPoint(transform.position);
+             EffectController prefab = EffectSpawnerController.Instance.Spawner.PoolPrefabs.GetByName(this.GetHitName());
+             EffectController newObj = EffectSpawnerController.Instance.Spawner.Spawn(prefab, hitPoint);
+             newObj.gameObject.SetActive(true);
+         }
+        
+         protected abstract string GetHitName();
     }
 }
