@@ -2,6 +2,7 @@ using System;
 using _Data.Paths;
 using _Data.Scripts;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace _Data.Enemy.EnemyScripts
 {
@@ -13,7 +14,8 @@ namespace _Data.Enemy.EnemyScripts
 
         
         [SerializeField] protected string pathName = "path (1)";
-        [SerializeField] protected Path enemyPath;
+        [FormerlySerializedAs("enemyPath")]
+        [SerializeField] protected PathMoving enemyPathMoving;
         [SerializeField] protected Point currentPoint;
         
         [SerializeField] protected float pointDistance = Mathf.Infinity;
@@ -89,7 +91,7 @@ namespace _Data.Enemy.EnemyScripts
         
         protected virtual void FindNextPoint()
         {
-            if (this.currentPoint == null) this.currentPoint = this.enemyPath.GetPoint(0);
+            if (this.currentPoint == null) this.currentPoint = this.enemyPathMoving.GetPoint(0);
             
             this.pointDistance = Vector3.Distance(transform.position, this.currentPoint.transform.position);
             if (this.pointDistance < this.stopDistance)
@@ -101,8 +103,8 @@ namespace _Data.Enemy.EnemyScripts
 
         protected virtual void LoadEnemyPath()
         {
-            if (this.enemyPath != null) return;
-            this.enemyPath = PathsManager.Instance.GetPath(this.pathName);
+            if (this.enemyPathMoving != null) return;
+            this.enemyPathMoving = PathsManager.Instance.GetPath(this.pathName);
             
             Debug.Log(transform.name + " is loading EnemyPath",gameObject);
         }

@@ -6,7 +6,7 @@ namespace _Data.Paths
 {
     public class PathsManager : LocSingleton<PathsManager>
     {
-        [SerializeField] protected List<Path> paths = new();
+        [SerializeField] protected List<PathMoving> paths = new();
         
         protected override void Awake()
         {
@@ -24,14 +24,14 @@ namespace _Data.Paths
            if (this.paths.Count > 0) return;
            foreach (Transform child in transform)
            {
-               var path = child.GetComponent<Path>();
+               var path = child.GetComponent<PathMoving>();
                this.paths.Add(path);
            }
            
            Debug.Log(transform.name + "Load Paths", gameObject);
         }
         
-        public Path GetPath(string pathName)
+        public PathMoving GetPath(string pathName)
         {
             foreach (var path in this.paths)
             {
