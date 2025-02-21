@@ -1,6 +1,4 @@
-using UnityEngine;
-
-namespace _Data.Effect
+namespace _Data.Effect.Fly
 {
     public class Fire2Controller : EffectFlyAbtract
     {
