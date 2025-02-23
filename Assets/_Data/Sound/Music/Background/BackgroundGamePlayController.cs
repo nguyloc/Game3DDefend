@@ -1,12 +1,10 @@
-﻿using UnityEngine;
-
-namespace _Data.Sound.Music
+﻿namespace _Data.Sound.Music.Background
 {
-    public class BackgroundGamePlayController : SoundController
+    public class BackgroundGamePlayController : MusicController
     {
         public override string GetName()
         {
-            return "BackgroundGamePlay";
+            return SoundName.BackgroundMusicGamePlay.ToString();
         }
     }
 }
