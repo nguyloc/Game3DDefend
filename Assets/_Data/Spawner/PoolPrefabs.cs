@@ -9,12 +9,6 @@ namespace _Data.Spawner
         [SerializeField] protected List<T> prefabs = new();
         
 
-        protected override void Awake()
-        {
-            base.Awake();
-            this.HidePrefabs();
-        }
-
         protected override void LoadComponents()
         {
             base.LoadComponents();
@@ -28,7 +22,7 @@ namespace _Data.Spawner
             foreach (Transform child in transform)
             {
                 T classPrefab = child.GetComponent<T>();
-                if (classPrefab) this.prefabs.Add(classPrefab);
+                if (classPrefab != null) this.prefabs.Add(classPrefab);
             }
             Debug.Log(transform.name + " : LoadPrefabs", gameObject);
         }

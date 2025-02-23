@@ -8,10 +8,13 @@ namespace _Data.Spawner
     {
         [SerializeField] protected int spawnCount = 0;
         [SerializeField] protected Transform poolHolder;
-        [SerializeField] protected List<T> inPoolObjs = new();
-        
         [SerializeField] protected PoolPrefabs<T> poolPrefabs;
         public PoolPrefabs<T> PoolPrefabs => poolPrefabs;
+        
+        
+        [SerializeField] protected List<T> inPoolObjs = new();
+        
+        
         
         
         protected override void LoadComponents()

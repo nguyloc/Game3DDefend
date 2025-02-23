@@ -6,7 +6,7 @@ namespace _Data.Sound.SFX.Laser
     {
         public override string GetName()
         {
-            return "Laser01";
+            return SoundName.Laser01.ToString();
         }
     }
 }
