@@ -89,7 +89,7 @@ namespace _Data.Tower.Scripts
             this.SpawnMuzzle(firePoint.transform.position, rotatorDirection);
             
             // Spawn Sound
-            //this.SpawnSound(firePoint.transform.position);
+            this.SpawnSound(firePoint.transform.position);
         }
         
         
@@ -141,8 +141,8 @@ namespace _Data.Tower.Scripts
 
         protected virtual void SpawnSound(Vector3 position)
         {
-            SfxController sfxPrefab = (SfxController) SoundSpawnerController.Instance.Prefabs.GetByName(this.shootSfxName.ToString());
-            SfxController newSfx = (SfxController) SoundSpawnerController.Instance.Spawner.Spawn(sfxPrefab, position);
+            SfxController newSfx = SoundManager.Instance.CreateSfx(this.shootSfxName);
+            newSfx.transform.position = position;
             newSfx.gameObject.SetActive(true);
         }
     }

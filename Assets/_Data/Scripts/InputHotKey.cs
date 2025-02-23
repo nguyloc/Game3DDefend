@@ -30,7 +30,7 @@ namespace _Data.Scripts
         
         protected virtual void ToogleSetting()
         {
-            this.isToogleSetting = Input.GetKeyUp(KeyCode.S);
+            this.isToogleSetting = Input.GetKeyUp(KeyCode.Escape);
         }
     }
 }

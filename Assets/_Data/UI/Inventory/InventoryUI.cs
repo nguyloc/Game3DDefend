@@ -32,7 +32,7 @@ namespace _Data.UI.Inventory
         protected override void Start()
         {
             base.Start();
-            this.Show();
+            this.Hide();
             this.HideDefaultItemInventory();
         }
         
