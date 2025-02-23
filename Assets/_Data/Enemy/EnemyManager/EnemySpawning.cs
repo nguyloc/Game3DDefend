@@ -38,7 +38,7 @@ namespace _Data.Enemy.EnemyManager
             newEnemy.gameObject.SetActive(true);
             
             this.spawnedEnemies.Add(newEnemy);
-            Debug.Log("Spawning", gameObject);
+            //Debug.Log("Spawning", gameObject);
         }
 
         protected virtual void RemoveDeadOne()

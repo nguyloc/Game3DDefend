@@ -1,6 +1,7 @@
 using _Data.Effect;
 using _Data.Effect.Fly;
 using _Data.Scripts;
+using _Data.Sound.SFX;
 using UnityEngine;
 
 namespace _Data.Player.Skills
@@ -34,5 +35,7 @@ namespace _Data.Player.Skills
         {
             return this.prefabs.GetByName(this.effectName);
         }
+        
+        
     }
 }

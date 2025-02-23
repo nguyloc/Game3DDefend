@@ -4,12 +4,11 @@ namespace _Data.Sound
 {
     public enum SoundName
     {
-        noSound = 0,
+        NoSound = 0,
         // Music
-        LastStand = 1,
+        BackgroundMusicGamePlay = 1,
         
         // SFX
-        LaserOnShot = 100,
-        LaserKickDrum = 100,
+        Laser01 = 100,
     }
 }
