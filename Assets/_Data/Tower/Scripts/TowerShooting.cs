@@ -1,6 +1,8 @@
 ﻿using _Data.Effect;
 using _Data.Effect.Fly;
 using _Data.Enemy.EnemyScripts;
+using _Data.Sound;
+using _Data.Sound.SFX;
 using UnityEngine;
 
 namespace _Data.Tower.Scripts
@@ -13,10 +15,17 @@ namespace _Data.Tower.Scripts
         [SerializeField] protected float rotationSpeed = 4f;
         [SerializeField] protected EnemyController target;
         
+        
         [SerializeField] protected int killCount = 0;
         [SerializeField] protected int totalKill = 0;
-        [SerializeField] protected EffectSpawner effectSpawner;
         public int KillCount => killCount;
+        
+        
+        [SerializeField] protected EffectSpawner effectSpawner;
+        [SerializeField] protected SoundName shootSfxName = SoundName.Laser01;
+        
+        
+       
 
 
 
@@ -67,14 +76,20 @@ namespace _Data.Tower.Scripts
         
         protected virtual void Shooting()
         {
-            Invoke(nameof(this.Shooting), this.shootingSpeed);
+            Invoke(nameof(this.Shooting), this.shootingSpeed + Random.Range(-0.1f, 0.1f));
             if (this.target == null) return;
             
             FirePoint firePoint = this.GetFirePoint();
             Vector3 rotatorDirection = this.towerController.Rotator.transform.forward;
             
+            // Spawn Bullet
             this.SpawnBullet(firePoint.transform.position, rotatorDirection);
+            
+            // Spawn Muzzle
             this.SpawnMuzzle(firePoint.transform.position, rotatorDirection);
+            
+            // Spawn Sound
+            //this.SpawnSound(firePoint.transform.position);
         }
         
         
@@ -122,6 +137,13 @@ namespace _Data.Tower.Scripts
             if (this.KillCount < count) return false;
             this.killCount -= count;
             return true;
+        }
+
+        protected virtual void SpawnSound(Vector3 position)
+        {
+            SfxController sfxPrefab = (SfxController) SoundSpawnerController.Instance.Prefabs.GetByName(this.shootSfxName.ToString());
+            SfxController newSfx = (SfxController) SoundSpawnerController.Instance.Spawner.Spawn(sfxPrefab, position);
+            newSfx.gameObject.SetActive(true);
         }
     }
 }

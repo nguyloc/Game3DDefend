@@ -6,7 +6,7 @@ namespace _Data.Sound
 {
     public class SoundManager : LocSingleton<SoundManager>
     {
-        [SerializeField] protected SoundName bgName = SoundName.LastStand;
+        [SerializeField] protected SoundName bgName = SoundName.BackgroundMusicGamePlay;
         [SerializeField] protected MusicController bgMusic;
         [SerializeField] protected SoundSpawnerController soundSpawnerController;
         public SoundSpawnerController SoundSpawnerController =>  soundSpawnerController;

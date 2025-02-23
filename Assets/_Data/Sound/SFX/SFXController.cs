@@ -8,7 +8,6 @@ namespace _Data.Sound.SFX
         {
             base.ResetValue();
             this.audioSource.loop = false;
-            
         }
     }
 }
