@@ -24,7 +24,7 @@ namespace _Data.Player.Scripts
         {
             this.playerController.ThirdPersonCamera.defaultDistance = this.closeLookDistance;
             
-            CrosshairPointer crosshairPointer = this.playerController.CrosshairPointer;
+            CrosshairPointer.CrosshairPointer crosshairPointer = this.playerController.CrosshairPointer;
             this.playerController.ThirdPersonController.RotateToPosition(crosshairPointer.transform.position);
             this.playerController.ThirdPersonController.isSprinting = false;
             this.playerController.AimingRig.weight = 1f;

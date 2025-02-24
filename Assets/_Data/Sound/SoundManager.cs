@@ -23,6 +23,12 @@ namespace _Data.Sound
          [SerializeField] protected List<MusicController> listMusic;
          [SerializeField] protected List<SfxController> listSfx;
         
+        protected override void Start()
+        {
+            base.Start();
+            this.StartMusicBackground();
+        }
+         
         protected override void Awake()
         {
             base.Awake();

@@ -14,8 +14,8 @@ namespace _Data.Player.Scripts
         [SerializeField] protected vThirdPersonCamera thirdPersonCamera;
         public vThirdPersonCamera ThirdPersonCamera => thirdPersonCamera;
         
-        [SerializeField] protected CrosshairPointer crosshairPointer;
-        public CrosshairPointer CrosshairPointer => crosshairPointer;
+        [SerializeField] protected CrosshairPointer.CrosshairPointer crosshairPointer;
+        public CrosshairPointer.CrosshairPointer CrosshairPointer => crosshairPointer;
 
         [SerializeField] protected Rig aimingRig;
         public Rig AimingRig => aimingRig;
@@ -78,7 +78,7 @@ namespace _Data.Player.Scripts
         protected virtual void LoadCrosshairPointer()
         {
             if (this.crosshairPointer != null) return;
-            this.crosshairPointer = GetComponentInChildren<CrosshairPointer>();
+            this.crosshairPointer = GetComponentInChildren<CrosshairPointer.CrosshairPointer>();
             Debug.Log(transform.name + ": LoadCrosshairPointer", gameObject);
         }
         
