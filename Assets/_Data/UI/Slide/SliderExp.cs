@@ -14,8 +14,8 @@ namespace _Data.UI.Slide
         
         protected virtual void LoadExp()
         {
-            int currentExp;
-            int nextExp;
+            //int currentExp;
+            //int nextExp;
 
             //layerLevel level = Player;
         }
