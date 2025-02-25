@@ -103,20 +103,20 @@ namespace _Data.Test
             bundle.Unload(false); // Giữ lại object đã instantiate
         }
 
-        void ClearScene()
-        {
-            GameObject[] allObjects = FindObjectsOfType<GameObject>();
-
-            foreach (GameObject obj in allObjects)
-            {
-                // Kiểm tra nếu đó không phải là UI Loading hoặc EventSystem
-                if (obj != gameObject && obj != uiLoading && obj.GetComponent<EventSystem>() == null)
-                {
-                    Destroy(obj);
-                }
-            }
-
-            Debug.Log("Cleared all objects in the scene, except UI Loading & EventSystem.");
-        }
+        // void ClearScene()
+        // {
+        //     GameObject[] allObjects = FindObjectsOfType<GameObject>();
+        //
+        //     foreach (GameObject obj in allObjects)
+        //     {
+        //         // Kiểm tra nếu đó không phải là UI Loading hoặc EventSystem
+        //         if (obj != gameObject && obj != uiLoading && obj.GetComponent<EventSystem>() == null)
+        //         {
+        //             Destroy(obj);
+        //         }
+        //     }
+        //
+        //     Debug.Log("Cleared all objects in the scene, except UI Loading & EventSystem.");
+        // }
     }
 }
