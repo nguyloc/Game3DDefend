@@ -13,7 +13,7 @@ namespace _Data.Player.Skills
         [SerializeField] protected EffectSpawner spawner;
         [SerializeField] protected EffectPrefabs prefabs;
 
-        protected void Update()
+        protected void LateUpdate()
         {
             this.Attacking();
         }
