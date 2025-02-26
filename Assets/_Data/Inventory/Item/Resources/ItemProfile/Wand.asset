@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryCodeName: 2
   itemCode: 2
+  itemSprite: {fileID: 21300000, guid: 7d2407f125343984591692f749a3f110, type: 3}
   itemName: Wand
   isStackable: 0

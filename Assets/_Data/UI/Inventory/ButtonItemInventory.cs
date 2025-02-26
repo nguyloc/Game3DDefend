@@ -3,6 +3,7 @@ using _Data.Inventory.Item;
 using _Data.UI.Buttons;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace _Data.UI.Inventory
 {
@@ -10,6 +11,7 @@ namespace _Data.UI.Inventory
     {
         [SerializeField] protected TextMeshProUGUI textItemName;
         [SerializeField] protected TextMeshProUGUI textItemCount;
+        [SerializeField] protected Image spriteItem;
         
         [SerializeField] protected ItemInventory itemInventory;
         public ItemInventory ItemInventory => itemInventory;
@@ -26,6 +28,7 @@ namespace _Data.UI.Inventory
             base.LoadComponents();
             this.LoadTextItemName();
             this.LoadTextItemCount();
+            this.LoadSpriteItem();
         }
         
         public virtual void SetItem(ItemInventory itemInventory)
@@ -50,6 +53,13 @@ namespace _Data.UI.Inventory
             if (this.textItemCount != null) return;
             this.textItemCount = transform.Find("ItemCount").GetComponent<TextMeshProUGUI>();
             Debug.Log(transform.name + " has no TextItemCount component.", gameObject);
+        }
+        
+        protected virtual void LoadSpriteItem()
+        {
+            if (this.spriteItem != null) return;
+            this.spriteItem = transform.Find("ItemSprite").GetComponent<Image>();
+            Debug.Log(transform.name + " has no SpriteItem component.", gameObject);
         }
         
         protected virtual void ItemsUpdating()
