@@ -1,4 +1,4 @@
-﻿using _Data.UI.Slider;
+﻿using _Data.UI.Slide;
 using UnityEngine;
 
 namespace _Data.Enemy.EnemyScripts

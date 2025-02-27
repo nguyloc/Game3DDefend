@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace _Data.Inventory
 {
-    public class InventoryMonies : InventoryController
+    public class InventoryCurrency : InventoryController
     {
         public override InventoryCodeName GetName()
         {

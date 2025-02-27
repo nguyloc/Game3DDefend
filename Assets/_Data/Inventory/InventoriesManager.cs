@@ -10,9 +10,6 @@ namespace _Data.Inventory
 {
     public class InventoriesManager : LocSingleton<InventoriesManager>
     {
-        [SerializeField] protected ItemInventory choosedItem;
-        public ItemInventory ChoosedItem => choosedItem;
-        
         [SerializeField] protected List<InventoryController> inventories;
         [SerializeField] protected List<ItemProfileSO> itemProfiles;
 
@@ -120,15 +117,6 @@ namespace _Data.Inventory
             inventoryController.RemoveItem(itemInventory);
         }
         
-        public virtual void SetChoosedItem(ItemInventory itemInventory)
-        {
-            this.choosedItem = itemInventory;
-        }
-
-        public virtual void UseChoosedItem()
-        {
-            Debug.Log("UseChoosedItem" + this.choosedItem.GetItemName());
-        }
         
         public virtual InventoryController Currency()
         {
