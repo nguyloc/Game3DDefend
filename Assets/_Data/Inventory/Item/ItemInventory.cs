@@ -8,8 +8,7 @@ namespace _Data.Inventory.Item
     {
         protected int itemId;
         public int ItemID => itemId;
-        public bool useable;
-
+    
         protected ItemProfileSO itemProfile;
         public ItemProfileSO ItemProfile => itemProfile;
     

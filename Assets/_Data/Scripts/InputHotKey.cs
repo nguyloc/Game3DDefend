@@ -43,12 +43,12 @@ namespace _Data.Scripts
         
         protected virtual void ToogleNumber()
         {
-            this.isPlaceTower = Input.GetKeyUp(KeyCode.Mouse0);
+            this.isPlaceTower = Input.GetKeyDown(KeyCode.Mouse0);
             
             for (int i = 1; i <= 5; i++)
             {
                 KeyCode key = (KeyCode) Enum.Parse(typeof(KeyCode), "Alpha" + i);
-                if (Input.GetKeyUp(key))
+                if (Input.GetKeyDown(key))
                 {
                     this.keyCode = this.keyCode == key ? KeyCode.None : key;
                     break;
