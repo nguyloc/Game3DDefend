@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.0.33f1
-CRC: 3874100506
+CRC: 2248843502
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 581f6c90481e22c04fc87b91366aeb5f
+    Hash: c1eb87fd7e014694a5f7ef90b2106498
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 6b02e95019ab2b7da4f139c160029106
+    Hash: cedcbd3e055f895d079376a2678f7e50
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 060d3afb626049929867f89b18b00f4a
+    Hash: 43ee6b3b6f95e88e9c9080c083d83932
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -125,6 +125,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 8e9c6d80c29d4174b0a8f6486e74bb10, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 4b7d5e425a374a3a9c474d7e9f670444, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 252947b4d1fd424a9c546b2b86c0f4f9, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: f152aed2ec1d45ec889045082c9cbd65, type: 3}
 - Class: 114
@@ -361,6 +363,7 @@ SerializeReferenceClassIdentifiers:
 Assets:
 - Assets/_Data/Prefabs/======= Tower .prefab
 - Assets/_Data/Prefabs/======= UI  .prefab
+- Assets/_Data/Prefabs/SoundManager.prefab
 - Assets/_Data/Prefabs/======= Enemy .prefab
 - Assets/_Data/Prefabs/======= Other .prefab
 - Assets/_Data/Prefabs/======= Environment .prefab
