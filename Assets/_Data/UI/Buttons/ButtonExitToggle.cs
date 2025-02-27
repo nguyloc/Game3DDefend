@@ -9,13 +9,7 @@ namespace _Data.UI.Buttons
     {
         protected override void OnClick()
         {
-            Debug.Log("Thoát game!"); // Kiểm tra xem hàm có được gọi không
-
-#if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false; // Dừng Play Mode trong Editor
-#else
-        Application.Quit(); // Thoát game khi build
-#endif
+            GameManager.Instance.QuitGame();
         }
     }
 }
