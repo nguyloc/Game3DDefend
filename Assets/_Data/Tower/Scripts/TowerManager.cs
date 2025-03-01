@@ -17,7 +17,7 @@ namespace _Data.Tower.Scripts
         Dictionary<TowerCode, int> towerPrices = new()
         {
             { TowerCode.MachineGun, 500 },  
-            { TowerCode.LaserGun, 1000 }   
+            { TowerCode.SunDisc, 1000 }   
         };
         
 
@@ -111,7 +111,7 @@ namespace _Data.Tower.Scripts
                 case KeyCode.Alpha1:
                     return TowerCode.MachineGun;
                 case KeyCode.Alpha2:
-                    return TowerCode.LaserGun;
+                    return TowerCode.SunDisc;
                 default:
                     return TowerCode.NoTower;
             }

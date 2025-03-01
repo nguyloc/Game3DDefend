@@ -5,6 +5,6 @@
         // Tower Codes
         NoTower = 0,
         MachineGun = 1,
-        LaserGun = 2,
+        SunDisc = 2,
     }
 }
