@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using com.cyborgAssets.inspectorButtonPro;
+using UnityEngine;
 
 namespace _Data.SaveManager
 {
@@ -17,7 +18,7 @@ namespace _Data.SaveManager
         {
             return PlayerPrefs.GetInt(key, defaultValue);
         }
-
+        
         public override void DeleteKey(string key)
         {
             PlayerPrefs.DeleteKey(key);

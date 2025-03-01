@@ -93,12 +93,16 @@ namespace _Data.Tower.Scripts
             this.towerPlace = false;
         }
         
-        protected virtual bool CanAffordTower(TowerCode towerCode)
+        public virtual bool CanAffordTower(TowerCode towerCode)
         {
             int currentMoney = InventoriesManager.Instance.CheckGold();
             return currentMoney >= towerPrices[towerCode];
         }
         
+        public int GetTowerPrice (TowerCode towerCode)
+        {
+            return towerPrices.ContainsKey(towerCode) ? towerPrices[towerCode] : -1;
+        }
         
         protected virtual TowerCode GetTowerCode(KeyCode keyCode)
         {

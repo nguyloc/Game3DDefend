@@ -1,5 +1,6 @@
 using _Data.Inventory;
 using _Data.Inventory.Item;
+using com.cyborgAssets.inspectorButtonPro;
 using UnityEngine;
 
 namespace _Data.Scripts
@@ -14,13 +15,20 @@ namespace _Data.Scripts
             base.LoadComponents();
             this.LoadSaveManager();
         }
-
+        
         
         protected virtual void LoadSaveManager()
         {
             if(this.save != null) return;
             this.save = GetComponentInChildren<SaveManager.SaveManager>();
             Debug.Log(transform.name + " loaded save manager: " ,gameObject);
+        }
+        
+        [ProButton]
+        public virtual void DeleteSaveData()
+        {
+            PlayerPrefs.DeleteAll();
+            PlayerPrefs.Save();
         }
 
         public virtual void QuitGame()
