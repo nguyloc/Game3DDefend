@@ -578,8 +578,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199036901}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9997589, z: -0, w: 0.021960141}
-  m_LocalPosition: {x: -8.573235, y: -1.147, z: 1.4148827}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -597,7 +597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e408ed36fc247b7811be9ebf132ebf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawner: {fileID: 0}
+  spawner: {fileID: 2050760058}
   parent: {fileID: 8482216597424746697}
   isDespawnByTime: 0
   timeLife: 7
@@ -10046,7 +10046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c23a746cbc14ad2bd8038e86f22e70a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerController: {fileID: 0}
+  towerController: {fileID: 8482216597424746697}
   isDisable: 1
   currentFirePoint: 0
   targetLoadSpeed: 1
@@ -10055,7 +10055,7 @@ MonoBehaviour:
   target: {fileID: 0}
   killCount: 0
   totalKill: 0
-  effectSpawner: {fileID: 0}
+  effectSpawner: {fileID: 3104772758456784334}
   shootSfxName: 100
 --- !u!4 &1552831644130519292
 Transform:
@@ -22989,7 +22989,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4575098261186594451}
   m_HandleRect: {fileID: 7770563957370535092}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -34184,7 +34184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
+  m_RenderShadows: 0
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
@@ -40233,9 +40233,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07453a19acc69194f85d3bf19d465712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1634504469577598854}
   minimapCamera: {fileID: 957245266796781165}
-  minimapPanel: {fileID: 0}
+  minimapPanel: {fileID: 4656154196189286908}
 --- !u!1 &4502030113355416115
 GameObject:
   m_ObjectHideFlags: 0
@@ -56381,7 +56381,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8652706800446773365}
   m_HandleRect: {fileID: 1489805876288142052}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -61567,7 +61567,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bgName: 1
   bgMusic: {fileID: 0}
-  soundSpawnerController: {fileID: 0}
+  soundSpawnerController: {fileID: 9171656295821378186}
   volumeMusic: 1
   volumeSfx: 1
   listMusic: []
@@ -73657,7 +73657,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 18b9ce45351c83745bbca6c4bde0d4f6, type: 2}
   m_TargetDisplay: 0
@@ -87749,7 +87749,7 @@ Transform:
   m_GameObject: {fileID: 59916809032983787}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.48, y: 1.147, z: 7.26}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

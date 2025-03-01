@@ -116,7 +116,12 @@ namespace _Data.Inventory
             InventoryController inventoryController = InventoriesManager.Instance.GetByCodeName(invCodeName);
             inventoryController.RemoveItem(itemInventory);
         }
-        
+
+        public virtual int CheckGold()
+        {
+            ItemInventory itemGold = this.Currency().FindItem(ItemCode.Gold);
+            return itemGold != null ? itemGold.itemCount : 0;
+        }
         
         public virtual InventoryController Currency()
         {

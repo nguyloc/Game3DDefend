@@ -1,19 +1,55 @@
+using System;
 using UnityEngine;
+using Invector.vCharacterController;
 
-public class HideMouse : MonoBehaviour
+namespace _Data.Scripts
 {
-    private void Start()
+    public class HideMouse : MonoBehaviour
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-    }
-    
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        public bool isUIOpen = false;
+        private vThirdPersonInput playerInput; 
+
+        [Obsolete("Obsolete")]
+        void Start()
+        {
+            playerInput = FindObjectOfType<vThirdPersonInput>(); 
+            HideCursor();
+        }
+
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.LeftAlt))
+            {
+                ToggleUI();
+            }
+        }
+
+        public void ToggleUI()
+        {
+            isUIOpen = !isUIOpen;
+
+            if (isUIOpen)
+            {
+                ShowCursor();
+                if (playerInput != null) playerInput.enabled = false; 
+            }
+            else
+            {
+                HideCursor();
+                if (playerInput != null) playerInput.enabled = true; 
+            }
+        }
+
+        public void ShowCursor()
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+        }
+
+        public void HideCursor()
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
 }

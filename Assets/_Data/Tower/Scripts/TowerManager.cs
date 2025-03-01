@@ -1,8 +1,8 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using _Data.Inventory;
 using _Data.Inventory.Item;
 using _Data.Player.Scripts;
 using _Data.Scripts;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace _Data.Tower.Scripts
@@ -13,6 +13,13 @@ namespace _Data.Tower.Scripts
         [SerializeField] protected TowerController towerPrefab;
 
         [SerializeField] protected bool towerPlace = false;
+
+        Dictionary<TowerCode, int> towerPrices = new()
+        {
+            { TowerCode.MachineGun, 500 },  
+            { TowerCode.LaserGun, 1000 }   
+        };
+        
 
         protected virtual void FixedUpdate()
         {
@@ -50,6 +57,14 @@ namespace _Data.Tower.Scripts
         
         protected virtual void PlaceTower()
         {
+            // Check if can afford tower
+            if (!this.CanAffordTower(this.newTowerId)) return;
+            
+            // Remove gold
+            int price = towerPrices[this.newTowerId];
+            InventoriesManager.Instance.RemoveItem(ItemCode.Gold, price);
+            
+            
             // Set tower place to true
             this.towerPlace = true;
                 
@@ -77,6 +92,13 @@ namespace _Data.Tower.Scripts
         {
             this.towerPlace = false;
         }
+        
+        protected virtual bool CanAffordTower(TowerCode towerCode)
+        {
+            int currentMoney = InventoriesManager.Instance.CheckGold();
+            return currentMoney >= towerPrices[towerCode];
+        }
+        
         
         protected virtual TowerCode GetTowerCode(KeyCode keyCode)
         {
