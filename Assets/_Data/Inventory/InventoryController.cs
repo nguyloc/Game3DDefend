@@ -12,7 +12,8 @@ namespace _Data.Inventory
         public List<ItemInventory> Items => items;
         
         public abstract InventoryCodeName GetName();
-    
+        
+        
         public virtual void AddItem(ItemInventory item)
         {
             ItemInventory itemExists = this.FindItem(item.ItemProfile.itemCode);

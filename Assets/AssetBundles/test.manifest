@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.0.33f1
-CRC: 2547810792
+CRC: 2248843502
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5ae905ec8ffddb4f90f25d8e9c13c4e4
+    Hash: c1eb87fd7e014694a5f7ef90b2106498
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 6ec82998a7639d8f52467a81fcbe312c
+    Hash: cedcbd3e055f895d079376a2678f7e50
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 7246cb74ece5cb7682c8aff7fd04e990
+    Hash: 43ee6b3b6f95e88e9c9080c083d83932
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -43,6 +43,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 83
   Script: {instanceID: 0}
+- Class: 84
+  Script: {instanceID: 0}
 - Class: 90
   Script: {instanceID: 0}
 - Class: 91
@@ -58,6 +60,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: aeda7bfbf984f2a4da5ab4b8967b115d, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 29055f59d1ff7344bb0ebbb6ba379d92, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 0dd5f94af88d38f4aa14638387704bcc, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 14b85763b5b7cdc47bd420b5765ebec1, type: 3}
@@ -70,15 +74,9 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 14e9d1dca32aae34f8d11d7ce5f73ab8, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 81b667d46a773ca42a8fa0727f33da1d, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: acc5fd5b5c104564b13beb1370221060, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 3ba7cbcfac29446aa0f0b211eb702b2a, type: 3}
 - Class: 114
@@ -94,13 +92,9 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 0b8d0b42d1220984ba73a9a826d2eaa7, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: fbd4fbb7c66d4a1f98717c9dd9debf36, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: e3c430f382484144e925c097c2d33cfe, type: 3}
 - Class: 114
@@ -126,8 +120,6 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 83fa23f99ee6dd34bb0d16890f2661d2, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 3d695b920b864a0397766662ea16bfc2, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 8e9c6d80c29d4174b0a8f6486e74bb10, type: 3}
@@ -136,8 +128,6 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 252947b4d1fd424a9c546b2b86c0f4f9, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: ccf1aba9553839d41ae37dd52e9ebcce, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: f152aed2ec1d45ec889045082c9cbd65, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: dfc1d8ba19754472a550961d03533122, type: 3}
@@ -145,8 +135,6 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 199317c3bd768074c917543e404f2b64, type: 3}
 - Class: 114
@@ -161,6 +149,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: ba9cd30cac87430ab5084c587786e729, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 9d1e9b94a02c41c0afb92becbc683524, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 07453a19acc69194f85d3bf19d465712, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: c470ef50bdf935646bcfded4ccadde1f, type: 3}
 - Class: 114
@@ -193,8 +183,6 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 5f143c5ff98199445b434a350790759b, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: da2412a2f6ce6f54983b7aaf9845c106, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: ed64621d1e6815c41b23ea969148409b, type: 3}
 - Class: 114
@@ -241,8 +229,6 @@ ClassTypes:
   Script: {fileID: 11500000, guid: d68b6a41dcd44d7e8d09c25e407aafdf, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: bf1cb2009aec30741b9fe1aadda63189, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 39fa3d8997a24136984ca6e2c99902bc, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 24303d74f40c405aad1118b524f3b948, type: 3}
 - Class: 114
@@ -322,44 +308,8 @@ SerializeReferenceClassIdentifiers:
   ClassName: UnityEngine.Animations.Rigging.WeightedTransform
 - AssemblyName: Unity.Animation.Rigging
   ClassName: UnityEngine.Animations.Rigging.WeightedTransformArray
-- AssemblyName: Unity.InputSystem
-  ClassName: UnityEngine.InputSystem.InputAction
-- AssemblyName: Unity.InputSystem
-  ClassName: UnityEngine.InputSystem.InputActionMap
-- AssemblyName: Unity.InputSystem
-  ClassName: UnityEngine.InputSystem.InputBinding
-- AssemblyName: Unity.InputSystem
-  ClassName: UnityEngine.InputSystem.InputControlScheme
-- AssemblyName: Unity.InputSystem
-  ClassName: UnityEngine.InputSystem.InputControlScheme/DeviceRequirement
-- AssemblyName: Unity.RenderPipelines.Core.Runtime
-  ClassName: UnityEngine.Rendering.BoolParameter
-- AssemblyName: Unity.RenderPipelines.Core.Runtime
-  ClassName: UnityEngine.Rendering.ClampedFloatParameter
-- AssemblyName: Unity.RenderPipelines.Core.Runtime
-  ClassName: UnityEngine.Rendering.ClampedIntParameter
-- AssemblyName: Unity.RenderPipelines.Core.Runtime
-  ClassName: UnityEngine.Rendering.ColorParameter
-- AssemblyName: Unity.RenderPipelines.Core.Runtime
-  ClassName: UnityEngine.Rendering.MinFloatParameter
-- AssemblyName: Unity.RenderPipelines.Core.Runtime
-  ClassName: UnityEngine.Rendering.TextureParameter
-- AssemblyName: Unity.RenderPipelines.Core.Runtime
-  ClassName: UnityEngine.Rendering.Vector2Parameter
-- AssemblyName: Unity.RenderPipelines.Universal.Runtime
-  ClassName: UnityEngine.Rendering.Universal.DownscaleParameter
-- AssemblyName: Unity.RenderPipelines.Universal.Runtime
-  ClassName: UnityEngine.Rendering.Universal.HDRACESPresetParameter
-- AssemblyName: Unity.RenderPipelines.Universal.Runtime
-  ClassName: UnityEngine.Rendering.Universal.MotionBlurModeParameter
-- AssemblyName: Unity.RenderPipelines.Universal.Runtime
-  ClassName: UnityEngine.Rendering.Universal.MotionBlurQualityParameter
-- AssemblyName: Unity.RenderPipelines.Universal.Runtime
-  ClassName: UnityEngine.Rendering.Universal.NeutralRangeReductionModeParameter
 - AssemblyName: Unity.RenderPipelines.Universal.Runtime
   ClassName: UnityEngine.Rendering.Universal.TemporalAA/Settings
-- AssemblyName: Unity.RenderPipelines.Universal.Runtime
-  ClassName: UnityEngine.Rendering.Universal.TonemappingModeParameter
 - AssemblyName: Unity.TextMeshPro
   ClassName: TMPro.FaceInfo_Legacy
 - AssemblyName: Unity.TextMeshPro
@@ -414,11 +364,8 @@ Assets:
 - Assets/_Data/Prefabs/======= Tower .prefab
 - Assets/_Data/Prefabs/======= UI  .prefab
 - Assets/_Data/Prefabs/SoundManager.prefab
-- Assets/_Data/Prefabs/Directional Light.prefab
-- Assets/_Data/Prefabs/EventSystem.prefab
 - Assets/_Data/Prefabs/======= Enemy .prefab
 - Assets/_Data/Prefabs/======= Other .prefab
 - Assets/_Data/Prefabs/======= Environment .prefab
-- Assets/_Data/Prefabs/Global Volume.prefab
 - Assets/_Data/Prefabs/======= Player .prefab
 Dependencies: []

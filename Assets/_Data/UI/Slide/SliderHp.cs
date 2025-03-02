@@ -1,6 +1,4 @@
-﻿using _Data.UI.Slide;
-
-namespace _Data.UI.Slider
+﻿namespace _Data.UI.Slide
 {
     public abstract class SliderHp : SliderAbstract
     {

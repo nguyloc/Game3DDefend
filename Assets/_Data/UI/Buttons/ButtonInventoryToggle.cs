@@ -10,6 +10,7 @@ namespace _Data.UI.Buttons
         protected override void OnClick()
         {
             InventoryUI.Instance.Toggle();
+            
         }
     }
 }

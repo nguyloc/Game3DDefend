@@ -29,6 +29,11 @@ namespace _Data.Scripts
         {
             // Load all components here
         }
+
+        public virtual void SetActive(bool status)
+        {
+            gameObject.SetActive(status);
+        }
     }
 }
 

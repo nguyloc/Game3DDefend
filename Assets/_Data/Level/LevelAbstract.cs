@@ -13,7 +13,13 @@ namespace _Data.Level
 
         protected abstract int GetCurrentExp();
         protected abstract bool DeductExp(int exp);
-
+        
+        // public cho slider su dung
+        public int NextLevelExp => this.GetNextLevelExp(); 
+        public int CurrentExp => this.GetCurrentExp(); 
+       
+        
+        
         protected virtual void FixedUpdate()
         {
             this.Leveling();
