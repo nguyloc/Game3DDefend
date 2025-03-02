@@ -1,0 +1,4571 @@
+fileFormatVersion: 2
+guid: 6f54fb138a1ad7a46ac48871c3f147f6
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'skinned_mesh|azir_attack1.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Head' has translation animation that will be discarded.\n\t'R_Elbow'
+      has translation animation that will be discarded.\n\t'R_Hand' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Knee' has translation
+      animation that will be discarded.\n\t'L_Ankle' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_attack1.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Head' has translation animation that will be discarded.\n\t'R_Elbow'
+      has translation animation that will be discarded.\n\t'R_Hand' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Knee' has translation
+      animation that will be discarded.\n\t'L_Ankle' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_attack2.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'R_Elbow'
+      has translation animation that will be discarded.\n\t'R_Hand' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'R_Knee' has translation animation that will be
+      discarded.\n\t'R_Ankle' has translation animation that will be discarded.\n\t'R_Foot'
+      has translation animation that will be discarded.\n\t'R_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'L_Knee'
+      has translation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_attack2.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'R_Elbow'
+      has translation animation that will be discarded.\n\t'R_Hand' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'R_Knee' has translation animation that will be
+      discarded.\n\t'R_Ankle' has translation animation that will be discarded.\n\t'R_Foot'
+      has translation animation that will be discarded.\n\t'R_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'L_Knee'
+      has translation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_attack_command.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Head' has translation animation that will be discarded.\n\t'L_Elbow'
+      has translation animation that will be discarded.\n\t'L_Hand' has translation
+      animation that will be discarded.\n\t'L_Index1' has translation animation that
+      will be discarded.\n\t'L_Index2' has translation animation that will be discarded.\n\t'R_Knee'
+      has translation animation that will be discarded.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' has translation animation that
+      will be discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'L_Knee' has translation animation that
+      will be discarded.\n\t'L_Ankle' has translation animation that will be discarded.\n\t'L_Foot'
+      has translation animation that will be discarded.\n\t'L_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_attack_command.anm_skinned_mesh.001' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine1' has translation animation
+      that will be discarded.\n\t'Spine2' has translation animation that will be
+      discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'Head'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'L_Hand' has translation animation that
+      will be discarded.\n\t'L_Index1' has translation animation that will be discarded.\n\t'L_Index2'
+      has translation animation that will be discarded.\n\t'R_Knee' has translation
+      animation that will be discarded.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' has translation animation that will be discarded.\n\t'R_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_Knee'
+      has translation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_attack_command_turnleft.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_attack_command_turnleft.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_attack_command_turnright.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Elbow' has translation animation that will be discarded.\n\t'R_Hand'
+      has translation animation that will be discarded.\n\t'L_Shoulder' has translation
+      animation that will be discarded.\n\t'L_Elbow' has translation animation that
+      will be discarded.\n\t'L_Hand' has translation animation that will be discarded.\n\t'R_Ankle'
+      has translation animation that will be discarded.\n\t'R_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'L_Knee'
+      has translation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_attack_command_turnright.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Elbow' has translation animation that will be discarded.\n\t'R_Hand'
+      has translation animation that will be discarded.\n\t'L_Shoulder' has translation
+      animation that will be discarded.\n\t'L_Elbow' has translation animation that
+      will be discarded.\n\t'L_Hand' has translation animation that will be discarded.\n\t'R_Ankle'
+      has translation animation that will be discarded.\n\t'R_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'L_Knee'
+      has translation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_channel.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'R_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_channel.anm_skinned_mesh.001' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_channel_windup.anm_skinned_mesh' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_channel_windup.anm_skinned_mesh.001' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'R_Foot' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\t'L_Foot' is
+      inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_dance_loop.anm_skinned_mesh' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine2' has translation animation that
+      will be discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'Head'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'R_Ankle' has translation animation that will be
+      discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation animation
+      that will be discarded.\n\t'L_Ankle' has translation animation that will be
+      discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation animation
+      that will be discarded.\n\nClip 'skinned_mesh|azir_dance_loop.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine2'
+      has translation animation that will be discarded.\n\t'Spine3' has translation
+      animation that will be discarded.\n\t'Head' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_dance_windup.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine2'
+      has translation animation that will be discarded.\n\t'Spine3' has translation
+      animation that will be discarded.\n\t'Head' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'R_Knee' has translation
+      animation that will be discarded.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' has translation animation that will be discarded.\n\t'R_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_Knee'
+      has translation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_dance_windup.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine2'
+      has translation animation that will be discarded.\n\t'Spine3' has translation
+      animation that will be discarded.\n\t'Head' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'R_Knee' has translation
+      animation that will be discarded.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' has translation animation that will be discarded.\n\t'R_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_Knee'
+      has translation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_death.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Head' has translation animation that will be discarded.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'R_Hand' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'R_Hip' has translation animation
+      that will be discarded.\n\t'R_Ankle' has translation animation that will be
+      discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation animation
+      that will be discarded.\n\t'L_Hip' has translation animation that will be discarded.\n\t'L_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_death.anm_skinned_mesh.001' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine1' has translation animation that
+      will be discarded.\n\t'Spine2' has translation animation that will be discarded.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'Head' has translation
+      animation that will be discarded.\n\t'R_Clavicle' has translation animation
+      that will be discarded.\n\t'R_Hand' has translation animation that will be
+      discarded.\n\t'L_Clavicle' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'R_Hip'
+      has translation animation that will be discarded.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Hip' has translation
+      animation that will be discarded.\n\t'L_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_ga_death.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Head' has translation animation that will be discarded.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'R_Elbow' has translation
+      animation that will be discarded.\n\t'R_Hand' has translation animation that
+      will be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'R_Hip'
+      has translation animation that will be discarded.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Hip' has translation
+      animation that will be discarded.\n\t'L_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_ga_death.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Head' has translation animation that will be discarded.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'R_Elbow' has translation
+      animation that will be discarded.\n\t'R_Hand' has translation animation that
+      will be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'R_Hip'
+      has translation animation that will be discarded.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Hip' has translation
+      animation that will be discarded.\n\t'L_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_idle3.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Clavicle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_idle3.anm_skinned_mesh.001' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'R_Clavicle' has translation animation that
+      will be discarded.\n\t'L_Clavicle' has translation animation that will be discarded.\n\t'R_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_idle4.anm_skinned_mesh' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Head' has translation animation that will
+      be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'R_Elbow'
+      has translation animation that will be discarded.\n\t'R_Hand' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'R_Ankle' has translation animation
+      that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'L_Ankle' has translation animation
+      that will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_idle4.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Head'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'R_Elbow' has translation animation that
+      will be discarded.\n\t'R_Hand' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'R_Ankle'
+      has translation animation that will be discarded.\n\t'R_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'L_Ankle'
+      has translation animation that will be discarded.\n\t'L_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_idle_in1.anm_skinned_mesh' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine1' has translation animation that
+      will be discarded.\n\t'Spine2' has translation animation that will be discarded.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'R_Elbow' has translation animation that
+      will be discarded.\n\t'R_Hand' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_idle_in1.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'R_Elbow'
+      has translation animation that will be discarded.\n\t'R_Hand' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'R_Ankle' has translation animation that will be
+      discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation animation
+      that will be discarded.\n\t'L_Ankle' has translation animation that will be
+      discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation animation
+      that will be discarded.\n\nClip 'skinned_mesh|azir_idle_in3.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'R_Ankle'
+      has translation animation that will be discarded.\n\t'R_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'L_Ankle'
+      has translation animation that will be discarded.\n\t'L_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_idle_in3.anm_skinned_mesh.001' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'L_Ankle' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_joke.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Neck' has translation animation that will be discarded.\n\t'Head'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'R_Ankle' has translation animation
+      that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'L_Ankle' has translation animation
+      that will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_joke.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Neck' has translation animation that will be discarded.\n\t'Head'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'R_Ankle' has translation animation
+      that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'L_Ankle' has translation animation
+      that will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_knockedup_leadin.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Clavicle' has translation
+      animation that will be discarded.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'L_Ankle' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_knockedup_leadin.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Clavicle' has translation
+      animation that will be discarded.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'L_Ankle' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_knockedup_loop.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'R_Ankle'
+      has translation animation that will be discarded.\n\t'R_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'L_Ankle'
+      has translation animation that will be discarded.\n\t'L_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_knockedup_loop.anm_skinned_mesh.001' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_laugh.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Clavicle' has translation
+      animation that will be discarded.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_laugh.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Clavicle' has translation
+      animation that will be discarded.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_recall_leadin.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_recall_leadin.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_recall_leadout.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'R_Ankle'
+      has translation animation that will be discarded.\n\t'R_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'L_Ankle'
+      has translation animation that will be discarded.\n\t'L_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_recall_leadout.anm_skinned_mesh.001' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_recall_loop.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'R_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_recall_loop.anm_skinned_mesh.001' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_recall_winddown.anm_skinned_mesh' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'R_Knee' has translation
+      animation that will be discarded.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' has translation animation that will be discarded.\n\t'R_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_Knee'
+      has translation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_recall_winddown.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'R_Knee'
+      has translation animation that will be discarded.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' has translation animation that
+      will be discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'L_Knee' has translation animation that
+      will be discarded.\n\t'L_Ankle' has translation animation that will be discarded.\n\t'L_Foot'
+      has translation animation that will be discarded.\n\t'L_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_respawn.anm_skinned_mesh' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine1' has translation animation that
+      will be discarded.\n\t'Spine2' has translation animation that will be discarded.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'R_Elbow' has translation animation that
+      will be discarded.\n\t'R_Hand' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_respawn.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'R_Elbow'
+      has translation animation that will be discarded.\n\t'R_Hand' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'R_Ankle' has translation animation that will be
+      discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation animation
+      that will be discarded.\n\t'L_Ankle' has translation animation that will be
+      discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation animation
+      that will be discarded.\n\nClip 'skinned_mesh|azir_run.anm_skinned_mesh' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Spine1' has translation
+      animation that will be discarded.\n\t'Spine2' has translation animation that
+      will be discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'R_Pinky1' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'R_Knee' has translation animation
+      that will be discarded.\n\t'R_Ankle' has translation animation that will be
+      discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation animation
+      that will be discarded.\n\t'L_Knee' has translation animation that will be
+      discarded.\n\t'L_Ankle' has translation animation that will be discarded.\n\t'L_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_run.anm_skinned_mesh.001' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine1' has translation animation that
+      will be discarded.\n\t'Spine2' has translation animation that will be discarded.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'R_Pinky1' has translation animation that
+      will be discarded.\n\t'L_Clavicle' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'R_Knee'
+      has translation animation that will be discarded.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Knee' has translation
+      animation that will be discarded.\n\t'L_Ankle' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_run_haste.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Head'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'R_Knee' has translation animation that will be
+      discarded.\n\t'R_Ankle' has translation animation that will be discarded.\n\t'R_Foot'
+      has translation animation that will be discarded.\n\t'R_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'L_Knee'
+      has translation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_run_haste.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Head'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'R_Knee' has translation animation that will be
+      discarded.\n\t'R_Ankle' has translation animation that will be discarded.\n\t'R_Foot'
+      has translation animation that will be discarded.\n\t'R_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'L_Knee'
+      has translation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_run_in.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'R_Pinky1'
+      has translation animation that will be discarded.\n\t'L_Clavicle' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'R_Knee' has translation
+      animation that will be discarded.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' has translation animation that will be discarded.\n\t'R_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_Knee'
+      has translation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_run_in.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'R_Pinky1'
+      has translation animation that will be discarded.\n\t'L_Clavicle' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'R_Knee' has translation
+      animation that will be discarded.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' has translation animation that will be discarded.\n\t'R_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_Knee'
+      has translation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_run_slow.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'R_Pinky1' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'R_Ankle' has translation animation
+      that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'L_Ankle' has translation animation
+      that will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_run_slow.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'R_Pinky1' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'R_Ankle' has translation animation
+      that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'L_Ankle' has translation animation
+      that will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_run_slow_in.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'R_Elbow' has translation
+      animation that will be discarded.\n\t'R_Pinky1' has translation animation that
+      will be discarded.\n\t'L_Clavicle' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'R_Ankle'
+      has translation animation that will be discarded.\n\t'R_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'L_Ankle'
+      has translation animation that will be discarded.\n\t'L_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_run_slow_in.anm_skinned_mesh.001' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'R_Clavicle' has translation animation that
+      will be discarded.\n\t'R_Elbow' has translation animation that will be discarded.\n\t'R_Pinky1'
+      has translation animation that will be discarded.\n\t'L_Clavicle' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'skinned_mesh|azir_run_variant.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'R_Hand'
+      has translation animation that will be discarded.\n\t'R_Pinky1' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'R_Knee' has translation animation
+      that will be discarded.\n\t'R_Ankle' has translation animation that will be
+      discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation animation
+      that will be discarded.\n\t'L_Knee' has translation animation that will be
+      discarded.\n\t'L_Ankle' has translation animation that will be discarded.\n\t'L_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_run_variant.anm_skinned_mesh.001' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine1' has translation animation that
+      will be discarded.\n\t'Spine2' has translation animation that will be discarded.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'R_Hand' has translation animation that
+      will be discarded.\n\t'R_Pinky1' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'R_Knee'
+      has translation animation that will be discarded.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Knee' has translation
+      animation that will be discarded.\n\t'L_Ankle' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_spell2.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Head' has translation animation that will be discarded.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'R_Elbow' has translation
+      animation that will be discarded.\n\t'R_Hand' has translation animation that
+      will be discarded.\n\t'L_Clavicle' has translation animation that will be discarded.\n\t'L_Elbow'
+      has translation animation that will be discarded.\n\t'L_Hand' has translation
+      animation that will be discarded.\n\t'L_Index1' has translation animation that
+      will be discarded.\n\t'L_Index2' has translation animation that will be discarded.\n\t'L_Middle1'
+      has translation animation that will be discarded.\n\t'L_Middle2' has translation
+      animation that will be discarded.\n\t'L_Ring1' has translation animation that
+      will be discarded.\n\t'L_Ring2' has translation animation that will be discarded.\n\t'L_Pinky1'
+      has translation animation that will be discarded.\n\t'L_Pinky2' has translation
+      animation that will be discarded.\n\t'R_Knee' has translation animation that
+      will be discarded.\n\t'R_Ankle' has translation animation that will be discarded.\n\t'R_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_Knee'
+      has translation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_spell2.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Head' has translation animation that will be discarded.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'R_Elbow' has translation
+      animation that will be discarded.\n\t'R_Hand' has translation animation that
+      will be discarded.\n\t'L_Clavicle' has translation animation that will be discarded.\n\t'L_Elbow'
+      has translation animation that will be discarded.\n\t'L_Hand' has translation
+      animation that will be discarded.\n\t'L_Index1' has translation animation that
+      will be discarded.\n\t'L_Index2' has translation animation that will be discarded.\n\t'L_Middle1'
+      has translation animation that will be discarded.\n\t'L_Middle2' has translation
+      animation that will be discarded.\n\t'L_Ring1' has translation animation that
+      will be discarded.\n\t'L_Ring2' has translation animation that will be discarded.\n\t'L_Pinky1'
+      has translation animation that will be discarded.\n\t'L_Pinky2' has translation
+      animation that will be discarded.\n\t'R_Knee' has translation animation that
+      will be discarded.\n\t'R_Ankle' has translation animation that will be discarded.\n\t'R_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_Knee'
+      has translation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_spell3_dash.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'R_Elbow'
+      has translation animation that will be discarded.\n\t'R_Knee' has translation
+      animation that will be discarded.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' has translation animation that will be discarded.\n\t'R_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_Knee'
+      has translation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_spell3_dash.anm_skinned_mesh.001'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'R_Elbow'
+      has translation animation that will be discarded.\n\t'R_Knee' has translation
+      animation that will be discarded.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' has translation animation that will be discarded.\n\t'R_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_Knee'
+      has translation animation that will be discarded.\n\t'L_Ankle' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\t'L_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'skinned_mesh|azir_spell3_dash_exit.anm_skinned_mesh'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'R_Ankle'
+      has translation animation that will be discarded.\n\t'R_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'L_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_spell3_dash_exit.anm_skinned_mesh.001' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'R_Ankle' has translation
+      animation that will be discarded.\n\t'R_Foot' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_spell4.anm_skinned_mesh' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine1' has translation animation that
+      will be discarded.\n\t'Spine2' has translation animation that will be discarded.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'R_Elbow' has translation animation that
+      will be discarded.\n\t'R_Hand' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'L_Knee' has translation animation that
+      will be discarded.\n\t'L_Ankle' has translation animation that will be discarded.\n\t'L_Foot'
+      has translation animation that will be discarded.\n\t'L_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_spell4.anm_skinned_mesh.001' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine1' has translation animation that
+      will be discarded.\n\t'Spine2' has translation animation that will be discarded.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'R_Elbow' has translation animation that
+      will be discarded.\n\t'R_Hand' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'L_Knee' has translation animation that
+      will be discarded.\n\t'L_Ankle' has translation animation that will be discarded.\n\t'L_Foot'
+      has translation animation that will be discarded.\n\t'L_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_spellp.anm_skinned_mesh' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'R_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'L_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_spellp.anm_skinned_mesh.001' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'R_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'L_Foot'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_taunt.anm_skinned_mesh' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine1' has translation animation that
+      will be discarded.\n\t'Spine2' has translation animation that will be discarded.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'R_Elbow' has translation animation that
+      will be discarded.\n\t'R_Hand' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'L_Hand' has translation animation that
+      will be discarded.\n\t'L_Index1' has translation animation that will be discarded.\n\t'L_Index2'
+      has translation animation that will be discarded.\n\t'L_Middle1' has translation
+      animation that will be discarded.\n\t'L_Middle2' has translation animation
+      that will be discarded.\n\t'L_Ring1' has translation animation that will be
+      discarded.\n\t'L_Ring2' has translation animation that will be discarded.\n\t'L_Pinky1'
+      has translation animation that will be discarded.\n\t'L_Pinky2' has translation
+      animation that will be discarded.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'L_Knee' has translation animation that
+      will be discarded.\n\t'L_Ankle' has translation animation that will be discarded.\n\t'L_Foot'
+      has translation animation that will be discarded.\n\t'L_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'skinned_mesh|azir_taunt.anm_skinned_mesh.001' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine1' has translation animation that
+      will be discarded.\n\t'Spine2' has translation animation that will be discarded.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'R_Elbow' has translation animation that
+      will be discarded.\n\t'R_Hand' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'L_Hand' has translation animation that
+      will be discarded.\n\t'L_Index1' has translation animation that will be discarded.\n\t'L_Index2'
+      has translation animation that will be discarded.\n\t'L_Middle1' has translation
+      animation that will be discarded.\n\t'L_Middle2' has translation animation
+      that will be discarded.\n\t'L_Ring1' has translation animation that will be
+      discarded.\n\t'L_Ring2' has translation animation that will be discarded.\n\t'L_Pinky1'
+      has translation animation that will be discarded.\n\t'L_Pinky2' has translation
+      animation that will be discarded.\n\t'R_Ankle' has translation animation that
+      will be discarded.\n\t'R_Foot' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'L_Knee' has translation animation that
+      will be discarded.\n\t'L_Ankle' has translation animation that will be discarded.\n\t'L_Foot'
+      has translation animation that will be discarded.\n\t'L_Foot' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: skinned_mesh|azir_attack1.anm_skinned_mesh
+      takeName: skinned_mesh|azir_attack1.anm_skinned_mesh
+      internalID: -7599652999831207239
+      firstFrame: 0
+      lastFrame: 54
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_attack1.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_attack1.anm_skinned_mesh.001
+      internalID: -711830103822407062
+      firstFrame: 0
+      lastFrame: 54
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_attack2.anm_skinned_mesh
+      takeName: skinned_mesh|azir_attack2.anm_skinned_mesh
+      internalID: 2296464231021967849
+      firstFrame: 0
+      lastFrame: 54
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_attack2.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_attack2.anm_skinned_mesh.001
+      internalID: -7802898346634724609
+      firstFrame: 0
+      lastFrame: 54
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_attack_command.anm_skinned_mesh
+      takeName: skinned_mesh|azir_attack_command.anm_skinned_mesh
+      internalID: -604122345183150537
+      firstFrame: 0
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_attack_command.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_attack_command.anm_skinned_mesh.001
+      internalID: 7381785298005452751
+      firstFrame: 0
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_attack_command_turnleft.anm_skinned_mesh
+      takeName: skinned_mesh|azir_attack_command_turnleft.anm_skinned_mesh
+      internalID: 598758432806798261
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_attack_command_turnleft.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_attack_command_turnleft.anm_skinned_mesh.001
+      internalID: -5585008821060667948
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_attack_command_turnright.anm_skinned_mesh
+      takeName: skinned_mesh|azir_attack_command_turnright.anm_skinned_mesh
+      internalID: 237188647154490663
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_attack_command_turnright.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_attack_command_turnright.anm_skinned_mesh.001
+      internalID: 2296792723154265306
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_buffbones.anm_skinned_mesh
+      takeName: skinned_mesh|azir_buffbones.anm_skinned_mesh
+      internalID: 8383891166142800554
+      firstFrame: 0
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_buffbones.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_buffbones.anm_skinned_mesh.001
+      internalID: -7236221884689096636
+      firstFrame: 0
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_channel.anm_skinned_mesh
+      takeName: skinned_mesh|azir_channel.anm_skinned_mesh
+      internalID: 3335567509540136623
+      firstFrame: 0
+      lastFrame: 94
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_channel.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_channel.anm_skinned_mesh.001
+      internalID: 8686190861105683429
+      firstFrame: 0
+      lastFrame: 94
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_channel_windup.anm_skinned_mesh
+      takeName: skinned_mesh|azir_channel_windup.anm_skinned_mesh
+      internalID: -1400524874614541670
+      firstFrame: 0
+      lastFrame: 94
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_channel_windup.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_channel_windup.anm_skinned_mesh.001
+      internalID: -5279678290881189817
+      firstFrame: 0
+      lastFrame: 94
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_dance_loop.anm_skinned_mesh
+      takeName: skinned_mesh|azir_dance_loop.anm_skinned_mesh
+      internalID: 8242628893920339764
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_dance_loop.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_dance_loop.anm_skinned_mesh.001
+      internalID: -1797633696599630456
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_dance_windup.anm_skinned_mesh
+      takeName: skinned_mesh|azir_dance_windup.anm_skinned_mesh
+      internalID: -2099552202979920306
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_dance_windup.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_dance_windup.anm_skinned_mesh.001
+      internalID: -2897425863620927959
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_death.anm_skinned_mesh
+      takeName: skinned_mesh|azir_death.anm_skinned_mesh
+      internalID: -1652088358902060271
+      firstFrame: 0
+      lastFrame: 147
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_death.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_death.anm_skinned_mesh.001
+      internalID: -2731207885380739697
+      firstFrame: 0
+      lastFrame: 147
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_ga_death.anm_skinned_mesh
+      takeName: skinned_mesh|azir_ga_death.anm_skinned_mesh
+      internalID: -2740528168471001760
+      firstFrame: 0
+      lastFrame: 146
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_ga_death.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_ga_death.anm_skinned_mesh.001
+      internalID: -5179959301550213192
+      firstFrame: 0
+      lastFrame: 146
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_idle1.anm_skinned_mesh
+      takeName: skinned_mesh|azir_idle1.anm_skinned_mesh
+      internalID: -1228212125342850798
+      firstFrame: 0
+      lastFrame: 94
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_idle1.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_idle1.anm_skinned_mesh.001
+      internalID: -2208690894887567302
+      firstFrame: 0
+      lastFrame: 94
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_idle2.anm_skinned_mesh
+      takeName: skinned_mesh|azir_idle2.anm_skinned_mesh
+      internalID: -3033113950480608537
+      firstFrame: 0
+      lastFrame: 94
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_idle2.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_idle2.anm_skinned_mesh.001
+      internalID: 3941371138391252518
+      firstFrame: 0
+      lastFrame: 94
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_idle3.anm_skinned_mesh
+      takeName: skinned_mesh|azir_idle3.anm_skinned_mesh
+      internalID: 6651041340573248627
+      firstFrame: 0
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_idle3.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_idle3.anm_skinned_mesh.001
+      internalID: -3121830091058994342
+      firstFrame: 0
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_idle4.anm_skinned_mesh
+      takeName: skinned_mesh|azir_idle4.anm_skinned_mesh
+      internalID: -4515176885019229171
+      firstFrame: 0
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_idle4.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_idle4.anm_skinned_mesh.001
+      internalID: -8670598235752912066
+      firstFrame: 0
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_idle_in1.anm_skinned_mesh
+      takeName: skinned_mesh|azir_idle_in1.anm_skinned_mesh
+      internalID: 7350022964951310342
+      firstFrame: 0
+      lastFrame: 142
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_idle_in1.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_idle_in1.anm_skinned_mesh.001
+      internalID: -5998603870931717910
+      firstFrame: 0
+      lastFrame: 142
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_idle_in3.anm_skinned_mesh
+      takeName: skinned_mesh|azir_idle_in3.anm_skinned_mesh
+      internalID: 2141075945988029026
+      firstFrame: 0
+      lastFrame: 134
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_idle_in3.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_idle_in3.anm_skinned_mesh.001
+      internalID: -2182099753967963880
+      firstFrame: 0
+      lastFrame: 134
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_joke.anm_skinned_mesh
+      takeName: skinned_mesh|azir_joke.anm_skinned_mesh
+      internalID: 251157407179970168
+      firstFrame: 0
+      lastFrame: 135
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_joke.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_joke.anm_skinned_mesh.001
+      internalID: 6671965624132901358
+      firstFrame: 0
+      lastFrame: 135
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_knockedup_leadin.anm_skinned_mesh
+      takeName: skinned_mesh|azir_knockedup_leadin.anm_skinned_mesh
+      internalID: 8479048775456750655
+      firstFrame: 0
+      lastFrame: 8
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_knockedup_leadin.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_knockedup_leadin.anm_skinned_mesh.001
+      internalID: 8147078749719252903
+      firstFrame: 0
+      lastFrame: 8
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_knockedup_loop.anm_skinned_mesh
+      takeName: skinned_mesh|azir_knockedup_loop.anm_skinned_mesh
+      internalID: -498518709628262799
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_knockedup_loop.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_knockedup_loop.anm_skinned_mesh.001
+      internalID: 6671557603881052740
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_laugh.anm_skinned_mesh
+      takeName: skinned_mesh|azir_laugh.anm_skinned_mesh
+      internalID: -5422791283420893908
+      firstFrame: 0
+      lastFrame: 94
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_laugh.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_laugh.anm_skinned_mesh.001
+      internalID: -5082096245202677769
+      firstFrame: 0
+      lastFrame: 94
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_recall_leadin.anm_skinned_mesh
+      takeName: skinned_mesh|azir_recall_leadin.anm_skinned_mesh
+      internalID: -5749707757626411901
+      firstFrame: 0
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_recall_leadin.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_recall_leadin.anm_skinned_mesh.001
+      internalID: 4259104760565727921
+      firstFrame: 0
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_recall_leadout.anm_skinned_mesh
+      takeName: skinned_mesh|azir_recall_leadout.anm_skinned_mesh
+      internalID: -6973481137982734687
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_recall_leadout.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_recall_leadout.anm_skinned_mesh.001
+      internalID: 8993706577167715087
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_recall_loop.anm_skinned_mesh
+      takeName: skinned_mesh|azir_recall_loop.anm_skinned_mesh
+      internalID: 247684550282034073
+      firstFrame: 0
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_recall_loop.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_recall_loop.anm_skinned_mesh.001
+      internalID: -6146597383871288461
+      firstFrame: 0
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_recall_winddown.anm_skinned_mesh
+      takeName: skinned_mesh|azir_recall_winddown.anm_skinned_mesh
+      internalID: -4925136126419252354
+      firstFrame: 0
+      lastFrame: 179
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_recall_winddown.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_recall_winddown.anm_skinned_mesh.001
+      internalID: 2856589461707316297
+      firstFrame: 0
+      lastFrame: 179
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_respawn.anm_skinned_mesh
+      takeName: skinned_mesh|azir_respawn.anm_skinned_mesh
+      internalID: 7808436694029540365
+      firstFrame: 0
+      lastFrame: 251
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_respawn.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_respawn.anm_skinned_mesh.001
+      internalID: -2468909223545395917
+      firstFrame: 0
+      lastFrame: 251
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_run.anm_skinned_mesh
+      takeName: skinned_mesh|azir_run.anm_skinned_mesh
+      internalID: 6849658688474150137
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_run.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_run.anm_skinned_mesh.001
+      internalID: -5584083103024959090
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_run_haste.anm_skinned_mesh
+      takeName: skinned_mesh|azir_run_haste.anm_skinned_mesh
+      internalID: 5864773786637143179
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_run_haste.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_run_haste.anm_skinned_mesh.001
+      internalID: -2846018637946938421
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_run_in.anm_skinned_mesh
+      takeName: skinned_mesh|azir_run_in.anm_skinned_mesh
+      internalID: -6626719951172624064
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_run_in.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_run_in.anm_skinned_mesh.001
+      internalID: -2341584043362918207
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_run_slow.anm_skinned_mesh
+      takeName: skinned_mesh|azir_run_slow.anm_skinned_mesh
+      internalID: 7797564500733269623
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_run_slow.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_run_slow.anm_skinned_mesh.001
+      internalID: -4360899420956005812
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_run_slow_in.anm_skinned_mesh
+      takeName: skinned_mesh|azir_run_slow_in.anm_skinned_mesh
+      internalID: -6014013006048612263
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_run_slow_in.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_run_slow_in.anm_skinned_mesh.001
+      internalID: -544542266281484009
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_run_variant.anm_skinned_mesh
+      takeName: skinned_mesh|azir_run_variant.anm_skinned_mesh
+      internalID: 3801046932178371153
+      firstFrame: 0
+      lastFrame: 102
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_run_variant.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_run_variant.anm_skinned_mesh.001
+      internalID: -9197578593076943660
+      firstFrame: 0
+      lastFrame: 102
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_spell2.anm_skinned_mesh
+      takeName: skinned_mesh|azir_spell2.anm_skinned_mesh
+      internalID: 7668836724897928876
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_spell2.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_spell2.anm_skinned_mesh.001
+      internalID: -186411423869071167
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_spell3_dash.anm_skinned_mesh
+      takeName: skinned_mesh|azir_spell3_dash.anm_skinned_mesh
+      internalID: 7044414994369453810
+      firstFrame: 0
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_spell3_dash.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_spell3_dash.anm_skinned_mesh.001
+      internalID: -7993845230727418829
+      firstFrame: 0
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_spell3_dash_exit.anm_skinned_mesh
+      takeName: skinned_mesh|azir_spell3_dash_exit.anm_skinned_mesh
+      internalID: -2794075360215107759
+      firstFrame: 0
+      lastFrame: 135
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_spell3_dash_exit.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_spell3_dash_exit.anm_skinned_mesh.001
+      internalID: 8169320444255392700
+      firstFrame: 0
+      lastFrame: 135
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_spell3_dash_loop.anm_skinned_mesh
+      takeName: skinned_mesh|azir_spell3_dash_loop.anm_skinned_mesh
+      internalID: 3180410020650558391
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_spell3_dash_loop.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_spell3_dash_loop.anm_skinned_mesh.001
+      internalID: -4795761756029549350
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_spell4.anm_skinned_mesh
+      takeName: skinned_mesh|azir_spell4.anm_skinned_mesh
+      internalID: 232971672594322821
+      firstFrame: 0
+      lastFrame: 22
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_spell4.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_spell4.anm_skinned_mesh.001
+      internalID: -3779087139537513751
+      firstFrame: 0
+      lastFrame: 22
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_spellp.anm_skinned_mesh
+      takeName: skinned_mesh|azir_spellp.anm_skinned_mesh
+      internalID: -1406015569881208363
+      firstFrame: 0
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_spellp.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_spellp.anm_skinned_mesh.001
+      internalID: 7247981900909576573
+      firstFrame: 0
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_taunt.anm_skinned_mesh
+      takeName: skinned_mesh|azir_taunt.anm_skinned_mesh
+      internalID: 3988468634093673819
+      firstFrame: 0
+      lastFrame: 191
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_taunt.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_taunt.anm_skinned_mesh.001
+      internalID: 4557324040743923090
+      firstFrame: 0
+      lastFrame: 191
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_turn0.anm_skinned_mesh
+      takeName: skinned_mesh|azir_turn0.anm_skinned_mesh
+      internalID: -1325957817199346153
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_turn0.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_turn0.anm_skinned_mesh.001
+      internalID: 3485686524537437784
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_turn180.anm_skinned_mesh
+      takeName: skinned_mesh|azir_turn180.anm_skinned_mesh
+      internalID: -495304083902262142
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_turn180.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_turn180.anm_skinned_mesh.001
+      internalID: 5902040795740904789
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_turn90.anm_skinned_mesh
+      takeName: skinned_mesh|azir_turn90.anm_skinned_mesh
+      internalID: -5813837147678517343
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_turn90.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_turn90.anm_skinned_mesh.001
+      internalID: 7772145976447728614
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_turnneg180.anm_skinned_mesh
+      takeName: skinned_mesh|azir_turnneg180.anm_skinned_mesh
+      internalID: -7952911425176891333
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_turnneg180.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_turnneg180.anm_skinned_mesh.001
+      internalID: -7423611227424905886
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_turnneg90.anm_skinned_mesh
+      takeName: skinned_mesh|azir_turnneg90.anm_skinned_mesh
+      internalID: -2804600301836467223
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: skinned_mesh|azir_turnneg90.anm_skinned_mesh.001
+      takeName: skinned_mesh|azir_turnneg90.anm_skinned_mesh.001
+      internalID: 5916564752334761494
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Root
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Hip
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Hip
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Knee
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Knee
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Ankle
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Ankle
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Shoulder
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Shoulder
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Elbow
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Elbow
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Toe
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Toe
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Thumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Thumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Index1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Index2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Middle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Middle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Ring1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Ring2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Pinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Pinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Thumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Thumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Index1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Index2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Middle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Middle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Ring1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Ring2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Pinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Pinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine3
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: quit(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Icosphere
+      parentName: quit(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Mesh_0.001
+      parentName: quit(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: skinned_mesh
+      parentName: quit(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Root
+      parentName: skinned_mesh
+      position: {x: -0.000010976791, y: 0.047248688, z: 1.4647715}
+      rotation: {x: 0.000004367317, y: -0.70710665, z: -0.7071069, w: 0.000004367317}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: Spine1
+      parentName: Root
+      position: {x: -0.000005121231, y: 0.07825825, z: 0.020973805}
+      rotation: {x: -0, y: -0.000000034924604, z: 2.220446e-15, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: Spine2
+      parentName: Spine1
+      position: {x: -0.000005159378, y: 0.15338437, z: -0.024748217}
+      rotation: {x: -4.0657597e-16, y: 0.000000002910383, z: -0.000000011641534, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Spine3
+      parentName: Spine2
+      position: {x: -0.0000051701068, y: 0.18097194, z: -0.046260636}
+      rotation: {x: -4.404573e-16, y: 0.0000000058207714, z: -0.000000011641534, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Neck
+      parentName: Spine3
+      position: {x: -0.000005145073, y: 0.24694812, z: -0.097826615}
+      rotation: {x: 0.00000008940697, y: -0.000000008731149, z: 0.000000011641533, w: 1}
+      scale: {x: 1.0000004, y: 1, z: 1.0000002}
+    - name: Head
+      parentName: Neck
+      position: {x: -0.000005197525, y: 0.111555785, z: 0.037477292}
+      rotation: {x: -0.00000008940697, y: -0.00000002328306, z: 0.000000023283068, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: C_Buffbone_Glb_Head_Loc
+      parentName: Head
+      position: {x: -0.0000050354, y: -0.00003256321, z: -0.000024852752}
+      rotation: {x: -0, y: 0.000000011641522, z: -0.00000001164153, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999998}
+    - name: C_Buffbone_Glb_Head_Loc_end
+      parentName: C_Buffbone_Glb_Head_Loc
+      position: {x: -0, y: 0.11769363, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Clavicle
+      parentName: Spine3
+      position: {x: -0.045035604, y: 0.14829345, z: -0.045618623}
+      rotation: {x: 1, y: 0.000000023283066, z: 0.00000004365576, w: -0.00000008940697}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
+    - name: R_Shoulder
+      parentName: R_Clavicle
+      position: {x: -0.24615605, y: -0.017988535, z: 0.072475165}
+      rotation: {x: 0.037388388, y: 0.0010285266, z: -0.013336304, w: 0.9992113}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000006}
+    - name: R_Elbow
+      parentName: R_Shoulder
+      position: {x: -0.44373688, y: -0.000035648347, z: -0.000024757384}
+      rotation: {x: -0.0027974288, y: -0.033313204, z: 0.011298718, w: 0.9993772}
+      scale: {x: 1.0000004, y: 0.99999976, z: 1.0000001}
+    - name: R_Hand
+      parentName: R_Elbow
+      position: {x: -0.39233643, y: -0.000032653807, z: -0.000023927689}
+      rotation: {x: 0.01644271, y: -0.000025287267, z: 0.0000063868056, w: 0.9998649}
+      scale: {x: 1, y: 1.0000008, z: 0.99999994}
+    - name: R_Thumb1
+      parentName: R_Hand
+      position: {x: -0.04028286, y: 0.031338997, z: -0.05512245}
+      rotation: {x: -0.6168065, y: -0.18431441, z: 0.2292422, w: -0.7300864}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: R_Thumb2
+      parentName: R_Thumb1
+      position: {x: -0.09114459, y: -0.00003259659, z: -0.000024833678}
+      rotation: {x: -0.020783268, y: 0.02066522, z: 0.7053219, w: 0.70828104}
+      scale: {x: 1.0000004, y: 1, z: 1}
+    - name: R_Thumb2_end
+      parentName: R_Thumb2
+      position: {x: -0, y: 0.091160074, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Index1
+      parentName: R_Hand
+      position: {x: -0.149792, y: 0.005059357, z: -0.049664307}
+      rotation: {x: 0.05686097, y: -0.055595778, z: -0.07661524, w: 0.9938843}
+      scale: {x: 1.0000004, y: 1.0000002, z: 0.99999994}
+    - name: R_Index2
+      parentName: R_Index1
+      position: {x: -0.0759099, y: -0.00003288746, z: -0.000025138854}
+      rotation: {x: -0.00023204461, y: -0.0000005625188, z: 0.70417637, w: 0.71002513}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+    - name: R_Index2_end
+      parentName: R_Index2
+      position: {x: -0, y: 0.07590476, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Middle1
+      parentName: R_Hand
+      position: {x: -0.15228613, y: 0.00017467498, z: -0.01376749}
+      rotation: {x: -0.053748485, y: -0.0147997495, z: -0.07571811, w: 0.99556965}
+      scale: {x: 1.0000001, y: 1.0000004, z: 0.9999999}
+    - name: R_Middle2
+      parentName: R_Middle1
+      position: {x: -0.10530092, y: -0.000032920838, z: -0.000024986266}
+      rotation: {x: -0.0001677833, y: 0.00000017974521, z: 0.7041323, w: 0.7100687}
+      scale: {x: 1.0000002, y: 1, z: 1.0000001}
+    - name: R_Middle2_end
+      parentName: R_Middle2
+      position: {x: -0, y: 0.10530115, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Ring1
+      parentName: R_Hand
+      position: {x: -0.1518819, y: 0.0068479534, z: 0.02168005}
+      rotation: {x: -0.1270669, y: 0.010601409, z: -0.060649533, w: 0.9899814}
+      scale: {x: 1.0000004, y: 1.0000006, z: 0.9999999}
+    - name: R_Ring2
+      parentName: R_Ring1
+      position: {x: -0.0949534, y: -0.000032539367, z: -0.000024604797}
+      rotation: {x: -0.00018363443, y: 0.0000010430812, z: 0.7041436, w: 0.7100577}
+      scale: {x: 1.0000002, y: 0.9999997, z: 0.9999999}
+    - name: R_Ring2_end
+      parentName: R_Ring2
+      position: {x: -0, y: 0.094937034, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Pinky1
+      parentName: R_Hand
+      position: {x: -0.14153431, y: 0.01455307, z: 0.058090817}
+      rotation: {x: -0.17829537, y: 0.004094465, z: -0.065599404, w: 0.98177934}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.9999998}
+    - name: R_Pinky2
+      parentName: R_Pinky1
+      position: {x: -0.08753834, y: -0.000032653807, z: -0.00002462387}
+      rotation: {x: -0.00019837913, y: 0.00000025075857, z: 0.7041533, w: 0.71004796}
+      scale: {x: 1.0000005, y: 0.9999998, z: 1.0000001}
+    - name: R_Pinky2_end
+      parentName: R_Pinky2
+      position: {x: -0, y: 0.087522775, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Weapon
+      parentName: R_Hand
+      position: {x: -0.12771384, y: 0.042828865, z: -0.091983564}
+      rotation: {x: -0.49524084, y: 0.6292567, z: -0.52079636, w: 0.29587775}
+      scale: {x: 1.0000007, y: 1.0000008, z: 1.0000008}
+    - name: Buffbone_Glb_Weapon_1
+      parentName: Weapon
+      position: {x: -0.0000051879883, y: 1.5516144, z: -0.000024909972}
+      rotation: {x: -0.000000014901158, y: 0.00000007450579, z: -0, w: 1}
+      scale: {x: 0.9999999, y: 1.0000002, z: 1.0000006}
+    - name: Buffbone_Glb_Weapon_1_end
+      parentName: Buffbone_Glb_Weapon_1
+      position: {x: -0, y: 1.1836066, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Weapon_Head
+      parentName: Weapon
+      position: {x: -0.0000050354, y: 1.2300575, z: 0.2821418}
+      rotation: {x: -0.000000029802315, y: 0.00000019371505, z: -0.00000005960463, w: 1}
+      scale: {x: 1, y: 1.0000004, z: 1.0000007}
+    - name: Cstm_Buffbone_L_Weapon_Tip
+      parentName: L_Weapon_Head
+      position: {x: -0.000005111694, y: 0.4346265, z: -0.1406586}
+      rotation: {x: -0.00000019371507, y: -0.00000002980233, z: 0.00000005960459, w: 1}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000004}
+    - name: Cstm_Buffbone_L_Weapon_Tip_end
+      parentName: Cstm_Buffbone_L_Weapon_Tip
+      position: {x: -0, y: 0.4568194, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Weapon_Head
+      parentName: Weapon
+      position: {x: -0.0000051879883, y: 1.2299883, z: -0.2821278}
+      rotation: {x: -0.000000089406946, y: -1, z: 0.00000005960463, w: 0.00000023841852}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000006}
+    - name: Cstm_Buffbone_R_Weapon_Tip
+      parentName: R_Weapon_Head
+      position: {x: -0.0000050354, y: 0.43462685, z: -0.13545723}
+      rotation: {x: -0.000000029757649, y: 0.00049984443, z: -0.9999999, w: -0.000000029683129}
+      scale: {x: 1.0000008, y: 1.0000002, z: 1}
+    - name: Cstm_Buffbone_R_Weapon_Tip_end
+      parentName: Cstm_Buffbone_R_Weapon_Tip
+      position: {x: -0, y: 0.45479175, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Weapon_End
+      parentName: Weapon
+      position: {x: -0.000005098954, y: -1.3873913, z: -0.00002480939}
+      rotation: {x: -0.000000044703473, y: 0.00000010430811, z: -0.000000029802315, w: 1}
+      scale: {x: 0.9999999, y: 1.0000005, z: 1.0000005}
+    - name: Weapon_End_end
+      parentName: Weapon_End
+      position: {x: -0, y: 1.1836067, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Buffbone_Glb_Hand_Loc
+      parentName: R_Hand
+      position: {x: -0.000005073547, y: -0.000032806394, z: -0.00002473831}
+      rotation: {x: -0.00017565674, y: 0.00034225197, z: 0.7055701, w: 0.7086401}
+      scale: {x: 0.9999998, y: 1, z: 0.99999976}
+    - name: R_Buffbone_Glb_Hand_Loc_end
+      parentName: R_Buffbone_Glb_Hand_Loc
+      position: {x: -0, y: 0.0055517456, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Feathers
+      parentName: R_Elbow
+      position: {x: -0.17918316, y: 0.0048518656, z: 0.07016389}
+      rotation: {x: -0.43573305, y: -0.53968936, z: 0.60800564, w: -0.3862658}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: R_Feather3_1
+      parentName: R_Feathers
+      position: {x: -0.077662535, y: 0.09786552, z: 0.00023214816}
+      rotation: {x: 0.7358089, y: -0.12008448, z: 0.11506018, w: -0.65644956}
+      scale: {x: 0.9999996, y: 1.0000008, z: 1.0000002}
+    - name: R_Feather3_2
+      parentName: R_Feather3_1
+      position: {x: -0.44397318, y: -0.00044668672, z: -0.000088005065}
+      rotation: {x: 0.00011962652, y: -0.0003620237, z: 0.0021813884, w: 0.9999976}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1}
+    - name: R_Feather3_3
+      parentName: R_Feather3_2
+      position: {x: -0.4999581, y: -0.0013400078, z: -0.00021680832}
+      rotation: {x: 0.00025141065, y: -0.00076725567, z: 0.0046130847, w: 0.99998903}
+      scale: {x: 1, y: 1, z: 0.9999998}
+    - name: R_Feather3_3_end
+      parentName: R_Feather3_3
+      position: {x: -0, y: 0.4999797, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Feather2_1
+      parentName: R_Feathers
+      position: {x: -0.082077876, y: -0.00003271103, z: -0.000025053023}
+      rotation: {x: 0.70570767, y: 0.005140692, z: -0.0019199848, w: -0.7084819}
+      scale: {x: 1.0000002, y: 1.000001, z: 1}
+    - name: R_Feather2_2
+      parentName: R_Feather2_1
+      position: {x: -0.46254513, y: -0.00003293991, z: -0.000024356841}
+      rotation: {x: 0.0001493096, y: -0.0003852138, z: 0.0022035218, w: 0.9999975}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1}
+    - name: R_Feather2_3
+      parentName: R_Feather2_2
+      position: {x: -0.56069523, y: -0.00003417015, z: -0.000025082529}
+      rotation: {x: 0.00024854825, y: -0.00081785995, z: 0.0046644253, w: 0.9999888}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1}
+    - name: R_Feather2_4
+      parentName: R_Feather2_3
+      position: {x: -0.51519287, y: -0.000034134388, z: -0.000023391247}
+      rotation: {x: -0.00000008486674, y: -0.000000011874358, z: 0.0000038563926, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000005}
+    - name: R_Feather2_4_end
+      parentName: R_Feather2_4
+      position: {x: -0, y: 0.5151972, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Feather1_1
+      parentName: R_Feathers
+      position: {x: -0.061820984, y: -0.109557495, z: 0.0010663795}
+      rotation: {x: 0.70354134, y: 0.11018406, z: -0.11023669, w: -0.6933521}
+      scale: {x: 1.0000002, y: 1.0000006, z: 0.99999994}
+    - name: R_Feather1_2
+      parentName: R_Feather1_1
+      position: {x: -0.54175276, y: -0.00072010036, z: -0.00008888244}
+      rotation: {x: 0.00013405082, y: -0.00037805727, z: 0.002192169, w: 0.99999756}
+      scale: {x: 1.0000004, y: 1.0000004, z: 0.9999997}
+    - name: R_Feather1_3
+      parentName: R_Feather1_2
+      position: {x: -0.64246446, y: -0.0017549132, z: -0.00028096198}
+      rotation: {x: 0.00027264332, y: -0.0007959494, z: 0.0046405657, w: 0.9999889}
+      scale: {x: 1.0000007, y: 1.0000004, z: 1.0000006}
+    - name: R_Feather1_4
+      parentName: R_Feather1_3
+      position: {x: -0.61014116, y: -0.000032844542, z: -0.000022654533}
+      rotation: {x: -0.00000059558056, y: 0.000000026542684, z: 0.0000002984945, w: 1}
+      scale: {x: 0.9999999, y: 1.0000002, z: 0.9999999}
+    - name: R_Feather1_4_end
+      parentName: R_Feather1_4
+      position: {x: -0, y: 0.610154, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Shoulder_Pad
+      parentName: R_Clavicle
+      position: {x: -0.22252852, y: -0.14072253, z: 0.088079825}
+      rotation: {x: -0.0025272076, y: 0.002528376, z: -0.7069243, w: 0.7072802}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1}
+    - name: R_Shoulder_Pad_end
+      parentName: R_Shoulder_Pad
+      position: {x: -0, y: 0.25186643, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Clavicle
+      parentName: Spine3
+      position: {x: 0.04505897, y: 0.14829342, z: -0.04561859}
+      rotation: {x: 9.550299e-16, y: -0.0000000017280453, z: 0.0000000349246, w: 1}
+      scale: {x: 1.0000002, y: 1, z: 1.0000001}
+    - name: L_Shoulder
+      parentName: L_Clavicle
+      position: {x: 0.24614567, y: 0.017992219, z: -0.07246116}
+      rotation: {x: 0.03741908, y: 0.0009568787, z: -0.013255624, w: 0.9992113}
+      scale: {x: 1.0000005, y: 0.9999998, z: 0.99999994}
+    - name: L_Elbow
+      parentName: L_Shoulder
+      position: {x: 0.41868353, y: -0.000032043754, z: -0.000024847985}
+      rotation: {x: -0.0027648658, y: -0.033320345, z: 0.011303797, w: 0.99937695}
+      scale: {x: 0.9999998, y: 0.9999997, z: 1.0000001}
+    - name: L_Hand
+      parentName: L_Elbow
+      position: {x: 0.37014797, y: -0.000034499466, z: -0.000025324822}
+      rotation: {x: 0.016438566, y: -0.00002367794, z: -0.00000032581002, w: 0.9998649}
+      scale: {x: 0.9999999, y: 1, z: 0.9999998}
+    - name: L_Thumb1
+      parentName: L_Hand
+      position: {x: 0.04027254, y: -0.03133537, z: 0.055136964}
+      rotation: {x: 0.6151734, y: 0.18441448, z: -0.22846979, w: 0.7316793}
+      scale: {x: 1.0000001, y: 0.99999976, z: 0.99999976}
+    - name: L_Thumb2
+      parentName: L_Thumb1
+      position: {x: 0.09113428, y: -0.000033040644, z: -0.000024967194}
+      rotation: {x: 0.01761818, y: 0.018076934, z: -0.7024422, w: 0.71129304}
+      scale: {x: 1.0000004, y: 0.9999999, z: 1.0000005}
+    - name: L_Thumb2_end
+      parentName: L_Thumb2
+      position: {x: -0, y: 0.091000155, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Index1
+      parentName: L_Hand
+      position: {x: 0.14981522, y: -0.0050549232, z: 0.049679056}
+      rotation: {x: 0.056874424, y: -0.05577812, z: -0.076196544, w: 0.99390554}
+      scale: {x: 1.0000002, y: 0.9999999, z: 1}
+    - name: L_Index2
+      parentName: L_Index1
+      position: {x: 0.07589948, y: -0.000032783744, z: -0.000024986266}
+      rotation: {x: -0.00023106486, y: -0.0000017620623, z: -0.70417464, w: 0.7100268}
+      scale: {x: 1.0000001, y: 0.9999998, z: 1.0000001}
+    - name: L_Index2_end
+      parentName: L_Index2
+      position: {x: -0, y: 0.075903565, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Middle1
+      parentName: L_Hand
+      position: {x: 0.15227574, y: -0.00017041562, z: 0.013782038}
+      rotation: {x: -0.05376261, y: -0.015027958, z: -0.07534325, w: 0.99559385}
+      scale: {x: 1.0000001, y: 0.9999997, z: 1}
+    - name: L_Middle2
+      parentName: L_Middle1
+      position: {x: 0.1052905, y: -0.00003285408, z: -0.000024776458}
+      rotation: {x: -0.00016578661, y: 0.00000026449564, z: -0.7041312, w: 0.71006995}
+      scale: {x: 1.0000006, y: 0.99999994, z: 1.0000006}
+    - name: L_Middle2_end
+      parentName: L_Middle2
+      position: {x: -0, y: 0.10530113, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Ring1
+      parentName: L_Hand
+      position: {x: 0.15190527, y: -0.006843686, z: -0.02166543}
+      rotation: {x: -0.12710662, y: 0.010294643, z: -0.06028065, w: 0.99000216}
+      scale: {x: 1, y: 0.9999999, z: 1.0000002}
+    - name: L_Ring2
+      parentName: L_Ring1
+      position: {x: 0.09494295, y: -0.000032261014, z: -0.000025138854}
+      rotation: {x: -0.00018629429, y: 0.0000004973262, z: -0.7041398, w: 0.71006143}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000005}
+    - name: L_Ring2_end
+      parentName: L_Ring2
+      position: {x: -0, y: 0.09493729, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Pinky1
+      parentName: L_Hand
+      position: {x: 0.14152396, y: -0.014548678, z: -0.058076113}
+      rotation: {x: -0.17789643, y: 0.0041162753, z: -0.06497005, w: 0.9818935}
+      scale: {x: 0.9999999, y: 1.0000004, z: 1.0000002}
+    - name: L_Pinky2
+      parentName: L_Pinky1
+      position: {x: 0.087527975, y: -0.00003293529, z: -0.000024900435}
+      rotation: {x: -0.00019966066, y: 0.0000004058238, z: -0.7041533, w: 0.710048}
+      scale: {x: 1.0000004, y: 1, z: 1.0000006}
+    - name: L_Pinky2_end
+      parentName: L_Pinky2
+      position: {x: -0, y: 0.08752275, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Buffbone_Glb_Hand_Loc
+      parentName: L_Hand
+      position: {x: -0.0000052452087, y: -0.000032898995, z: -0.00002488613}
+      rotation: {x: 0.7086378, y: 0.7055724, z: -0.0003413148, w: 0.00017609993}
+      scale: {x: 0.9999997, y: 1, z: 0.99999964}
+    - name: L_Buffbone_Glb_Hand_Loc_end
+      parentName: L_Buffbone_Glb_Hand_Loc
+      position: {x: -0, y: 0.00555121, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Feathers
+      parentName: L_Elbow
+      position: {x: 0.17917287, y: -0.004849488, z: -0.07014944}
+      rotation: {x: -0.43524405, y: -0.539439, z: 0.60836387, w: -0.38660267}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000004}
+    - name: L_Feather3_1
+      parentName: L_Feathers
+      position: {x: 0.077685796, y: -0.097862005, z: -0.0002178277}
+      rotation: {x: 0.73590505, y: -0.12050034, z: 0.11446382, w: -0.65637}
+      scale: {x: 1.0000001, y: 0.9999998, z: 0.9999997}
+    - name: L_Feather3_2
+      parentName: L_Feather3_1
+      position: {x: 0.44399658, y: 0.00044798135, z: 0.000039372444}
+      rotation: {x: 0.00011995433, y: -0.00036359575, z: 0.0021786687, w: 0.9999976}
+      scale: {x: 0.99999976, y: 1.0000002, z: 1.0000001}
+    - name: L_Feather3_3
+      parentName: L_Feather3_2
+      position: {x: 0.49998102, y: 0.0013438904, z: 0.00023042678}
+      rotation: {x: 0.00025056224, y: -0.00076485216, z: 0.004616528, w: 0.99998903}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1.0000001}
+    - name: L_Feather3_3_end
+      parentName: L_Feather3_3
+      position: {x: -0, y: 0.49997672, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Feather2_1
+      parentName: L_Feathers
+      position: {x: 0.08206745, y: 0.000036052465, z: -0.000025056004}
+      rotation: {x: 0.70569634, y: 0.004684328, z: -0.002499818, w: -0.7084945}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000004}
+    - name: L_Feather2_2
+      parentName: L_Feather2_1
+      position: {x: 0.46256813, y: -0.00003288269, z: -0.000024950503}
+      rotation: {x: 0.00010234116, y: -0.00038424035, z: 0.0022044468, w: 0.99999756}
+      scale: {x: 0.99999976, y: 0.9999999, z: 1}
+    - name: L_Feather2_3
+      parentName: L_Feather2_2
+      position: {x: 0.56068486, y: -0.00003296375, z: -0.000023179055}
+      rotation: {x: 0.0002618937, y: -0.00081791886, z: 0.0046643796, w: 0.99998873}
+      scale: {x: 1, y: 1.0000002, z: 1.0000006}
+    - name: L_Feather2_4
+      parentName: L_Feather2_3
+      position: {x: 0.5152162, y: -0.000032615662, z: -0.000024995803}
+      rotation: {x: 0.000000060390434, y: 0.00000010512301, z: 0.000000020465132, w: 1}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1}
+    - name: L_Feather2_4_end
+      parentName: L_Feather2_4
+      position: {x: -0, y: 0.5152048, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Feather1_1
+      parentName: L_Feathers
+      position: {x: 0.06181064, y: 0.1095608, z: -0.0010527506}
+      rotation: {x: 0.7034554, y: 0.10973801, z: -0.11081423, w: -0.69341797}
+      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+    - name: L_Feather1_2
+      parentName: L_Feather1_1
+      position: {x: 0.5417422, y: 0.0007237434, z: 0.00010349273}
+      rotation: {x: 0.00013092159, y: -0.00037708125, z: 0.002194315, w: 0.9999975}
+      scale: {x: 0.9999998, y: 1, z: 1}
+    - name: L_Feather1_3
+      parentName: L_Feather1_2
+      position: {x: 0.64245397, y: 0.0017555713, z: 0.0002969074}
+      rotation: {x: 0.00027496275, y: -0.00079462177, z: 0.004635786, w: 0.999989}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1}
+    - name: L_Feather1_4
+      parentName: L_Feather1_3
+      position: {x: 0.61016434, y: -0.000029182433, z: -0.00002439022}
+      rotation: {x: 0.00000032564262, y: -0.0000002852756, z: -0.00000012788247, w: 1}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000004}
+    - name: L_Feather1_4_end
+      parentName: L_Feather1_4
+      position: {x: -0, y: 0.6101499, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Shoulder_Pad
+      parentName: L_Clavicle
+      position: {x: 0.25605512, y: 0.11809203, z: -0.13860388}
+      rotation: {x: -0.0025270777, y: 0.0025285594, z: -0.7069243, w: 0.7072802}
+      scale: {x: 1.0000002, y: 1.0000001, z: 0.99999994}
+    - name: L_Shoulder_Pad_end
+      parentName: L_Shoulder_Pad
+      position: {x: -0, y: 0.25186774, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Collar
+      parentName: Spine3
+      position: {x: -0.22923586, y: 0.38426712, z: -0.17790443}
+      rotation: {x: 0.70728487, y: 0.7069287, z: 0.00000004107842, w: -0.0000000020574342}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000005}
+    - name: R_Collar_end
+      parentName: R_Collar
+      position: {x: -0, y: 0.16154972, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Collar
+      parentName: Spine3
+      position: {x: 0.22922553, y: 0.38426712, z: -0.17790441}
+      rotation: {x: 0.000000041087738, y: 0.00000009969932, z: -0.70692885, w: 0.7072847}
+      scale: {x: 0.99999976, y: 1.0000004, z: 1.0000002}
+    - name: L_Collar_end
+      parentName: L_Collar
+      position: {x: -0, y: 0.16154972, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: C_Buffbone_Glb_Chest_Loc
+      parentName: Spine3
+      position: {x: -0.00000518322, y: -0.000032958982, z: -0.000024933814}
+      rotation: {x: 1.5924224e-15, y: -0.00000002910384, z: 0.000000034924604, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: C_Buffbone_Glb_Chest_Loc_end
+      parentName: C_Buffbone_Glb_Chest_Loc
+      position: {x: -0, y: 0.16154967, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: M_Collar
+      parentName: Spine3
+      position: {x: -0.0000051900743, y: 0.3380356, z: -0.38692862}
+      rotation: {x: 0.70195144, y: 0.7014184, z: -0.08739746, w: 0.087396316}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000005}
+    - name: M_Collar_end
+      parentName: M_Collar
+      position: {x: -0, y: 0.16154972, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pelvis
+      parentName: Root
+      position: {x: -0.000005145073, y: -0.04309969, z: -0.022500638}
+      rotation: {x: -0, y: -0.000000023283068, z: -0.000000011641532, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Hip
+      parentName: Pelvis
+      position: {x: -0.15498285, y: -0.0910512, z: -0.024748249}
+      rotation: {x: 0.52674305, y: 0.4687645, z: -0.5212356, w: -0.4807443}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: R_Knee
+      parentName: R_Hip
+      position: {x: -0.5803455, y: -0.000032215117, z: -0.000025612115}
+      rotation: {x: -0.030271268, y: -0.009473236, z: -0.05940261, w: -0.9977301}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000002}
+    - name: R_Ankle
+      parentName: R_Knee
+      position: {x: -0.21261919, y: 0.07082807, z: -0.000024763345}
+      rotation: {x: 0.97758627, y: -0.15294197, z: 0.03991695, w: -0.13906999}
+      scale: {x: 1.0000001, y: 0.9999999, z: 0.9999999}
+    - name: R_Foot
+      parentName: R_Ankle
+      position: {x: -0.4191321, y: -0.000032258034, z: -0.000024302006}
+      rotation: {x: -0.0061447006, y: -0.007922352, z: -0.048570376, w: 0.99876946}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000005}
+    - name: R_Toe
+      parentName: R_Foot
+      position: {x: -0.08726857, y: -0.08121314, z: 0.0033147063}
+      rotation: {x: -0.5378345, y: -0.45913348, z: -0.538558, w: 0.45813286}
+      scale: {x: 1.0000006, y: 0.99999994, z: 1.0000005}
+    - name: R_Toe_end
+      parentName: R_Toe
+      position: {x: -0, y: 0.0017153032, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Buffbone_Glb_Foot_Loc
+      parentName: R_Foot
+      position: {x: 0.00016328276, y: 0.0007240616, z: 0.0013235606}
+      rotation: {x: -0.49957687, y: -0.49957633, z: -0.5012702, w: 0.49957445}
+      scale: {x: 1, y: 0.99999976, z: 1.0000002}
+    - name: R_Buffbone_Glb_Foot_Loc_end
+      parentName: R_Buffbone_Glb_Foot_Loc
+      position: {x: -0, y: 0.0017153072, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Hip_Pad
+      parentName: Pelvis
+      position: {x: -0.19087909, y: 0.08066617, z: 0.08397017}
+      rotation: {x: 0.1899776, y: 0.9698411, z: 0.14670727, w: -0.04235225}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: R_Hip_Pad_end
+      parentName: R_Hip_Pad
+      position: {x: -0, y: 0.14653693, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cloth_Front1
+      parentName: Pelvis
+      position: {x: -0.0000051879883, y: -0.07543412, z: 0.19358753}
+      rotation: {x: 0.5014453, y: -0.49939266, z: -0.49976572, w: 0.49939355}
+      scale: {x: 0.9999999, y: 0.9999997, z: 0.9999998}
+    - name: Cloth_Front2
+      parentName: Cloth_Front1
+      position: {x: 0.29693958, y: -0.000033512115, z: -0.000024366378}
+      rotation: {x: -0.00014308094, y: -0.00015757977, z: -0.0069355806, w: 0.9999759}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Cloth_Front3
+      parentName: Cloth_Front2
+      position: {x: 0.3215448, y: -0.000032392738, z: -0.000026092528}
+      rotation: {x: 0.000000032581735, y: 0.0000017437412, z: -0.0000001787594, w: 1}
+      scale: {x: 1.0000002, y: 0.9999999, z: 1.0000001}
+    - name: Cloth_Front3_end
+      parentName: Cloth_Front3
+      position: {x: -0, y: 0.32155198, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Hip_Pad
+      parentName: Pelvis
+      position: {x: 0.19086878, y: 0.08066618, z: 0.08397018}
+      rotation: {x: -0.042352136, y: -0.14670727, z: 0.9698411, w: -0.18997768}
+      scale: {x: 1.0000002, y: 0.99999946, z: 1}
+    - name: L_Hip_Pad_end
+      parentName: L_Hip_Pad
+      position: {x: -0, y: 0.14653693, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Hip
+      parentName: Pelvis
+      position: {x: 0.15497234, y: -0.09105113, z: -0.024748223}
+      rotation: {x: 0.4807446, y: -0.5212342, z: -0.46876413, w: 0.5267445}
+      scale: {x: 0.9999999, y: 0.9999998, z: 1.0000002}
+    - name: L_Knee
+      parentName: L_Hip
+      position: {x: 0.5803349, y: -0.000033388285, z: -0.000023394823}
+      rotation: {x: -0.017635465, y: -0.012695208, z: 0.10896076, w: -0.99380857}
+      scale: {x: 1.0000002, y: 1, z: 1.0000001}
+    - name: L_Ankle
+      parentName: L_Knee
+      position: {x: 0.199295, y: 0.00003613293, z: -0.000024858713}
+      rotation: {x: 0.98801684, y: 0.01285221, z: 0.013382865, w: -0.15322722}
+      scale: {x: 1.0000001, y: 0.9999995, z: 0.9999999}
+    - name: L_Foot
+      parentName: L_Ankle
+      position: {x: 0.41912204, y: -0.000033058524, z: -0.0000251472}
+      rotation: {x: -0.004438572, y: -0.008015515, z: -0.050246105, w: 0.9986949}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: L_Toe
+      parentName: L_Foot
+      position: {x: 0.08729238, y: 0.08121613, z: -0.0033000454}
+      rotation: {x: 0.5378333, y: 0.46095428, z: 0.53700405, w: -0.45813024}
+      scale: {x: 1.0000002, y: 0.9999999, z: 0.99999994}
+    - name: L_Toe_end
+      parentName: L_Toe
+      position: {x: -0, y: 0.001880894, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Buffbone_Glb_Foot_Loc
+      parentName: L_Foot
+      position: {x: -0.00014009002, y: -0.00072067603, z: -0.001309358}
+      rotation: {x: 0.49957708, y: 0.5012692, z: 0.49957722, w: -0.4995744}
+      scale: {x: 1.0000007, y: 1.0000008, z: 1.0000002}
+    - name: L_Buffbone_Glb_Foot_Loc_end
+      parentName: L_Buffbone_Glb_Foot_Loc
+      position: {x: -0, y: 0.0018808937, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cloth_Back
+      parentName: Pelvis
+      position: {x: -0.0000052207706, y: -0.036288626, z: -0.14348432}
+      rotation: {x: 0.6217009, y: -0.3385989, z: -0.61983055, w: 0.33859852}
+      scale: {x: 1, y: 1.0000001, z: 1.0000004}
+    - name: Cloth_Back_end
+      parentName: Cloth_Back
+      position: {x: -0, y: 0.14653692, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: C_Buffbone_Glb_Layout_Loc
+      parentName: skinned_mesh
+      position: {x: -0.0000051879915, y: 0.061608426, z: -0.000032806383}
+      rotation: {x: -0.00000005338442, y: 0.7071068, z: 0.7071068, w: -0.000000053383893}
+      scale: {x: 0.99999976, y: 0.9999995, z: 0.99999976}
+    - name: C_Buffbone_Glb_Layout_Loc_end
+      parentName: C_Buffbone_Glb_Layout_Loc
+      position: {x: -0, y: 0.061580032, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: C_Buffbone_Glb_Center_Loc
+      parentName: skinned_mesh
+      position: {x: -0.14038825, y: 0.48556507, z: 1.1216335}
+      rotation: {x: 0.000000053381846, y: 0.7071068, z: 0.7071068, w: 0.000000053384447}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: C_Buffbone_Glb_Center_Loc_end
+      parentName: C_Buffbone_Glb_Center_Loc
+      position: {x: -0, y: 1.2616346, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Buffbone_Glb_Ground_Loc
+      parentName: skinned_mesh
+      position: {x: -0.0000051879865, y: -0.0030574035, z: -0.000032806394}
+      rotation: {x: 0.000000053383495, y: 0.7071068, z: 0.7071068, w: 0.000000053384817}
+      scale: {x: 0.99999976, y: 0.9999998, z: 0.9999998}
+    - name: Buffbone_Glb_Ground_Loc_end
+      parentName: Buffbone_Glb_Ground_Loc
+      position: {x: -0, y: 0.0030632657, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: C_Buffbone_Glb_Overhead_Loc
+      parentName: skinned_mesh
+      position: {x: -0.000005187987, y: 0.057241667, z: 3.0610209}
+      rotation: {x: 0.000000053383495, y: 0.7071068, z: 0.7071068, w: 0.000000053384817}
+      scale: {x: 0.99999976, y: 0.9999998, z: 0.9999998}
+    - name: C_Buffbone_Glb_Overhead_Loc_end
+      parentName: C_Buffbone_Glb_Overhead_Loc
+      position: {x: -0, y: 3.061556, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Buffbone_Glb_Channel_Loc
+      parentName: skinned_mesh
+      position: {x: -0.000005187987, y: -0.7999829, z: 1.300024}
+      rotation: {x: -2.842171e-12, y: -0, z: 1, w: 1.0842022e-19}
+      scale: {x: 0.9999998, y: 0.9999999, z: 0.9999999}
+    - name: Buffbone_Glb_Channel_Loc_end
+      parentName: Buffbone_Glb_Channel_Loc
+      position: {x: -0, y: 1.5264337, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cstm_Buffbone_Weapon_Attack1
+      parentName: skinned_mesh
+      position: {x: 0.045463484, y: -2.4969008, z: 1.2672765}
+      rotation: {x: 0.6909462, y: 0.0014176071, z: 0.7185613, w: -0.079126686}
+      scale: {x: 1.0000011, y: 1, z: 1.0000008}
+    - name: Cstm_Buffbone_Weapon_Attack1_end
+      parentName: Cstm_Buffbone_Weapon_Attack1
+      position: {x: -0, y: 2.800469, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Weapon_World
+      parentName: skinned_mesh
+      position: {x: 0.77936566, y: 1.2618767, z: 1.2154037}
+      rotation: {x: 0.000000052386888, y: -0, z: 1, w: -0.00000002328306}
+      scale: {x: 1, y: 1.0000001, z: 0.9999999}
+    - name: Weapon_World_end
+      parentName: Weapon_World
+      position: {x: -0, y: 0.2755622, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
