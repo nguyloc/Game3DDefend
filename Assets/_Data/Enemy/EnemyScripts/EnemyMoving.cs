@@ -106,7 +106,7 @@ namespace _Data.Enemy.EnemyScripts
             if (this.enemyPathMoving != null) return;
             this.enemyPathMoving = PathsManager.Instance.GetPath(this.pathName);
             
-            //Debug.Log(transform.name + " is loading EnemyPath",gameObject);
+            Debug.Log(transform.name + " is loading EnemyPath",gameObject);
         }
         
         protected virtual void CheckMoving()
