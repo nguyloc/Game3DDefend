@@ -9,7 +9,7 @@ namespace _Data.Inventory.ItemDrop
         public override void DoDespawn()
         {
             ItemDropController itemDropController = (ItemDropController) this.parent;        
-            InventoryManager.Instance.AddItem(itemDropController.ItemCode, itemDropController.ItemCount);
+            InventoriesManager.Instance.AddItem(itemDropController.ItemCode, itemDropController.ItemCount);
             base.DoDespawn();
         }
     }

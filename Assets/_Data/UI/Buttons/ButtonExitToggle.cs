@@ -9,8 +9,7 @@ namespace _Data.UI.Buttons
     {
         protected override void OnClick()
         {
-            UnityEditor.EditorApplication.isPlaying = false;
-            Application.Quit();
+            GameManager.Instance.QuitGame();
         }
     }
 }

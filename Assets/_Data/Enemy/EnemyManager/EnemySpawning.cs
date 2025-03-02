@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using _Data.Enemy.EnemyScripts;
 using _Data.Enemy.Manager;
+using _Data.TimeCycle;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -16,7 +17,8 @@ namespace _Data.Enemy.EnemyManager
         protected override void Start()
         {
             base.Start();
-            Invoke(nameof(this.Spawning), spawnSpeed);
+            //Invoke(nameof(this.Spawning), spawnSpeed);
+            InvokeRepeating(nameof(CheckSpawnCondition), 0f, 1f);
         }
 
         protected void FixedUpdate()
@@ -38,7 +40,6 @@ namespace _Data.Enemy.EnemyManager
             newEnemy.gameObject.SetActive(true);
             
             this.spawnedEnemies.Add(newEnemy);
-            //Debug.Log("Spawning", gameObject);
         }
 
         protected virtual void RemoveDeadOne()
@@ -50,6 +51,21 @@ namespace _Data.Enemy.EnemyManager
                     this.spawnedEnemies.Remove(enemyController);
                     return;
                 }
+            }
+        }
+        
+        protected virtual void CheckSpawnCondition()
+        {
+            if (DayNightCycle.Instance.isNight)
+            {
+                if (!IsInvoking(nameof(Spawning))) 
+                {
+                    InvokeRepeating(nameof(Spawning), 0f, spawnSpeed);
+                }
+            }
+            else
+            {
+                CancelInvoke(nameof(Spawning)); 
             }
         }
     }

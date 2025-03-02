@@ -24,7 +24,7 @@ namespace _Data.Paths
                 this.points.Add(point);
             }
             
-            Debug.Log(transform.name + "Load Points", gameObject);
+            //Debug.Log(transform.name + "Load Points", gameObject);
         }
         
         public Point GetPoint(int index)

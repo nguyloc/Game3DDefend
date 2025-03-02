@@ -1,12 +1,13 @@
 using System.Collections.Generic;
 using _Data.Level;
 using _Data.Scripts;
+using _Data.Spawner;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
 namespace _Data.Tower.Scripts
 {
-    public class TowerController : LocMonoBehaviour
+    public abstract class TowerController : PoolObj
     {
         [SerializeField] protected Transform model;
         [SerializeField] protected Transform rotator;

@@ -28,7 +28,7 @@ namespace _Data.Paths
                this.paths.Add(path);
            }
            
-           Debug.Log(transform.name + "Load Paths", gameObject);
+           //Debug.Log(transform.name + "Load Paths", gameObject);
         }
         
         public PathMoving GetPath(string pathName)

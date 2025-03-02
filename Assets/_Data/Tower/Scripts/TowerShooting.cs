@@ -9,6 +9,7 @@ namespace _Data.Tower.Scripts
 {
     public class TowerShooting : TowerAbstract
     {
+        [SerializeField] protected bool isDisable = true;
         [SerializeField] protected float currentFirePoint = 0;
         [SerializeField] protected float targetLoadSpeed = 1f;
         [SerializeField] protected float shootingSpeed = 1f;
@@ -64,6 +65,7 @@ namespace _Data.Tower.Scripts
          
         protected virtual void Looking()
         {
+            if (this.isDisable) return;
             if (this.target == null) return; 
             Vector3 directionToTarget = this.target.TowerTargetable.transform.position - this.towerController.Rotator.position;
             Vector3 newDirection = Vector3.RotateTowards(
@@ -76,6 +78,8 @@ namespace _Data.Tower.Scripts
         
         protected virtual void Shooting()
         {
+            if (this.isDisable) return;
+            
             Invoke(nameof(this.Shooting), this.shootingSpeed + Random.Range(-0.1f, 0.1f));
             if (this.target == null) return;
             
@@ -144,6 +148,16 @@ namespace _Data.Tower.Scripts
             SfxController newSfx = SoundManager.Instance.CreateSfx(this.shootSfxName);
             newSfx.transform.position = position;
             newSfx.gameObject.SetActive(true);
+        }
+
+        public virtual void Active()
+        {
+            this.isDisable = false;
+        }
+        
+        public virtual void Disable()
+        {
+            this.isDisable = true;
         }
     }
 }

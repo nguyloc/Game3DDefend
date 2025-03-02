@@ -84,7 +84,7 @@ namespace _Data.UI.Inventory
         {
             if(!this.isShow) return;
             
-            InventoryController itemInventoryController = InventoryManager.Instance.Items();
+            InventoryController itemInventoryController = InventoriesManager.Instance.Items();
             foreach (ItemInventory itemInventory in itemInventoryController.Items)
             {
                ButtonItemInventory newButtonItem = this.GetExistItem(itemInventory);

@@ -20,7 +20,7 @@ namespace _Data.Inventory
         {
             for (int i = 0; i < count; i++)
             {
-                InventoryManager.Instance.AddItem(itemCode, 1);
+                InventoriesManager.Instance.AddItem(itemCode, 1);
             }
         }
 
@@ -29,7 +29,7 @@ namespace _Data.Inventory
         {
             for (int i = 0; i < count; i++)
             {
-                InventoryManager.Instance.RemoveItem(itemCode, 1);
+                InventoriesManager.Instance.RemoveItem(itemCode, 1);
             }
         }
         

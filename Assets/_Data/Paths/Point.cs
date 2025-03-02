@@ -24,7 +24,7 @@ namespace _Data.Paths
                 this.nextPoint = transform.parent.GetChild(siblingIndex + 1).GetComponent<Point>();
             }
             
-            Debug.Log(transform.name + "Load Next Point", gameObject);
+            //Debug.Log(transform.name + "Load Next Point", gameObject);
         }
     }
 }
